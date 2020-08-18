@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Landing from '../pages/Landing.vue'
+import Bouton from '../components/Bouton.vue'
+
 
 Vue.use(VueRouter)
 
@@ -10,6 +13,19 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home
   },
+
+  {
+    path: '/landing',
+    name: 'Landing',
+    component: Landing
+  },
+
+  {
+    path: '/bouton',
+    name: 'Bouton',
+    component: Bouton
+  },
+
   {
     path: '/about',
     name: 'About',
