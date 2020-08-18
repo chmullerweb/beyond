@@ -1,15 +1,4 @@
-<<<<<<< Updated upstream
-<template lang="html">
-<div class="cardOffre">
-  
-</div>
-</template>
-<script>
-export default {
-}
-</script>
-<style lang="css" scoped>
-=======
+
 <template>
 
   <div>
@@ -71,5 +60,4 @@ export default {
   padding: 1.5rem auto;
 }
 
->>>>>>> Stashed changes
 </style>

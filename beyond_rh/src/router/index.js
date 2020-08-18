@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-<<<<<<< Updated upstream
-=======
+
 import Landing from '../pages/landing.vue'
 // import Concept from '../pages/concept.vue'
 import Offre from '../pages/offre.vue'
@@ -17,7 +16,6 @@ import CardTitle from '../components/CardTitle.vue'
 // import Caroussel from '../components/Caroussel.vue'
 
 
->>>>>>> CardOffre
 
 Vue.use(VueRouter)
 
@@ -27,8 +25,7 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home
   },
-<<<<<<< Updated upstream
-=======
+
 
   // pages :
 
@@ -100,7 +97,7 @@ Vue.use(VueRouter)
   //   component: Caroussel
   // },
 
->>>>>>> CardOffre
+
   {
     path: '/about',
     name: 'About',
