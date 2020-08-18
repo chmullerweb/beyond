@@ -1,18 +1,23 @@
 <template>
     <div class="">
+      
     <CardTitle/>
     <CardConcept/>
+    <CardPictos/>
+
     </div>
 </template>
 
 <script>
 import CardTitle from "../components/CardTitle";
 import CardConcept from "../components/CardConcept";
+import CardPictos from "../components/CardPictos";
+
 
 
 export default {
   name: 'Landing',
-  components: {CardTitle, CardConcept},
+  components: {CardTitle, CardConcept, CardPictos},
 //   data() {
 //     return {
 //       users: membres,
@@ -32,7 +37,7 @@ export default {
 //         email: {
 //             type: String,
 //             default: ""
-//         } 
+//         }
 //   },
 //   computed: {
 //       fullName() { return this.firstname + this.lastname }
