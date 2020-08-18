@@ -1,6 +1,8 @@
 <template>
   <div class="bouton_principal">
-    <button type="button" :class="{'btn': btn,'btn-dark': btnDark,'btn-info': btnInfo}">{{ titleButton }}</button>
+    <button type="button" :class="{'btn': btn,'btn-dark': btnDark,'btn-info': btnInfo}">
+            <slot>Default Text</slot>
+    </button>
   </div>
 </template>
 
@@ -43,6 +45,6 @@ export default {
 
 .bouton_principal
 {
-  margin: 2rem;
+  margin: 2rem 0rem;
 }
 </style>

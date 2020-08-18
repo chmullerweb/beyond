@@ -1,29 +1,49 @@
 <template>
-    <div class="cardConcept container-fluid">
-        <div class="row justify-content-md-center">
+    <div class="container-fluid">
+        <div class="row cardConcept">
             <div class="col img">
             <img src="../assets/conceptBeyond.jpg"/>
             </div>
-            <div class="col cardTitle">
-            <CardTitle/>
+            <div class="col cardConceptText">
+            <h2 class="claimConcept"><slot name="claimConcept">Analysez les soft skills</slot></h2>
+            <p class="container"><slot name="claimConceptText">Marshmallow soufflé cake gingerbread pie chocolate bar. Marshmallow caramels candy canes toffee gummi bears tootsie roll. Fruitcake cheesecake caramels cotton candy marshmallow halvah croissant.</slot></p>
+            <Bouton btn btnDark><slot name="txtButton">En savoir plus</slot></Bouton>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import CardTitle from './CardTitle.vue';
+//import CardTitle from './CardTitle.vue';
+import Bouton from './Bouton.vue';
 
 export default {
   name: 'CardConcept',
-  components: {CardTitle},
+  components: {Bouton},
 
 };
+
+// <CardTitle>
+//             <template v-slot:claimTitle>Analysez les softs skills</template>
+//             <template v-slot:claimTxt>Marshmallow soufflé cake gingerbread pie chocolate bar. Marshmallow caramels candy canes toffee gummi bears tootsie roll. Fruitcake cheesecake caramels cotton candy marshmallow halvah croissant.</template>
+//             <template v-slot:txtButton>En savoir plus</template>
+//             </CardTitle>
 </script>
 
-<style>
+<style scoped>
+
+.cardConcept{
+    align-items: center;
+}
+
+.cardConceptText{
+    text-align: left;
+}
+
 
 
 
 
 </style>
+
+
