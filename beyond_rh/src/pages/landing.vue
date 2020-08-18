@@ -1,16 +1,18 @@
 <template>
     <div class="">
     <CardTitle/>
+    <CardConcept/>
     </div>
 </template>
 
 <script>
 import CardTitle from "../components/CardTitle";
+import CardConcept from "../components/CardConcept";
 
 
 export default {
   name: 'Landing',
-  components: {CardTitle},
+  components: {CardTitle, CardConcept},
 //   data() {
 //     return {
 //       users: membres,
