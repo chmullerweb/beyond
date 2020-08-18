@@ -1,9 +1,9 @@
 <template>
-    <div class="cardTitle container">
+    <div class="cardTitle container-fluid">
         <div class="row justify-content-md-center">
             <div class="col">
             <h1 class="claim">Recrutez autrement, Recrutez sportivement</h1>
-            <p>Gummies jujubes carrot cake tiramisu. Chocolate cake dragée soufflé gummi bears candy croissant croissant. Chupa chups sesame snaps cotton candy cake oat cake. Icing bonbon powder topping sugar plum sugar plum apple pie. Cupcake oat cake pudding jelly beans jelly beans soufflé jelly-o. </p>
+            <p class="container">Gummies jujubes carrot cake tiramisu. Chocolate cake dragée soufflé gummi bears candy croissant croissant. Chupa chups sesame snaps cotton candy cake oat cake. Icing bonbon powder topping sugar plum sugar plum apple pie. Cupcake oat cake pudding jelly beans jelly beans soufflé jelly-o. </p>
             <Bouton btn btnInfo titleButton="Comment ça marche ?"></Bouton>
             </div>
         </div>
@@ -23,7 +23,6 @@ export default {
 <style>
 
 .cardTitle{
-    border: 2px blue solid; 
     margin: 1.5rem auto;
 }
 

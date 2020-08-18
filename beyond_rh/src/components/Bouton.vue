@@ -21,7 +21,7 @@ export default {
     btnDark:
     {
       type: Boolean,
-      default: true,
+      default: false,
     },
     btnInfo:
     {
