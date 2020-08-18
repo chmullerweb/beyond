@@ -1,20 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Landing from '../pages/Landing.vue'
-// import Concept from '../pages/Concept.vue'
-// import Offre from '../pages/Offre.vue'
+<<<<<<< Updated upstream
+=======
+import Landing from '../pages/landing.vue'
+// import Concept from '../pages/concept.vue'
+import Offre from '../pages/offre.vue'
 
 import Bouton from '../components/Bouton.vue'
 // import CardConcept from '../components/CardConcept.vue'
 // import CardHome from '../components/CardHome.vue'
-// import CardOffre from '../components/CardOffre.vue'
+import CardOffre from '../components/CardOffre.vue'
 // import CardPictos from '../components/CardPictos.vue'
 // import CardTeam from '../components/CardTeam.vue'
-// import CardTitle from '../components/CardTitle.vue'
+import CardTitle from '../components/CardTitle.vue'
 // import Caroussel from '../components/Caroussel.vue'
 
 
+>>>>>>> CardOffre
 
 Vue.use(VueRouter)
 
@@ -24,8 +27,10 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home
   },
+<<<<<<< Updated upstream
+=======
 
-  // pages : 
+  // pages :
 
   {
     path: '/landing',
@@ -39,13 +44,13 @@ Vue.use(VueRouter)
   //   component: Concept
   // },
 
-  // {
-  //   path: '/offre',
-  //   name: 'Offre',
-  //   component: Offre
-  // },
+  {
+    path: '/offre',
+    name: 'Offre',
+    component: Offre
+  },
 
-  // components : 
+  // components :
 
   {
     path: '/bouton',
@@ -65,11 +70,11 @@ Vue.use(VueRouter)
   //   component: CardHome
   // },
 
-  // {
-  //   path: '/cardOffre',
-  //   name: ' CardOffre',
-  //   component: CardOffre
-  // },
+  {
+    path: '/cardOffre',
+    name: ' CardOffre',
+    component: CardOffre
+  },
 
   // {
   //   path: '/cardPictos',
@@ -83,11 +88,11 @@ Vue.use(VueRouter)
   //   component: CardTeam
   // },
 
-  // {
-  //   path: '/cardTitle',
-  //   name: ' CardTitle',
-  //   component: CardTitle
-  // },
+  {
+    path: '/cardTitle',
+    name: ' CardTitle',
+    component: CardTitle
+  },
 
   // {
   //   path: '/caroussel',
@@ -95,6 +100,7 @@ Vue.use(VueRouter)
   //   component: Caroussel
   // },
 
+>>>>>>> CardOffre
   {
     path: '/about',
     name: 'About',
