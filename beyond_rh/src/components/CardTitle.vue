@@ -1,3 +1,5 @@
+<<<<<<< Updated upstream
+=======
 <template>
     <div class="cardTitle container-fluid">
         <div class="row justify-content-md-center">
@@ -32,3 +34,4 @@ export default {
 
 
 </style>
+>>>>>>> CardOffre
