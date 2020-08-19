@@ -1,23 +1,38 @@
 <template>
-  <div class="container-fluid footer">
-    <h3>BEYOND</h3>
-    <div class="container">
-      <div class="row">
-        <div class="col flex">
-          <div class="adresse">
-            <h4>Paris</h4>
-            <p>XX rue Mason</p>
-            <p>75020 Paris</p>
-            <p>France</p>
-            <p class="phone">06.XX.XX.XX.XX</p>
+  <div>
+    <div class="container-fluid footer">
+      <h3>BEYOND</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col flex">
+              <div class="adresse">
+                <h4>Paris</h4>
+                <p>XX rue Mason</p>
+                <p>75020 Paris</p>
+                <p>France</p>
+                <p class="phone">06.XX.XX.XX.XX</p>
+              </div>
+              <div class="legacy">
+                <p>Mentions légales</p>
+                <p>CGU</p></div>
+              </div>
+            <div class="col">
+              <h4>Les derniers articles</h4>
+            </div>
           </div>
-          <div class="legacy">
-          <p>Mentions légales</p>
-          <p>CGU</p></div>
         </div>
-        <div class="col">
-        uhuh
-        </div>
+    </div>
+    <div class="container-fluid social">
+      <div class="row">
+          <div class="col copyright">
+              <p>Copyright Sochapa Descodeuses - 2020</p>
+          </div>
+          <div class="col pictosSocial">
+              <span>Suivez-nous</span>
+              <span>F</span>
+              <span>I</span>
+              <span>L</span>
+          </div>
       </div>
     </div>
   </div>
@@ -66,11 +81,10 @@ export default {
 
 .footer
 {
-  margin: 2rem 0rem;
+  margin: 2rem 0rem 0 0;
   background-color: #3C3744;
   color: white; 
   text-align: left;
-
 }
 
 h3{
@@ -92,4 +106,30 @@ h3{
 .legacy{
   padding: 3rem 0rem 2rem 2rem;
 }
+
+.social{
+  background-color: #2b2d42;
+  color: white;
+}
+
+.copyright{
+    text-align: left;
+    padding: 0.5rem 0 0.5rem 3rem;
+}
+
+.copyright p{
+margin-bottom: 0;
+}
+
+.pictosSocial{
+  text-align: right; 
+  padding: 0.5rem 3rem 0.5rem 0;
+}
+
+.pictosSocial span{
+  padding-right: 2rem;
+}
+
+
+
 </style>
