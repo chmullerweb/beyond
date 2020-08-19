@@ -1,17 +1,18 @@
 <template>
+
     <div class="">
-    <CardOffre cardOffre/>
-    <CardOffre cardOffreRight/>
-    <CardOffre cardOffre/>
-    <CardOffre cardOffreRight/>
-    <CardOffre cardOffre/>
-    <CardOffre cardOffreRight/>
 
+      <CardOffre cardOffre/>
+      <CardOffre cardOffreRight/>
+      <CardOffre cardOffre/>
+      <CardOffre cardOffreRight/>
+      <CardOffre cardOffre/>
+      <CardOffre cardOffreRight/>
 
-    <Bouton/>
-    <!-- <Bouton btn btnInfo titleButton="Comment ça marche ?"></Bouton> -->
-
+      <Bouton/>
+      
     </div>
+
 </template>
 
 <script>
