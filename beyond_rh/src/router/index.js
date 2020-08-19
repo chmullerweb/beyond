@@ -3,17 +3,21 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 import Landing from '../pages/landing.vue'
-// import Concept from '../pages/concept.vue'
+import Concept from '../pages/concept.vue'
 import Offre from '../pages/offre.vue'
 
 import Bouton from '../components/Bouton.vue'
-// import CardConcept from '../components/CardConcept.vue'
+
+import CardConcept from '../components/CardConcept.vue'
+
+import CardConcept from '../components/CardConcept.vue'
+
 import CardHome from '../components/CardHome.vue'
 import CardOffre from '../components/CardOffre.vue'
 import CardPictos from '../components/CardPictos.vue'
 // import CardTeam from '../components/CardTeam.vue'
 import CardTitle from '../components/CardTitle.vue'
-// import Caroussel from '../components/Caroussel.vue'
+import Caroussel from '../components/Caroussel.vue'
 
 
 
@@ -35,11 +39,11 @@ Vue.use(VueRouter)
     component: Landing
   },
 
-  // {
-  //   path: '/concept',
-  //   name: 'Concept',
-  //   component: Concept
-  // },
+  {
+    path: '/concept',
+    name: 'Concept',
+    component: Concept
+  },
 
   {
     path: '/offre',
@@ -55,11 +59,11 @@ Vue.use(VueRouter)
     component: Bouton
   },
 
-  // {
-  //   path: '/cardConcept',
-  //   name: 'CardConcept',
-  //   component: CardConcept
-  // },
+  {
+    path: '/cardConcept',
+    name: 'CardConcept',
+    component: CardConcept
+  },
 
   {
     path: '/cardHome',
@@ -91,11 +95,11 @@ Vue.use(VueRouter)
     component: CardTitle
   },
 
-  // {
-  //   path: '/caroussel',
-  //   name: ' Caroussel',
-  //   component: Caroussel
-  // },
+  {
+    path: '/caroussel',
+    name: ' Caroussel',
+    component: Caroussel
+  },
 
 
   {
