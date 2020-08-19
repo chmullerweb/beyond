@@ -25,6 +25,7 @@ export default {
 
 .cardHome{
     margin: 1.5rem auto;
+    backgrounds-color: lightsalmon;
 }
 
 .claim{
