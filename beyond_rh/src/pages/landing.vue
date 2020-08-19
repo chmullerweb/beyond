@@ -1,3 +1,4 @@
+<!-- page d'accueil -->
 <template>
     <div class="">
     <CardTitle/>
@@ -32,7 +33,7 @@ export default {
 //         email: {
 //             type: String,
 //             default: ""
-//         } 
+//         }
 //   },
 //   computed: {
 //       fullName() { return this.firstname + this.lastname }
