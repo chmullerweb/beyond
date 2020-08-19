@@ -10,7 +10,7 @@
       </div>
 
       <Bouton btn btnInfo><slot name="txtButton">Comment ça marche ?</slot></Bouton>
-      
+
     </div>
 </template>
 
@@ -29,6 +29,8 @@ export default {
 .cardHome{
     margin: 1.5rem auto;
     backgrounds-color: lightsalmon;
+    width: 90rem;
+    height: 90rem;
 }
 
 .claim{
