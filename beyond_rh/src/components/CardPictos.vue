@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: 'CardPictos', 
+  name: 'CardPictos',
 }
 </script>
 
@@ -53,9 +53,9 @@ i{
   font-size: 7rem;
   margin: 1.5rem;
 }
-
-/* .cardPictos{
+/*
+.cardPictos{
   width: 100%;
-} */
+}  */
 
 </style>
