@@ -7,7 +7,7 @@ import Concept from '../pages/concept.vue'
 import Offre from '../pages/offre.vue'
 
 import Bouton from '../components/Bouton.vue'
-// import CardConcept from '../components/CardConcept.vue'
+import CardConcept from '../components/CardConcept.vue'
 import CardHome from '../components/CardHome.vue'
 import CardOffre from '../components/CardOffre.vue'
 import CardPictos from '../components/CardPictos.vue'
@@ -55,11 +55,11 @@ Vue.use(VueRouter)
     component: Bouton
   },
 
-  // {
-  //   path: '/cardConcept',
-  //   name: 'CardConcept',
-  //   component: CardConcept
-  // },
+  {
+    path: '/cardConcept',
+    name: 'CardConcept',
+    component: CardConcept
+  },
 
   {
     path: '/cardHome',
