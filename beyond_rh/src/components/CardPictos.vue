@@ -1,6 +1,6 @@
 <template>
 
-  <div class="cardPictos container-fluid">
+  <div class="container-fluid cardPictos">
 
     <div class="card text-white">
         <img src="" class="card-img" alt="">
