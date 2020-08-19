@@ -40,6 +40,8 @@ export default {
 .cardPictos{
   display: flex;
   flex-direction: row;
+  width: 25rem;
+  height: 25rem;
   background-color: #454545;
 }
 </style>
