@@ -6,7 +6,7 @@
     <CardPictos/>
     <CardConcept/>
     <FormContact/>
-
+    <Footer/>
     </div>
 </template>
 
@@ -15,13 +15,14 @@ import CardTitle from "../components/CardTitle";
 import CardConcept from "../components/CardConcept";
 import CardPictos from "../components/CardPictos";
 import CardHome from "../components/CardHome";
+import Footer from "../layout/Footer";
 import FormContact from "../components/FormContact";
 
 
 
 export default {
   name: 'Landing',
-  components: {CardTitle, CardConcept, CardPictos, CardHome, FormContact},
+  components: {CardTitle, CardConcept, CardPictos, CardHome, Footer, FormContact},
 //   data() {
 //     return {
 //       users: membres,
