@@ -39,8 +39,8 @@
         <template v-slot:img>
           <img
             class="img-fluid w-100"
-            width="640"
-            height="420"
+            width="1024"
+            height="480"
             src="../assets/work.jpg"
             alt="image slot"
           >
