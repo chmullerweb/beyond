@@ -31,8 +31,8 @@ export default {
 <style>
 
 .cardHome{
-    margin: 1.5rem auto;
-    background-color: lightsalmon;
+    /* margin: 1.5rem auto; */
+    background-color: #227C9D;
     width: 100%;
     height: 25rem;
 }
