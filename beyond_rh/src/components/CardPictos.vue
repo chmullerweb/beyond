@@ -40,5 +40,6 @@ export default {
 .cardPictos{
   display: flex;
   flex-direction: row;
+  background-color: gold;
 }
 </style>
