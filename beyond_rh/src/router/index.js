@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Landing from '../pages/Landing.vue'
+// import Landing from '../pages/landing.vue'
 // import Concept from '../pages/Concept.vue'
 // import Offre from '../pages/Offre.vue'
 
@@ -12,7 +12,7 @@ import Bouton from '../components/Bouton.vue'
 // import CardPictos from '../components/CardPictos.vue'
 // import CardTeam from '../components/CardTeam.vue'
 // import CardTitle from '../components/CardTitle.vue'
-// import Caroussel from '../components/Caroussel.vue'
+import Caroussel from '../components/Caroussel.vue'
 
 
 
@@ -25,13 +25,13 @@ Vue.use(VueRouter)
     component: Home
   },
 
-  // pages : 
+  // pages :
 
-  {
-    path: '/landing',
-    name: 'Landing',
-    component: Landing
-  },
+  // {
+  //   path: '/landing',
+  //   name: 'Landing',
+  //   component: Landing
+  // },
 
   // {
   //   path: '/concept',
@@ -45,7 +45,7 @@ Vue.use(VueRouter)
   //   component: Offre
   // },
 
-  // components : 
+  // components :
 
   {
     path: '/bouton',
@@ -89,11 +89,11 @@ Vue.use(VueRouter)
   //   component: CardTitle
   // },
 
-  // {
-  //   path: '/caroussel',
-  //   name: ' Caroussel',
-  //   component: Caroussel
-  // },
+  {
+    path: '/caroussel',
+    name: ' Caroussel',
+    component: Caroussel
+  },
 
   {
     path: '/about',

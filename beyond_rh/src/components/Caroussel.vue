@@ -1,6 +1,6 @@
 <!-- template avec width à modif -->
 <template>
-  <div class="CarousselPicture">
+  <div class="CarousselPicture caroussel">
     <b-carousel
       class="Caroussel"
       v-model="slide"
@@ -58,7 +58,7 @@
   import Caroussel from './Caroussel.vue';
 
     export default {
-      name: 'CarousselPicture',
+      name: 'Caroussel',
       component: {Caroussel},
 
       data() {
