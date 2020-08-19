@@ -36,7 +36,7 @@ export default {
 //             default: ""
 //         },
 //         adresse: String,
-//         email: {
+//         email: fff
 //             type: String,
 //             default: ""
 //         }
