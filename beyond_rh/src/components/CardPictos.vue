@@ -6,8 +6,8 @@
         <img src="" class="card-img" alt="">
       <div class="card-img-overlay">
         <i class="fas fa-microscope"></i>
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title pictos">Card title</h5>
+        <p class="card-text pictos">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
 
@@ -15,8 +15,8 @@
         <img src="" class="card-img" alt="">
       <div class="card-img-overlay">
         <i class="fas fa-trophy"></i>
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title pictos">Card title</h5>
+        <p class="card-text pictos">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
 
@@ -24,8 +24,8 @@
         <img src="" class="card-img" alt="">
       <div class="card-img-overlay">
         <i class="far fa-clock"></i>
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title pictos">Card title</h5>
+        <p class="card-text pictos">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
 
