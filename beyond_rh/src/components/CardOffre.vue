@@ -9,8 +9,8 @@
         </div>
 
         <div class="card-body col-md-8">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text claim">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title offre">Card title</h5>
+          <p class="card-text offre">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
 
     </div>
@@ -47,7 +47,7 @@ export default {
     background-color: lightBlue;
 }
 
-.claim{
+.offre{
     padding: 2rem 2rem 1.3rem 4rem;
 }
 
