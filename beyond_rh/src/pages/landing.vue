@@ -2,7 +2,6 @@
     <div class="">
     <CardHome/>
     <CardTitle/>
-    <CardHome/>
     <CardPictos/>
     <CardConcept/>
     <Footer/>
