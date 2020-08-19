@@ -16,10 +16,10 @@
       <b-carousel-slide>
         <template v-slot:img>
           <img
-            class="d-block img-fluid w-100"
+            class="img-fluid w-100"
             width="1024"
             height="480"
-            src="../assets/logo.png"
+            src="../assets/meet.jpg"
             alt="image slot"
           >
         </template>
@@ -27,10 +27,10 @@
       <b-carousel-slide>
         <template v-slot:img>
           <img
-            class="d-block img-fluid w-100"
+            class="img-fluid w-100"
             width="1024"
             height="480"
-            src="../assets/logo.png"
+            src="../assets/meeting.jpg"
             alt="image slot"
           >
         </template>
@@ -38,10 +38,10 @@
       <b-carousel-slide>
         <template v-slot:img>
           <img
-            class="d-block img-fluid w-100"
-            width="640"
-            height="420"
-            src="../assets/logo.png"
+            class="img-fluid w-100"
+            width="1024"
+            height="480"
+            src="../assets/work.jpg"
             alt="image slot"
           >
         </template>
@@ -49,6 +49,7 @@
     </b-carousel>
   </div>
 </template>
+
 <script>
   import Caroussel from './Caroussel.vue';
     export default {
@@ -70,3 +71,10 @@
       }
     }
 </script>
+
+<style lang="css" scoped>
+
+.w-100{
+  width: 40%!important;
+}
+</style>
