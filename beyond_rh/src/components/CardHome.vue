@@ -9,7 +9,12 @@
         </div>
       </div>
 
-      <Bouton btn btnInfo><slot name="txtButton">Comment ça marche ?</slot></Bouton>
+      <Bouton btn btnInfo>
+        <slot name="txtButton">
+        Comment ça marche ?
+        </slot>
+
+      </Bouton>
 
     </div>
 </template>
@@ -28,9 +33,9 @@ export default {
 
 .cardHome{
     margin: 1.5rem auto;
-    backgrounds-color: lightsalmon;
-    width: 90rem;
-    height: 90rem;
+    background-color: lightsalmon;
+    width: 100%;
+    height: 25rem;
 }
 
 .claim{
