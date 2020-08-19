@@ -1,5 +1,6 @@
 <template>
     <div class="">
+    <HeaderNavbar/>
     <CardHome/>
     <CardTitle/>
     <CardPictos/>
@@ -14,12 +15,13 @@ import CardConcept from "../components/CardConcept";
 import CardPictos from "../components/CardPictos";
 import CardHome from "../components/CardHome";
 import Footer from "../layout/Footer";
+import HeaderNavbar from "../layout/HeaderNavbar";
 
 
 
 export default {
   name: 'Landing',
-  components: {CardTitle, CardConcept, CardPictos, CardHome, Footer},
+  components: {CardTitle, CardConcept, CardPictos, CardHome, Footer, HeaderNavbar},
 //   data() {
 //     return {
 //       users: membres,
