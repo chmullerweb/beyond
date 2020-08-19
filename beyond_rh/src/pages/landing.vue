@@ -2,17 +2,18 @@
     <div class="">
     <CardTitle/>
     <CardConcept/>
+    <Footer/>
     </div>
 </template>
 
 <script>
 import CardTitle from "../components/CardTitle";
 import CardConcept from "../components/CardConcept";
-
+import Footer from "../layout/Footer";
 
 export default {
   name: 'Landing',
-  components: {CardTitle, CardConcept},
+  components: {CardTitle, CardConcept, Footer},
 //   data() {
 //     return {
 //       users: membres,
