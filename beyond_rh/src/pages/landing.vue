@@ -2,8 +2,9 @@
     <div class="">
 
     <CardTitle/>
-    <CardConcept/>
+    <CardHome/>
     <CardPictos/>
+    <CardConcept/>
 
     </div>
 </template>
@@ -12,12 +13,13 @@
 import CardTitle from "../components/CardTitle";
 import CardConcept from "../components/CardConcept";
 import CardPictos from "../components/CardPictos";
+import CardHome from "../components/CardHome";
 
 
 
 export default {
   name: 'Landing',
-  components: {CardTitle, CardConcept, CardPictos},
+  components: {CardTitle, CardConcept, CardPictos, CardHome},
 //   data() {
 //     return {
 //       users: membres,
