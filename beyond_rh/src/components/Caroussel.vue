@@ -8,8 +8,6 @@
       controls
       indicators
       background="#ccc"
-      img-width="640"
-      img-height="420"
       style="text-shadow: 1px 1px 2px #000;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
@@ -18,9 +16,7 @@
       <b-carousel-slide>
         <template v-slot:img>
           <img
-            class="d-block img-fluid w-100"
-            width="640"
-            height="420"
+            class="d-block img-fluid"
             src="../assets/meet.jpg"
             alt="image slot"
           >
@@ -30,24 +26,20 @@
       <b-carousel-slide>
         <template v-slot:img>
           <img
-            class="d-block img-fluid w-100"
-            width="640"
-            height="420"
+            class="d-block img-fluid"
             src="../assets/meeting.jpg"
             alt="image slot"
           >
         </template>
+        <h1>COCO</h1>
       </b-carousel-slide>
 
       <b-carousel-slide>
         <template v-slot:img>
           <img
-            class="d-block img-fluid w-100"
-            width="640"
-            height="420"
+            class="d-block img-fluid"
             src="../assets/work.jpg"
-            alt="image slot"
-          >
+            alt="image slot">
         </template>
       </b-carousel-slide>
     </b-carousel>
