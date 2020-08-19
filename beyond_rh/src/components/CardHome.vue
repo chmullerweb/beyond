@@ -37,12 +37,12 @@ export default {
     height: 25rem;
 }
 
-.card-title, home{
+.card-title.home{
   padding: 2rem 0rem 0.1rem 0rem;
   font-size: 5rem;
 }
 
-.card-text, home{
+.card-text.home{
     padding: 3rem 0rem 1.3rem 0rem;
     font-size: 2rem;
 }
