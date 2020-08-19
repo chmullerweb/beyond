@@ -19,7 +19,7 @@
             class="d-block img-fluid w-100"
             width="1024"
             height="480"
-            src="../assets/meet.jpg"
+            src="../assets/logo.png"
             alt="image slot"
           >
         </template>
@@ -30,7 +30,7 @@
             class="d-block img-fluid w-100"
             width="1024"
             height="480"
-            src="../assets/meeting.jpg"
+            src="../assets/logo.png"
             alt="image slot"
           >
         </template>
@@ -41,7 +41,7 @@
             class="d-block img-fluid w-100"
             width="640"
             height="420"
-            src="../assets/work.jpg"
+            src="../assets/logo.png"
             alt="image slot"
           >
         </template>
