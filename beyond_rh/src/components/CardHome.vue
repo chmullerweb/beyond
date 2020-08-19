@@ -3,9 +3,8 @@
       <div class="card text-white">
           <img src="" class="card-img" alt="">
         <div class="card-img-overlay">
-          <i class="fas fa-microscope"></i>
-          <h5 class="card-title">BEYOND</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title home">BEYOND</h5>
+          <p class="card-text home">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
       </div>
 
@@ -38,12 +37,12 @@ export default {
     height: 25rem;
 }
 
-.card-title{
+.card-title, home{
   padding: 2rem 0rem 0.1rem 0rem;
   font-size: 5rem;
 }
 
-.card-text{
+.card-text, home{
     padding: 3rem 0rem 1.3rem 0rem;
     font-size: 2rem;
 }
