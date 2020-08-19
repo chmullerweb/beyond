@@ -1,7 +1,6 @@
-<!-- page d'accueil -->
 <template>
     <div class="">
-      
+
     <CardTitle/>
     <CardConcept/>
     <CardPictos/>
