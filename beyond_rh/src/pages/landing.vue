@@ -1,6 +1,6 @@
 <template>
     <div class="">
-
+    <CardHome/>
     <CardTitle/>
     <CardHome/>
     <CardPictos/>
