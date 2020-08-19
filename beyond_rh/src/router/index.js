@@ -8,6 +8,13 @@ import Offre from '../pages/offre.vue'
 
 import Bouton from '../components/Bouton.vue'
 import CardConcept from '../components/CardConcept.vue'
+
+import Landing from '../pages/landing.vue'
+// import Concept from '../pages/Concept.vue'
+import Offre from '../pages/Offre.vue'
+
+import Bouton from '../components/Bouton.vue'
+import CardConcept from '../components/CardConcept.vue'
 import CardHome from '../components/CardHome.vue'
 import CardOffre from '../components/CardOffre.vue'
 import CardPictos from '../components/CardPictos.vue'
@@ -90,6 +97,15 @@ Vue.use(VueRouter)
     name: ' CardTitle',
     component: CardTitle
   },
+
+
+  {
+    path: '/caroussel',
+    name: ' Caroussel',
+    component: Caroussel
+  },
+
+
 
   {
     path: '/caroussel',
