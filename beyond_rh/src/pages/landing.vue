@@ -8,6 +8,7 @@
 </template>
 
 <script>
+
 import CardTitle from "../components/CardTitle";
 import CardConcept from "../components/CardConcept";
 import CardPictos from "../components/CardPictos";
