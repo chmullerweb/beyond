@@ -1,5 +1,6 @@
 <template>
   <div class="CarousselPicture caroussel">
+    <h2>L'approche sportive</h2>
     <b-carousel
       class="Caroussel"
       v-model="slide"
