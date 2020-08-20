@@ -11,7 +11,7 @@ import CardConcept from '../components/CardConcept.vue'
 import CardHome from '../components/CardHome.vue'
 import CardOffre from '../components/CardOffre.vue'
 import CardPictos from '../components/CardPictos.vue'
-// import CardTeam from '../components/CardTeam.vue'
+import CardTeam from '../components/CardTeam.vue'
 import CardTitle from '../components/CardTitle.vue'
 import Caroussel from '../components/Caroussel.vue'
 
@@ -79,11 +79,11 @@ Vue.use(VueRouter)
     component: CardPictos
   },
 
-  // {
-  //   path: '/cardTeam',
-  //   name: ' CardTeam',
-  //   component: CardTeam
-  // },
+  {
+    path: '/cardTeam',
+    name: ' CardTeam',
+    component: CardTeam
+  },
 
   {
     path: '/cardTitle',
