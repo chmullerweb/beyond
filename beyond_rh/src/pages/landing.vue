@@ -1,9 +1,11 @@
 <template>
     <div class="">
+    <HeaderNavbar/>
     <CardHome/>
     <CardTitle/>
     <CardPictos/>
     <CardConcept/>
+    <Footer/>
     </div>
 </template>
 
