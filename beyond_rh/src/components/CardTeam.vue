@@ -45,13 +45,20 @@ export default {
 <style lang="css" scoped>
 
 .cardTeam{
-    padding: 2rem 3rem 2.5rem 1rem;
+    padding: 2rem 1rem 2.5rem 1rem;
     background-color: #D6D5C9;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row!important;
+    margin: 0!important;
+
 }
 
 .cardTeamRight{
+  /* padding: 2rem 3rem 2.5rem 1rem; */
   display: flex;
   flex-direction: row-reverse!important;
+  flex-wrap: wrap;
   background-color: #A37871;
   /* padding: 1.5rem auto; */
 }
@@ -64,14 +71,16 @@ export default {
 .round{
   border: 0.3rem solid grey;
   border-radius: 75px;;
-  padding: 0.2rem;
+  /* padding: 0.2rem; */
   width: 8rem;
   height: 8rem;
+  margin: 0!important;
 }
 
 
 .col-md-4{
-  margin: 1rem !important;
+  margin: 0rem !important;
+  padding: 0px !important;
 }
 
 .team{
