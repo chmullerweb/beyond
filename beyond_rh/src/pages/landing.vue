@@ -22,38 +22,8 @@ import FormContact from "../components/FormContact";
 
 export default {
   name: 'Landing',
-  components: {CardTitle, CardConcept, CardPictos, CardHome, Footer, FormContact},
-//   data() {
-//     return {
-//       users: membres,
-//     }
-//   },
-//   props: {
-//         identifiantClient: Number,
-//         nom: {
-//             type: String,
-//             default: ""
-//         },
-//         prenom: {
-//             type: String,
-//             default: ""
-//         },
-//         adresse: String,
-//         email: fff
-//             type: String,
-//             default: ""
-//         }
-//   },
-//   computed: {
-//       fullName() { return this.firstname + this.lastname }
-//   },
-//   methods: {
-//       showExo1() {
-//           this.$router.push({path: `/exo-1`})
-//       },
-//       showAnne() {
-//           this.$router.push({path: `/users/3`})
-//       },
-//   },
-};
+  components: {CardTitle, CardConcept, CardPictos, CardHome, Footer,
+  FormContact
+  },
+}
 </script>

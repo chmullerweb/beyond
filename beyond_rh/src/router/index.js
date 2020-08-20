@@ -14,7 +14,7 @@ import CardPictos from '../components/CardPictos.vue'
 // import CardTeam from '../components/CardTeam.vue'
 import CardTitle from '../components/CardTitle.vue'
 // import Caroussel from '../components/Caroussel.vue'
-
+import Contact from '../pages/contact.vue'
 
 
 Vue.use(VueRouter)
@@ -33,6 +33,12 @@ Vue.use(VueRouter)
     path: '/landing',
     name: 'Landing',
     component: Landing
+  },
+
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   },
 
   // {
