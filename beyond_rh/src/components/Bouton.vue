@@ -1,6 +1,6 @@
 <template>
   <div class="bouton_principal">
-    <button type="button" :class="{'btn': btn,'btn-dark': btnDark,'btn-info': btnInfo}">
+    <button v-on:click="$emit('showForm')" type="button" :class="{'btn': btn,'btn-dark': btnDark,'btn-info': btnInfo}">
             <slot>Default Text</slot>
     </button>
   </div>

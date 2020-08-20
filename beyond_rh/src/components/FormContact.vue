@@ -1,7 +1,7 @@
 <template>
-<div class="modal_fixed container-fluid" v-if="visible">
+<div class="modal_fixed container-fluid" v-show="show">
 <form class="formContact container">
-  <h2 class="contactUs">Contactez-nous !<i class="fas fa-times-circle i_cross bounceIn" @click="exit"></i></h2>
+  <h2 class="contactUs">Contactez-nous !<i class="fas fa-times-circle i_cross bounceIn" @click="show = !show"></i></h2>
   <div class="form-row justify-content-md-center">
     <div class="form-group col-md-4">
       <label for="inputStatus">Vous êtes :</label>
@@ -62,12 +62,12 @@ export default {
   name: 'FormContact',
   data () {
     return {
-      visible: true
+      show: true
       };
   },
   methods:{
       exit() {
-      this.visible = false;
+      this.show = false;
     }
   }
 }
