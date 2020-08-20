@@ -71,7 +71,7 @@ export default {
 
 .round{
   border: 0.3rem solid grey;
-  border-radius: 75px;;
+  border-radius: 75px;
   padding: 0.2rem;
   width: 8rem;
   height: 8rem;
