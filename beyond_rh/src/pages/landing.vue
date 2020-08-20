@@ -10,14 +10,13 @@
 </template>
 
 <script>
+
 import CardTitle from "../components/CardTitle";
 import CardConcept from "../components/CardConcept";
 import CardPictos from "../components/CardPictos";
 import CardHome from "../components/CardHome";
 import Footer from "../layout/Footer";
 import HeaderNavbar from "../layout/HeaderNavbar";
-
-
 
 export default {
   name: 'Landing',
