@@ -2,6 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
+import HeaderNavbar from '../layout/HeaderNavbar.vue'
+import Footer from '../layout/Footer.vue'
+
+
 import Landing from '../pages/landing.vue'
 import Concept from '../pages/concept.vue'
 import Offre from '../pages/offre.vue'
@@ -24,6 +28,7 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+
   },
 
 
@@ -32,19 +37,19 @@ Vue.use(VueRouter)
   {
     path: '/landing',
     name: 'Landing',
-    component: Landing
+    components: { default: Landing, header: HeaderNavbar, footer: Footer },
   },
 
   {
     path: '/concept',
     name: 'Concept',
-    component: Concept
+    components: { default: Concept, header: HeaderNavbar, footer: Footer },
   },
 
   {
     path: '/offre',
     name: 'Offre',
-    component: Offre
+    components: { default: Offre, header: HeaderNavbar, footer: Footer },
   },
 
   // components :

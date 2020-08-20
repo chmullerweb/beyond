@@ -19,6 +19,7 @@
 
 <script>
 export default {
+  name: 'HeaderNavbar',
 
   data() {
     return {
@@ -37,14 +38,11 @@ export default {
 
 .nav-link{
   padding: 1.5rem 2.5rem;
+  font-family: Helvetica;
 }
 
 a{
   color: white;
 }
-
-
-
-
 
 </style>

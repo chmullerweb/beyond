@@ -40,30 +40,7 @@
 
 <script>
 export default {
-  name: 'Bouton',
-  props: {
-    titleButton:
-    {
-      type: String,
-      default: "coco",
-    },
-    btn:
-    {
-      type: Boolean,
-      default: true,
-    },
-    btnDark:
-    {
-      type: Boolean,
-      default: false,
-    },
-    btnInfo:
-    {
-      type: Boolean,
-      default: false,
-    }
-
-  },
+  name: 'Footer',
 
   data() {
     return {
@@ -83,7 +60,7 @@ export default {
 {
   margin: 2rem 0rem 0 0;
   background-color: #3C3744;
-  color: white; 
+  color: white;
   text-align: left;
 }
 
@@ -122,7 +99,7 @@ margin-bottom: 0;
 }
 
 .pictosSocial{
-  text-align: right; 
+  text-align: right;
   padding: 0.5rem 3rem 0.5rem 0;
 }
 

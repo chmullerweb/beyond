@@ -75,6 +75,6 @@
 <style lang="css" scoped>
 
 .w-100{
-  width: 60%!important;
+  width: 30%!important;
 }
 </style>

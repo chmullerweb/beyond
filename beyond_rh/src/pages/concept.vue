@@ -3,6 +3,7 @@
     <div class="">
 
       <Caroussel/>
+      <Caroussel/>
       <CardTeam cardTeam/>
       <CardTeam cardTeamRight/>
       <CardTeam cardTeam/>
