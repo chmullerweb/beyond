@@ -16,8 +16,6 @@ import CardHome from "../components/CardHome";
 import Footer from "../layout/Footer";
 import HeaderNavbar from "../layout/HeaderNavbar";
 
-
-
 export default {
   name: 'Landing',
   components: {CardTitle, CardConcept, CardPictos, CardHome, Footer, HeaderNavbar},
