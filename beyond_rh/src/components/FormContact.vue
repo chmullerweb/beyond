@@ -1,7 +1,7 @@
 <template>
-<div class="modal_fixed container-fluid">
+<div class="modal_fixed container-fluid" v-if="visible">
 <form class="formContact container">
-  <h2 class="contactUs">Contactez-nous !<i class="fas fa-times-circle i_cross exit"></i></h2>
+  <h2 class="contactUs">Contactez-nous !<i class="fas fa-times-circle i_cross bounceIn" @click="exit"></i></h2>
   <div class="form-row justify-content-md-center">
     <div class="form-group col-md-4">
       <label for="inputStatus">Vous êtes :</label>
@@ -41,6 +41,10 @@
     </div>
   </div>
   <div class="form-group">
+    <label for="exampleFormControlTextarea1">Dîtes-nous tout : </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="form-group">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="gridCheck">
       <label class="form-check-label" for="gridCheck">
@@ -58,10 +62,12 @@ export default {
   name: 'FormContact',
   data () {
     return {
-      formValues: {
-        name: 'Jenny Taylor',
-        email: 'jenny.taylor@example.com'
-      }
+      visible: true
+      };
+  },
+  methods:{
+      exit() {
+      this.visible = false;
     }
   }
 }
@@ -82,7 +88,7 @@ export default {
 
 .modal_fixed{
 	position: 					fixed;
-	top: 								15rem;
+	top: 								7rem;
 	z-index: 						900;
 	justify-content: 		center;
 }
@@ -108,10 +114,87 @@ export default {
   padding-left: 0.8rem;
 }
 
+.bounceIn:hover {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  20% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  -webkit-transform: scale3d(.9, .9, .9);
+  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+  -webkit-transform: scale3d(.97, .97, .97);
+  transform: scale3d(.97, .97, .97);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  20% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  -webkit-transform: scale3d(.9, .9, .9);
+  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+  -webkit-transform: scale3d(.97, .97, .97);
+  transform: scale3d(.97, .97, .97);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
 @media screen and (max-width:768px){
   .modal_fixed{
-	position: 					fixed;
-	top: 								2rem;
+	position: 					absolute;
+	top: 							  10rem;
 	z-index: 						900;
 	justify-content: 		center;
 }
