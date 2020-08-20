@@ -10,7 +10,7 @@
       <CardOffre cardOffreRight/>
 
       <Bouton/>
-      
+
     </div>
 
 </template>
