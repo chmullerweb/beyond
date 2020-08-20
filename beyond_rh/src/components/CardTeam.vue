@@ -11,7 +11,7 @@
           </div>
         </div>
 
-        <div class="card-body col-md-6">
+        <div class="card-body col-md-8">
           <h5 class="card-title team">Card title</h5>
           <p class="card-text team">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
@@ -45,10 +45,10 @@ export default {
 <style lang="css" scoped>
 
 .cardTeam{
-    padding: 2rem 1rem 2.5rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
     background-color: #D6D5C9;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex-direction: row!important;
     margin: 0!important;
 
@@ -58,7 +58,8 @@ export default {
   /* padding: 2rem 3rem 2.5rem 1rem; */
   display: flex;
   flex-direction: row-reverse!important;
-  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
   background-color: #A37871;
   /* padding: 1.5rem auto; */
 }
@@ -71,16 +72,15 @@ export default {
 .round{
   border: 0.3rem solid grey;
   border-radius: 75px;;
-  /* padding: 0.2rem; */
+  padding: 0.2rem;
   width: 8rem;
   height: 8rem;
-  margin: 0!important;
+  margin: 1rem!important;
 }
 
 
 .col-md-4{
-  margin: 0rem !important;
-  padding: 0px !important;
+  padding: 0px 125px 0px 125px;
 }
 
 .team{
