@@ -48,7 +48,7 @@ export default {
     padding: 2rem 1rem 2.5rem 1rem;
     background-color: #D6D5C9;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row!important;
     margin: 0!important;
 
@@ -58,7 +58,7 @@ export default {
   /* padding: 2rem 3rem 2.5rem 1rem; */
   display: flex;
   flex-direction: row-reverse!important;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   background-color: #A37871;
   /* padding: 1.5rem auto; */
 }
