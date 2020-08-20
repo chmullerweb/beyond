@@ -104,14 +104,6 @@ Vue.use(VueRouter)
   },
 
 
-
-  {
-    path: '/caroussel',
-    name: ' Caroussel',
-    component: Caroussel
-  },
-
-
   {
     path: '/about',
     name: 'About',
