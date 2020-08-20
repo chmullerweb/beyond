@@ -42,20 +42,23 @@ export default {
 <style lang="css" scoped>
 
 .cardTeam{
-    margin: 1.5rem auto;
-    background-color: lightBlue;
-}
-
-.team{
-    padding: 2rem 2rem 1.3rem 4rem;
+    padding: 2rem 3rem 2.5rem 1rem;
+    background-color: #D6D5C9;
 }
 
 .cardTeamRight{
   display: flex;
   flex-direction: row!important;
-  background-color: lightSalmon;
-  margin: 1.5rem auto;
+  background-color: #A37871;
   padding: 1.5rem auto;
+}
+
+.card-title.team{
+  /* padding: 1rem; */
+}
+
+.card-text.team{
+  /* padding: 1rem; */
 }
 
 </style>
