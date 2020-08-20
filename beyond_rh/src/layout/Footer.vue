@@ -29,9 +29,9 @@
           </div>
           <div class="col pictosSocial">
               <span>Suivez-nous</span>
-              <span>F</span>
-              <span>I</span>
-              <span>L</span>
+              <span><a  href="#"> <i class="fab fa-facebook fa-1x mx-3 text-primary b"></i></a></span>
+              <span><a  href="#"> <i class="fab fa-instagram fa-1x mx-3 text-primary b"></i></a></span>
+              <span><a  href="#"><i class="fab fa-linkedin fa-1x mx-3 text-primary b"></i></a></span>
           </div>
       </div>
     </div>
