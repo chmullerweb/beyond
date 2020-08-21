@@ -1,7 +1,7 @@
 <template>
     <div id="app" class="">
     <Bouton btn btnDark :displayForm="showForm">Contactez-nous</Bouton>
-    <FormContact :displayForm="showForm" v-show="show"/>
+    <FormContact :closeForm="showForm" v-show="show"/>
     </div>
 </template>
 

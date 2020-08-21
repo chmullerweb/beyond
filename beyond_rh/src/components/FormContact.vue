@@ -1,12 +1,21 @@
 <template>
 <div class="modal_fixed container-fluid">
-<form class="formContact container">
-  <h2 class="contactUs">Contactez-nous !<i class="fas fa-times-circle i_cross bounceIn" v-on:click="displayForm()"></i></h2>
+<form 
+class="formContact container"
+id="formContactPopup"
+action="../../public/formContact.php"
+method="post"
+novalidate="true">
+  <h2 class="contactUs">Contactez-nous !<i class="fas fa-times-circle i_cross bounceIn" v-on:click="closeForm()"></i></h2>
   <div class="form-row justify-content-md-center">
     <div class="form-group col-md-4">
       <label for="inputStatus">Vous êtes :</label>
-      <select id="inputStatus" class="form-control">
-        <option selected>Choisir...</option>
+      <select 
+      id="inputStatus"
+      class="form-control"
+      v-model="inputStatus"
+      name="inputStatus">
+        <option>Choisir...</option>
         <option>Directeur Général</option>
         <option>Directeur Commercial</option>
         <option>DRH</option>
@@ -15,34 +24,60 @@
         <option>Autre</option>
       </select>
     </div>
-    <div class="form-group col-md-4">
+    <div class="form-group col-md-4" v-if="inputStatus == 'Autre'">
       <label for="inputJobDetails">Précisez :</label>
-      <input type="text" class="form-control" id="inputJobDetails" placeholder="Mon poste est...">
+      <input
+      type="text"
+      class="form-control"
+      id="inputJobDetails"
+      placeholder="Mon poste est...">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputName">Nom</label>
-      <input type="text" class="form-control" id="inputName">
+      <input
+      type="text"
+      v-model="inputName"
+      name="inputName"
+      class="form-control"
+      id="inputName">
     </div>
     <div class="form-group col-md-6">
       <label for="inputFirstname">Prénom</label>
-      <input type="text" class="form-control" id="inputFirstname">
+      <input
+      type="text"
+      name="inputFirstname"
+      class="form-control"
+      id="inputFirstname">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputPhone">Téléphone</label>
-      <input type="text" class="form-control" id="inputPhone">
+      <input
+      type="text"
+      name="innputPhone"
+      class="form-control"
+      id="inputPhone">
     </div>
     <div class="form-group col-md-6">
       <label for="inputEmail">Email</label>
-      <input type="text" class="form-control" id="inputEmail">
+      <input
+      type="text"
+      name="inputEmail"
+      class="form-control"
+      id="inputEmail">
     </div>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Dîtes-nous tout : </label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label for="textareaMsg">Dîtes-nous tout : </label>
+    <textarea
+    class="form-control"
+    name="textareaMsg"
+    id="textareaMsg"
+    rows="3">
+    </textarea>
   </div>
   <div class="form-group">
     <div class="form-check">
@@ -52,7 +87,7 @@
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-info btn-submit">Envoyer</button>
+  <button @submit="checkForm()" type="submit" class="btn btn-info btn-submit">Envoyer</button>
 </form>
 </div>
 </template>
@@ -62,13 +97,45 @@ export default {
   name: 'FormContact',
   data () {
     return {
+      errors: [],
+      inputStatus: 'Choisir...',
+      inputJobDetails: null,
+      inputName: null,
+      inputFirstname: null,
+      inputPhone: null,
+      inputEmail: null
             };
   },
   methods:{
-      
+      checkForm(e){
+        this.errors = [];
+
+        if (!this.inputName) {
+          this.errors.push("Name required");
+        }
+        if (!this.email) {
+        this.errors.push('Email required.');
+      }
+
+      if (!this.email) {
+        this.errors.push('Email required.');
+      } else if (!this.validEmail(this.email)) {
+        this.errors.push('Valid email required.');
+      }
+
+      if (!this.errors.length) {
+        return true;
+      }
+
+      e.preventDefault();
+    },
+    validEmail(email) {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
   },
   props: {
-    displayForm: {
+    closeForm: {
       type: Function,
     }
   },
