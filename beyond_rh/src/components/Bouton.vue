@@ -1,48 +1,44 @@
 <template>
   <div class="bouton_principal">
-    <button v-on:click="displayForm()" type="button" :class="{'btn': btn,'btn-dark': btnDark,'btn-info': btnInfo}">
-            <slot>Default Text</slot>
+    <button
+      v-on:click="displayForm()"
+      type="button"
+      :class="{ btn: btn, 'btn-dark': btnDark, 'btn-info': btnInfo }"
+    >
+      <slot>Default Text</slot>
     </button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Bouton',
+  name: "Bouton",
   props: {
-    displayForm:{
+    displayForm: {
       type: Function,
     },
-    btn:
-    {
+    btn: {
       type: Boolean,
       default: true,
     },
-    btnDark:
-    {
+    btnDark: {
       type: Boolean,
       default: false,
     },
-    btnInfo:
-    {
+    btnInfo: {
       type: Boolean,
       default: false,
-    }
-
+    },
   },
 
   data() {
-    return {
-
-    }
-  }
+    return {};
+  },
 };
 </script>
 
 <style lang="css" scoped>
-
-.bouton_principal
-{
+.bouton_principal {
   margin: 2rem 0rem;
 }
 </style>

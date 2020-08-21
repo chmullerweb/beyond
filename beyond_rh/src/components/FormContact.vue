@@ -3,11 +3,19 @@
 <form 
 class="formContact container"
 id="formContactPopup"
-action="../../public/formContact.php"
-method="post"
-novalidate="true">
+novalidate="true"
+@submit="checkForm"
+>
   <h2 class="contactUs">Contactez-nous !<i class="fas fa-times-circle i_cross bounceIn" v-on:click="closeForm()"></i></h2>
+  <h3>Merci de renseigner tous les champs avant de valider</h3>
   <div class="form-row justify-content-md-center">
+  <div class="form-group col-md-12" v-if="errors.length">
+    <h3>Resaisir les champs suivants : </h3>
+    <ul>
+      <li v-for="error in errors">{{ error }}</li>
+    </ul>
+  </p>
+  </div>
     <div class="form-group col-md-4">
       <label for="inputStatus">Vous êtes :</label>
       <select 
@@ -87,7 +95,7 @@ novalidate="true">
       </label>
     </div>
   </div>
-  <button @submit="checkForm()" type="submit" class="btn btn-info btn-submit">Envoyer</button>
+  <button   type="submit" class="btn btn-info btn-submit">Envoyer</button>
 </form>
 </div>
 </template>
@@ -103,25 +111,37 @@ export default {
       inputName: null,
       inputFirstname: null,
       inputPhone: null,
-      inputEmail: null
+      inputEmail: null,
+      textareaMsg: null,
             };
   },
   methods:{
       checkForm(e){
         this.errors = [];
 
+        if (this.inputStatus == "Choisir...") {
+        this.errors.push('Quel est votre poste ?');
+      }
+      if (this.inputStatus == "Autre" && !this.inputJobDetails ) {
+        this.errors.push('Précisez votre fonction');
+      }
         if (!this.inputName) {
-          this.errors.push("Name required");
+          this.errors.push("Ne soyez pas timide ! Quel est votre nom ?");
         }
-        if (!this.email) {
-        this.errors.push('Email required.');
+        if (!this.inputFirstName) {
+        this.errors.push('Ne soyez pas timide ! Quel est votre prénom ?');
+        }
+      if (!this.inputPhone) {
+        this.errors.push('N\'oubliez pas votre numéro de téléphone pour vous recontacter');
       }
-
       if (!this.email) {
-        this.errors.push('Email required.');
+        this.errors.push('N\'oubliez pas votre email !');
       } else if (!this.validEmail(this.email)) {
-        this.errors.push('Valid email required.');
+        this.errors.push('N\'oubliez pas votre email pour vous recontacter');
       }
+      if (!this.textareaMsg){
+        this.errors.push("Oups ! Votre message est vide")
+      }      
 
       if (!this.errors.length) {
         return true;
@@ -140,6 +160,9 @@ export default {
     }
   },
 }
+// // action="http://localhost:8080/contact"
+// method="post"
+//action="../../public/formContact.php"
 </script>
 
 <style lang="css" scoped>
