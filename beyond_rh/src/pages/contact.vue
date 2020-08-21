@@ -1,7 +1,7 @@
 <template>
     <div id="app" class="">
-    <Bouton v-on:showForm="show= !show">Contactez-nous</Bouton>
-    <FormContact v-show="show"/>
+    <Bouton btn btnDark :displayForm="showForm">Contactez-nous</Bouton>
+    <FormContact :displayForm="showForm" v-show="show"/>
     </div>
 </template>
 
@@ -19,6 +19,11 @@ export default {
        show: false
        }
   },
+  methods: {
+    showForm() {
+      return this.show = !this.show;
+    }
+  }
 };
 
 </script>

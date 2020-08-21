@@ -1,6 +1,6 @@
 <template>
   <div class="bouton_principal">
-    <button v-on:click="$emit('showForm')" type="button" :class="{'btn': btn,'btn-dark': btnDark,'btn-info': btnInfo}">
+    <button v-on:click="displayForm()" type="button" :class="{'btn': btn,'btn-dark': btnDark,'btn-info': btnInfo}">
             <slot>Default Text</slot>
     </button>
   </div>
@@ -10,10 +10,8 @@
 export default {
   name: 'Bouton',
   props: {
-    titleButton:
-    {
-      type: String,
-      default: "coco",
+    displayForm:{
+      type: Function,
     },
     btn:
     {
