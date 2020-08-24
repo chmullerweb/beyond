@@ -163,6 +163,28 @@ export default {
       this.checkForm();
       if(this.errors.length === 0){
         console.log("lala")
+        // this.$axios.post('route om on envoie les données', { lister les données
+        // inputStatus: this.inputStatus,
+        // inputJobDetails: this.inputJobDetails,
+        // inputName: this.inputName,
+        // inputFirstname: this.inputFirstname,
+        // inputPhone: this.inputPhone,
+        // inputEmail: this.inputEmail,
+        // textareaMsg: this.textareaMsg
+        //}).then(response => {
+        //  console.log(response);
+        //}).catch(error) => {
+        //  console.log(error)
+        // })
+
+        // connecter le front et le back avec express et bodyParser
+        //app.post('route', (req, res) => {
+        //  console.log(req.body)
+        // })
+
+        //importer les fonctionalités de bodyParser
+        // app.use(bodyParser.json())
+        // app.use(bodyParser.urlencoded({ extended: false }))
       }
     }
   },
