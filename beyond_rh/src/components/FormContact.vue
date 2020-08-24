@@ -4,7 +4,7 @@
 class="formContact container"
 id="formContactPopup"
 novalidate="true"
-@submit="checkForm"
+@submit.prevent="submitForm"
 >
   <h2 class="contactUs">Contactez-nous !<i class="fas fa-times-circle i_cross bounceIn" v-on:click="closeForm()"></i></h2>
   <h3>Merci de renseigner tous les champs avant de valider</h3>
@@ -12,9 +12,8 @@ novalidate="true"
   <div class="form-group col-md-12" v-if="errors.length">
     <h3>Resaisir les champs suivants : </h3>
     <ul>
-      <li v-for="error in errors">{{ error }}</li>
+      <li v-for="error in errors" :key="error">{{ error }}</li>
     </ul>
-  </p>
   </div>
     <div class="form-group col-md-4">
       <label for="inputStatus">Vous êtes :</label>
@@ -95,7 +94,7 @@ novalidate="true"
       </label>
     </div>
   </div>
-  <button   type="submit" class="btn btn-info btn-submit">Envoyer</button>
+  <button  type="submit" class="btn btn-info btn-submit">Envoyer</button>
 </form>
 </div>
 </template>
@@ -110,7 +109,9 @@ export default {
       inputJobDetails: null,
       inputName: null,
       inputFirstname: null,
-      inputPhone: null,
+      inputPhone: {
+        type: Number,
+      },
       inputEmail: null,
       textareaMsg: null,
             };
@@ -134,6 +135,9 @@ export default {
       if (!this.inputPhone) {
         this.errors.push('N\'oubliez pas votre numéro de téléphone pour vous recontacter');
       }
+      if (this.inputPhone.length != 10){
+        this.errors.push('Renseignez un numéro de téléphone valide');
+      }
       if (!this.email) {
         this.errors.push('N\'oubliez pas votre email !');
       } else if (!this.validEmail(this.email)) {
@@ -152,6 +156,12 @@ export default {
     validEmail(email) {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
+    },
+    submitForm(){
+      this.checkForm();
+      if(this.error.length === 0){
+        console.log("lala")
+      }
     }
   },
   props: {
