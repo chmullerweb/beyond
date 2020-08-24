@@ -9,31 +9,9 @@
         <h5 class="card-title pictos"><slot name="title"></slot></h5>
         <p class="card-text pictos"><slot name="text"></slot></p>
       </div>
-
     </div>
-    
+
   </div>
-
-<!--
-
-    <div class="card text-white">
-        <img src="" class="card-img" alt="">
-      <div class="card-img-overlay">
-        <i class="fas fa-trophy"><slot name="icone"></slot></i>
-        <h5 class="card-title pictos"><slot name="title"></slot></h5>
-        <p class="card-text pictos"><slot name="text"></slot></p>
-      </div>
-    </div>
-
-    <div class="card text-white">
-        <img src="" class="card-img" alt="">
-      <div class="card-img-overlay">
-        <i class="far fa-clock"><slot name="icone"></slot></i>
-        <h5 class="card-title pictos"><slot name="title"></slot></h5>
-        <p class="card-text pictos"><slot name="text"></slot></p>
-      </div>
-    </div> -->
-
 
 </template>
 

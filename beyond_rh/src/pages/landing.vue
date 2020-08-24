@@ -6,6 +6,8 @@
     <CardTitle/>
     <CardConcept/>
 
+  <div class="cardPictos">
+
     <CardPictos>
       <template v-slot:icone>
         <i class="fas fa-microscope"></i>
@@ -29,6 +31,9 @@
     <template v-slot:title>Mon titre</template>
     <template v-slot:text>Mon texte</template>
   </CardPictos>
+
+ </div>
+
 
     </div>
 </template>
@@ -85,3 +90,20 @@ export default {
 //   },
 };
 </script>
+
+<style lang="css" scoped>
+
+.cardPictos{
+  display: flex;
+  flex-direction: row;
+  background-color: #454545;
+  width: 100%;
+  margin: 0!important;
+  padding: 0!important;
+}
+.container-fluid{
+  margin: 0!important;
+  padding: 0!important;
+}
+
+</style>

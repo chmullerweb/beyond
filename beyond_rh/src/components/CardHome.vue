@@ -4,7 +4,9 @@
           <img src="" class="card-img" alt="">
         <div class="card-img-overlay home">
           <h5 class="card-title home">BEYOND</h5>
-          <p class="card-text home">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text home">
+            LA SOLUTION D'AUTHENTICITÉ POUR VOS RECRUTEMENTS <br>
+            FAITES DE MEILLEURS RECRUTEMENTS EN CHALLENGEANT VOS CANDIDATS !</p>
           <Bouton btn btnInfo>
             <slot name="txtButton">
             Comment ça marche ?

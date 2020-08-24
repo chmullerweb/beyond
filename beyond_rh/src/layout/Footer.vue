@@ -58,7 +58,7 @@ export default {
 
 .footer
 {
-  margin: 2rem 0rem 0 0;
+  margin: 0rem 0rem 0 0;
   background-color: #3C3744;
   color: white;
   text-align: left;

@@ -72,7 +72,7 @@ export default {
 .round{
   border: 0.3rem solid grey;
   border-radius: 75px;
-  padding: 0.2rem;
+  padding: 1.2rem;
   width: 8rem;
   height: 8rem;
   margin: 1rem!important;
@@ -80,7 +80,7 @@ export default {
 
 
 .col-md-4{
-  padding: 0px 125px 0px 125px;
+  padding: 75px 125px 0px 125px;
 }
 
 .team{
