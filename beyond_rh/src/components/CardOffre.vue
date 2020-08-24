@@ -5,12 +5,12 @@
     <div :class="{'cardOffre': cardOffre, 'cardOffreRight': cardOffreRight}">
 
         <div class="col-md-4">
-          <img src="" class="card-img" alt="">
+          <img :src="etape.photo" alt="Super photo">
         </div>
 
         <div class="card-body col-md-8">
-          <h5 class="card-title offre">Card title</h5>
-          <p class="card-text offre">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title offre">{{etape.title}}</h5>
+          <p class="card-text offre">{{etape.text}}</p>
         </div>
 
     </div>
@@ -26,7 +26,9 @@
 export default {
  name: 'CardOffre',
 
- props:{
+ props:['etape'],
+
+
    cardOffre:{
        type: Boolean,
        default: true,
@@ -35,7 +37,7 @@ export default {
        type: Boolean,
        default: false,
    },
- }
+ 
 };
 
 </script>
