@@ -2,15 +2,16 @@
 
   <div>
 
-    <div :class="{'cardOffre': cardOffre, 'cardOffreRight': cardOffreRight}">
+    <div :class="{'cardOffreRight': cardOffreRight, 'cardOffre': cardOffre}">
+
 
         <div class="col-md-4">
-          <img :src="etape.photo" alt="Super photo">
+          <img src="" alt="Super photo">
         </div>
 
         <div class="card-body col-md-8">
-          <h5 class="card-title offre">{{etape.title}}</h5>
-          <p class="card-text offre">{{etape.text}}</p>
+          <h5 class="card-title offre"><slot name="title"></slot></h5>
+          <p class="card-text offre"><slot name="text"></slot></p>
         </div>
 
     </div>
@@ -26,19 +27,26 @@
 export default {
  name: 'CardOffre',
 
- props:['etape'],
+ // props:['etape'],
+ //
+ //  id: Number,
+ //  title: String,
+ //  text: String,
+ //  class: Boolean,
+ //  photo: String,
+   //
+   props:{
+     cardOffre:{
+         type: Boolean,
+         default: true,
+     },
+     cardOffreRight:{
+         type: Boolean,
+         default: false,
+     },
+   }
+ };
 
-
-   cardOffre:{
-       type: Boolean,
-       default: true,
-   },
-   cardOffreRight:{
-       type: Boolean,
-       default: false,
-   },
- 
-};
 
 </script>
 

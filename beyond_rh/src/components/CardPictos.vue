@@ -5,41 +5,64 @@
     <div class="card text-white">
         <img src="" class="card-img" alt="">
       <div class="card-img-overlay">
-        <i class="fas fa-microscope"></i>
-        <h5 class="card-title pictos">Card title</h5>
-        <p class="card-text pictos">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <i class=""><slot name="icone"></slot></i>
+        <h5 class="card-title pictos"><slot name="title"></slot></h5>
+        <p class="card-text pictos"><slot name="text"></slot></p>
       </div>
-    </div>
 
-    <div class="card text-white">
-        <img src="" class="card-img" alt="">
-      <div class="card-img-overlay">
-        <i class="fas fa-trophy"></i>
-        <h5 class="card-title pictos">Card title</h5>
-        <p class="card-text pictos">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
     </div>
-
-    <div class="card text-white">
-        <img src="" class="card-img" alt="">
-      <div class="card-img-overlay">
-        <i class="far fa-clock"></i>
-        <h5 class="card-title pictos">Card title</h5>
-        <p class="card-text pictos">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-
+    
   </div>
+
+<!--
+
+    <div class="card text-white">
+        <img src="" class="card-img" alt="">
+      <div class="card-img-overlay">
+        <i class="fas fa-trophy"><slot name="icone"></slot></i>
+        <h5 class="card-title pictos"><slot name="title"></slot></h5>
+        <p class="card-text pictos"><slot name="text"></slot></p>
+      </div>
+    </div>
+
+    <div class="card text-white">
+        <img src="" class="card-img" alt="">
+      <div class="card-img-overlay">
+        <i class="far fa-clock"><slot name="icone"></slot></i>
+        <h5 class="card-title pictos"><slot name="title"></slot></h5>
+        <p class="card-text pictos"><slot name="text"></slot></p>
+      </div>
+    </div> -->
+
 
 </template>
 
 <script>
+
 export default {
   name: 'CardPictos',
-}
+  //
+  // props: ['picto'],
+  //
+  // id: Number,
+  // image: String,
+  // icone: String,
+  // title: String,
+  // text: String,
+  //
+  // data(){
+  //   return
+  // }
+
+};
 </script>
 
 <style lang="css" scoped>
+
+.cardPictos{
+  display: flex;
+  flex-direction: wrap;
+}
 
 .card{
   width: 25rem;
