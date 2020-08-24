@@ -55,6 +55,7 @@ novalidate="true"
       <input
       type="text"
       name="inputFirstname"
+      v-model="inputFirstname"
       class="form-control"
       id="inputFirstname">
     </div>
@@ -65,6 +66,7 @@ novalidate="true"
       <input
       type="text"
       name="innputPhone"
+      v-model="inputPhone"
       class="form-control"
       id="inputPhone">
     </div>
@@ -73,6 +75,7 @@ novalidate="true"
       <input
       type="text"
       name="inputEmail"
+      v-model="inputEmail"
       class="form-control"
       id="inputEmail">
     </div>
@@ -82,6 +85,7 @@ novalidate="true"
     <textarea
     class="form-control"
     name="textareaMsg"
+    v-model="textareaMsg"
     id="textareaMsg"
     rows="3">
     </textarea>
@@ -106,14 +110,12 @@ export default {
     return {
       errors: [],
       inputStatus: 'Choisir...',
-      inputJobDetails: null,
+      inputJobDetails: '',
       inputName: null,
       inputFirstname: null,
-      inputPhone: {
-        type: Number,
-      },
+      inputPhone: null,
       inputEmail: null,
-      textareaMsg: null,
+      textareaMsg: null
             };
   },
   methods:{
@@ -129,7 +131,7 @@ export default {
         if (!this.inputName) {
           this.errors.push("Ne soyez pas timide ! Quel est votre nom ?");
         }
-        if (!this.inputFirstName) {
+        if (!this.inputFirstname) {
         this.errors.push('Ne soyez pas timide ! Quel est votre prénom ?');
         }
       if (!this.inputPhone) {
@@ -138,9 +140,9 @@ export default {
       if (this.inputPhone.length != 10){
         this.errors.push('Renseignez un numéro de téléphone valide');
       }
-      if (!this.email) {
+      if (!this.inputEmail) {
         this.errors.push('N\'oubliez pas votre email !');
-      } else if (!this.validEmail(this.email)) {
+      } else if (!this.validEmail(this.inputEmail)) {
         this.errors.push('N\'oubliez pas votre email pour vous recontacter');
       }
       if (!this.textareaMsg){
@@ -159,7 +161,7 @@ export default {
     },
     submitForm(){
       this.checkForm();
-      if(this.error.length === 0){
+      if(this.errors.length === 0){
         console.log("lala")
       }
     }
@@ -170,9 +172,7 @@ export default {
     }
   },
 }
-// // action="http://localhost:8080/contact"
-// method="post"
-//action="../../public/formContact.php"
+
 </script>
 
 <style lang="css" scoped>
