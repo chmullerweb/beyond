@@ -1,24 +1,29 @@
 <template>
 
-  <div>
+  <!-- <div> -->
+  <!-- <div class="card mb-3" style="max-width: 540px;"> -->
 
     <div :class="{'cardTeam': cardTeam, 'cardTeamRight': cardTeamRight}">
 
-        <div class="col-md-4">
-          <img src="" class="card-img" alt="">
-          <div class="round">
-            <p class="number"><slot name="number"></slot></p>
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <slot name="img">
+            </slot>
+            <img src="" class="card-img" alt="">
           </div>
         </div>
 
+        <!-- <div class="row no-gutters"> -->
         <div class="card-body col-md-8">
           <h5 class="card-title team"><slot name="title"></slot></h5>
           <p class="card-text team"><slot name="text"></slot></p>
         </div>
+      <!-- </div> -->
+
 
     </div>
 
-  </div>
+  <!-- </div> -->
 
 </template>
 
