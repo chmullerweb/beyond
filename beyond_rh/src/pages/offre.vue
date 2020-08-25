@@ -36,7 +36,7 @@
        <template v-slot:title>Recrutement</template>
        <template v-slot:text>L\'objectif de la mise en situation de recrutement est de savoir si on recrute cette personne ou non. Le sport est un véritable outil et non un gadget. Notre méthodologie scientifique nous permettent de sélectionner les profils qui vous correspondent.</template>
        <Bouton/>
-       
+
       </CardOffre>
 
 

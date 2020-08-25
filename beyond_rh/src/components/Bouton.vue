@@ -1,7 +1,7 @@
 <template>
   <div class="bouton_principal">
     <button type="button" :class="{'btn': btn,'btn-dark': btnDark,'btn-info': btnInfo}">
-            <slot>Default Text</slot>
+            <slot> default text </slot>
     </button>
   </div>
 </template>
@@ -10,11 +10,6 @@
 export default {
   name: 'Bouton',
   props: {
-    titleButton:
-    {
-      type: String,
-      default: "coco",
-    },
     btn:
     {
       type: Boolean,

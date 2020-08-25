@@ -7,18 +7,13 @@
           <p class="card-text home">
             LA SOLUTION D'AUTHENTICITÉ POUR VOS RECRUTEMENTS <br>
             FAITES DE MEILLEURS RECRUTEMENTS EN CHALLENGEANT VOS CANDIDATS !</p>
-          <Bouton btn btnInfo>
-            <slot name="txtButton">
-            Comment ça marche ?
-            </slot>
 
-          </Bouton>
+              <router-link to="/concept">
+                <Bouton btnInfo btn>Comment ça marche ?</Bouton>
+             </router-link>
+
         </div>
-
       </div>
-
-
-
     </div>
 </template>
 
@@ -27,9 +22,18 @@ import Bouton from './Bouton.vue';
 
 export default {
   name: 'CardHome',
+
   components: {Bouton},
 
-};
+  data() {
+      return {
+      }
+  },
+
+}
+
+
+
 </script>
 
 <style>
