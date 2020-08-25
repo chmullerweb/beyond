@@ -1,7 +1,7 @@
 <template>
 
   <div class="">
-  
+
       <CardOffre cardOffre>
        <template v-slot:number>1</template>
        <template v-slot:title>Situation</template>
@@ -34,6 +34,8 @@
 
       </CardOffre>
 
+    <Carousseletapes/>
+
 
 
   </div>
@@ -42,19 +44,12 @@
 </template>
 
 <script>
-// import {etapes} from "../data.js";
 import CardOffre from "../components/CardOffre";
+import Carousseletapes from "../components/Carousseletapes";
 import Bouton from "../components/Bouton";
 
 export default {
   name: 'Offre',
-  components: {CardOffre, Bouton},
-
-// data() {
-//   return {
-//     etapes : etapes,
-//   };
-// },
-
+  components: {CardOffre, Bouton, Carousseletapes},
 };
 </script>

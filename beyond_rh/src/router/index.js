@@ -18,6 +18,8 @@ import CardPictos from '../components/CardPictos.vue'
 import CardTeam from '../components/CardTeam.vue'
 import CardTitle from '../components/CardTitle.vue'
 import Caroussel from '../components/Caroussel.vue'
+import Carousseletapes from '../components/Carousseletapes.vue'
+
 
 
 
@@ -103,6 +105,11 @@ Vue.use(VueRouter)
     component: Caroussel
   },
 
+  {
+    path: '/carousseletapes',
+    name: ' Carousseletapes',
+    component: Carousseletapes
+  },
 
   {
     path: '/about',
