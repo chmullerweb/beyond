@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Landing from '../pages/Landing.vue'
+import Landing from '../pages/landing.vue'
 // import Concept from '../pages/Concept.vue'
 // import Offre from '../pages/Offre.vue'
 
@@ -25,7 +25,7 @@ Vue.use(VueRouter)
     component: Home
   },
 
-  // pages : 
+  // pages :
 
   {
     path: '/landing',
@@ -45,7 +45,7 @@ Vue.use(VueRouter)
   //   component: Offre
   // },
 
-  // components : 
+  // components :
 
   {
     path: '/bouton',
