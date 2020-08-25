@@ -45,4 +45,8 @@ export default {
     text-align: left;
 }
 
+.container{
+  padding: 0!important; 
+}
+
 </style>
