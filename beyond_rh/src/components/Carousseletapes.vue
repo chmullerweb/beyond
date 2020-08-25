@@ -63,11 +63,9 @@
 
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
         <div>
-            <div class="">
               <div class="round">
                 <p class="number">4</p>
               </div>
-            </div>
             <div class="">
               <h1>Évaluation</h1>
               <p>Valeur forte de BEYOND pour recruter : garder une approche entière de l’individu et une approche centrée sur l’humain afin de ne pas tout mécaniser. Recruter un collaborateur c'est accueillir un nouveau membre dans la famille. L\'évaluation se veux humaine pour prendre en compte tous les facette du candidats.</p>
