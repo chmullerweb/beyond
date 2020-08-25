@@ -104,6 +104,8 @@ novalidate="true"
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'FormContact',
   data () {
@@ -111,11 +113,11 @@ export default {
       errors: [],
       inputStatus: 'Choisir...',
       inputJobDetails: '',
-      inputName: null,
-      inputFirstname: null,
-      inputPhone: null,
-      inputEmail: null,
-      textareaMsg: null
+      inputName: '',
+      inputFirstname: '',
+      inputPhone: '',
+      inputEmail: '',
+      textareaMsg: ''
             };
   },
   methods:{
@@ -163,19 +165,19 @@ export default {
       this.checkForm();
       if(this.errors.length === 0){
         console.log("lala")
-        // this.$axios.post('route om on envoie les données', { lister les données
-        // inputStatus: this.inputStatus,
-        // inputJobDetails: this.inputJobDetails,
-        // inputName: this.inputName,
-        // inputFirstname: this.inputFirstname,
-        // inputPhone: this.inputPhone,
-        // inputEmail: this.inputEmail,
-        // textareaMsg: this.textareaMsg
-        //}).then(response => {
-        //  console.log(response);
-        //}).catch(error) => {
-        //  console.log(error)
-        // })
+        axios.post('http://localhost:8081/contact', { 
+        inputStatus: this.inputStatus,
+        inputJobDetails: this.inputJobDetails,
+        inputName: this.inputName,
+        inputFirstname: this.inputFirstname,
+        inputPhone: this.inputPhone,
+        inputEmail: this.inputEmail,
+        textareaMsg: this.textareaMsg
+        }).then(response => {
+          console.log(response)
+        }).catch(error => {
+          console.log(error)
+        })
 
         // connecter le front et le back avec express et bodyParser
         //app.post('route', (req, res) => {
