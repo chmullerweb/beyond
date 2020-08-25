@@ -1,8 +1,5 @@
 <template>
 
-  <!-- <div> -->
-  <!-- <div class="card mb-3" style="max-width: 540px;"> -->
-
     <div :class="{'cardTeam': cardTeam, 'cardTeamRight': cardTeamRight}">
 
         <div class="row no-gutters">
@@ -13,17 +10,12 @@
           </div>
         </div>
 
-        <!-- <div class="row no-gutters"> -->
         <div class="card-body col-md-8">
           <h5 class="card-title team"><slot name="title"></slot></h5>
           <p class="card-text team"><slot name="text"></slot></p>
         </div>
-      <!-- </div> -->
-
 
     </div>
-
-  <!-- </div> -->
 
 </template>
 
@@ -56,17 +48,13 @@ export default {
     flex-wrap: wrap;
     flex-direction: row!important;
     margin: 0!important;
-
 }
 
 .cardTeamRight{
-  /* padding: 2rem 3rem 2.5rem 1rem; */
   display: flex;
   flex-direction: row-reverse!important;
   justify-content: space-between;
-  /* flex-wrap: nowrap; */
   background-color: #A37871;
-  /* padding: 1.5rem auto; */
 }
 
 .number{

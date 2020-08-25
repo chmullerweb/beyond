@@ -3,7 +3,12 @@
   <div class="container-fluid cardPictos">
 
     <div class="card text-white">
+      <!-- <div class="">
+        <slot name="img">
+        </slot>
         <img src="" class="card-img" alt="">
+      </div> -->
+        <!-- <img src="" class="card-img" alt=""> -->
       <div class="card-img-overlay">
         <i class=""><slot name="icone"></slot></i>
         <h5 class="card-title pictos"><slot name="title"></slot></h5>
