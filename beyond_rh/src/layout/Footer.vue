@@ -60,6 +60,7 @@ export default {
 {
   margin: 0rem 0rem 0 0;
   background-color: #5D737E;
+  opacity: 0.9;
   color: white;
   text-align: left;
 }
@@ -85,7 +86,8 @@ h3{
 }
 
 .social{
-  background-color: #6E7271;
+  /* background-color: #6E7271; */
+  background-color: #5D737E;
   color: white;
 }
 

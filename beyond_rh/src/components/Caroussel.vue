@@ -21,7 +21,7 @@
       ></b-carousel-slide> -->
 
       <!-- Slides with custom text -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=48">
         <h1>UTILISEZ DES CRITÈRES OBJECTIFS ET SCIENTIFIQUES</h1>
         <p>Supprimez les biais du recrutement !
   ​          Recruteurs comme candidats, les entretiens demandent une attention
@@ -33,7 +33,7 @@
         </p>
       </b-carousel-slide>
 
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=18">
         <h1>UTILISATION DE MISES EN SITUATION ​SPORTIVES</h1>
         <p>Des mises en situation pour challenger vos candidats !
            ​Utilisez le sports et les mises en situation pour comprendre et
@@ -44,14 +44,14 @@
         </p>
       </b-carousel-slide>
 
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
         <h1>ASSUREZ VOUS UN BON RECRUTEMENT !</h1>
         <p>Le corps est un révélateur formidable !
            Définissez les éléments de personnalité qui seront primordial chez
            votre futur collaborateur et testez les de manière scientifique et
            objective.
            Vous assurez ainsi un recrutement humain et scientifique, qui met
-           au coeur vos valeurs ainsi que le candidat. 
+           au coeur vos valeurs ainsi que le candidat.
            C'est un recrutement Win-Win !
         </p>
       </b-carousel-slide>

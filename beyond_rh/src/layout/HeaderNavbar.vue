@@ -33,6 +33,7 @@ export default {
 
 .nav{
   background-color: #5D737E;
+  opacity: 0.9;
   height: 5rem;
 }
 

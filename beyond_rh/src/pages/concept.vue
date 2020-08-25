@@ -16,10 +16,7 @@
        </template>
      </CardTeam>
 
-     <Caroussel>
-       <template v-slot:title>L'approche sportive</template>
-     </Caroussel>
-
+     <Caroussel/>
 
      <CardTeam cardTeamRight>
        <template v-slot:img>
@@ -35,9 +32,7 @@
        Ce projet est lauréat French Tech Tremplin, Start Us Up et Pitch and Code des Decodeuses.</template>
      </CardTeam>
 
-     <Caroussel>
-
-     </Caroussel>
+     <Caroussel/>
 
      <CardTeam cardTeam>
        <template v-slot:img>
