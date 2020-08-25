@@ -111,29 +111,29 @@ export default {
       errors: [],
       inputStatus: 'Choisir...',
       inputJobDetails: '',
-      inputName: null,
-      inputFirstname: null,
-      inputPhone: null,
-      inputEmail: null,
-      textareaMsg: null
+      inputName: '',
+      inputFirstname: '',
+      inputPhone: '',
+      inputEmail: '',
+      textareaMsg: ''
             };
   },
   methods:{
       checkForm(e){
         this.errors = [];
 
-        if (this.inputStatus == "Choisir...") {
+      if (this.inputStatus == "Choisir...") {
         this.errors.push('Quel est votre poste ?');
       }
       if (this.inputStatus == "Autre" && !this.inputJobDetails ) {
         this.errors.push('Précisez votre fonction');
       }
-        if (!this.inputName) {
+      if (!this.inputName) {
           this.errors.push("Ne soyez pas timide ! Quel est votre nom ?");
-        }
-        if (!this.inputFirstname) {
+      }
+      if (!this.inputFirstname) {
         this.errors.push('Ne soyez pas timide ! Quel est votre prénom ?');
-        }
+      }
       if (!this.inputPhone) {
         this.errors.push('N\'oubliez pas votre numéro de téléphone pour vous recontacter');
       }
@@ -148,43 +148,20 @@ export default {
       if (!this.textareaMsg){
         this.errors.push("Oups ! Votre message est vide")
       }      
-
       if (!this.errors.length) {
         return true;
       }
 
       e.preventDefault();
     },
-    validEmail(email) {
+    validEmail(inputEmail) {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email);
+      return re.test(inputEmail);
     },
     submitForm(){
       this.checkForm();
       if(this.errors.length === 0){
         console.log("lala")
-        // this.$axios.post('route om on envoie les données', { lister les données
-        // inputStatus: this.inputStatus,
-        // inputJobDetails: this.inputJobDetails,
-        // inputName: this.inputName,
-        // inputFirstname: this.inputFirstname,
-        // inputPhone: this.inputPhone,
-        // inputEmail: this.inputEmail,
-        // textareaMsg: this.textareaMsg
-        //}).then(response => {
-        //  console.log(response);
-        //}).catch(error) => {
-        //  console.log(error)
-        // })
-
-        // connecter le front et le back avec express et bodyParser
-        //app.post('route', (req, res) => {
-        //  console.log(req.body)
-        // })
-
-        //importer les fonctionalités de bodyParser
-        // app.use(bodyParser.json())
-        // app.use(bodyParser.urlencoded({ extended: false }))
       }
     }
   },
