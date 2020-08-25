@@ -108,7 +108,7 @@ margin-bottom: 0;
 
 .pictosSocial span{
   padding-right: 2rem;
-  color: #363636;
+  color: #white;
 }
 
 .pictosSocial span a{
