@@ -8,7 +8,6 @@
             <h2 class="claimConcept"><slot name="claimConcept">Analysez les soft skills</slot></h2>
             <p class="container"><slot name="claimConceptText">Marshmallow soufflé cake gingerbread pie chocolate bar. Marshmallow caramels candy canes toffee gummi bears tootsie roll. Fruitcake cheesecake caramels cotton candy marshmallow halvah croissant.</slot></p>
 
-*
             <router-link to="/concept">
               <Bouton btnDark btn>En savoir plus </Bouton>
            </router-link>
