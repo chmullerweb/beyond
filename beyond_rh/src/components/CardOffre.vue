@@ -6,7 +6,6 @@
 
 
         <div class="col-md-4">
-          <!-- <img src="../assets/meet.jpg" alt="Super photo"> -->
           <div class="round">
             <p class="number"><slot name="number"></slot></p>
           </div>
