@@ -51,6 +51,7 @@ export default {
   width: 25rem;
   height: 20rem;
   background-color: #454545;
+  opacity: 0.6;
   display: inline-grid;
   border-radius: 0!important;
 }

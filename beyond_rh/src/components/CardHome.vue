@@ -39,6 +39,7 @@ export default {
 .cardHome{
     /* margin: 1.5rem auto; */
     background-color: #227C9D;
+    opacity: 0.8;
     width: 100%;
     height: 25rem;
 }

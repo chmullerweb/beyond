@@ -4,17 +4,10 @@
 
     <CardHome/>
     <CardTitle/>
-    <CardConcept/>
 
   <div class="cardPictos">
 
     <CardPictos>
-      <!-- <template v-slot:img>
-        <img
-
-          src="../assets/meet.jpg"
-        >
-      </template> -->
       <template v-slot:icone>
         <i class="fas fa-microscope"></i>
       </template>
@@ -41,8 +34,13 @@
  </div>
 
 
-    </div>
+
+    <CardConcept/>
+  </div>
+
 </template>
+
+
 
 <script>
 
