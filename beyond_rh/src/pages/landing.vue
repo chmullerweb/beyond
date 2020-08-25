@@ -5,7 +5,7 @@
     <CardHome/>
     <CardTitle/>
 
-  <div class="cardPictos">
+  <div class="cardPictos container-fluid">
 
     <CardPictos>
       <template v-slot:icone>
@@ -33,9 +33,8 @@
 
  </div>
 
-
-
     <CardConcept/>
+
   </div>
 
 </template>

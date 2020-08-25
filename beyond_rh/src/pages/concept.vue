@@ -2,15 +2,6 @@
 
     <div class="">
 
-      <!-- <Caroussel>
-        <template v-slot:title>L'approche sportive</template>
-      </Caroussel> -->
-
-      <!-- <Caroussel>
-        <template v-slot:title>L'approche psychologique</template>
-      </Caroussel> -->
-
-
       <CardTeam cardTeam>
        <template v-slot:img>
          <img
@@ -45,7 +36,7 @@
      </CardTeam>
 
      <Caroussel>
-       
+
      </Caroussel>
 
      <CardTeam cardTeam>

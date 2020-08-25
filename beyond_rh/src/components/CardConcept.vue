@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row cardConcept">
             <div class="col img">
-            <img src="../assets/conceptBeyond.jpg"/>
+            <img src="../assets/boxe.jpg"/>
             </div>
             <div class="col cardConceptText">
             <h2 class="claimConcept"><slot name="claimConcept">Analysez les soft skills</slot></h2>
@@ -38,6 +38,7 @@ export default {
 
 .cardConcept{
     align-items: center;
+    background-color: #C6D8D3;
 }
 
 .cardConceptText{
