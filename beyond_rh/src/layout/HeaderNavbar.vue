@@ -1,5 +1,6 @@
 <template>
   <div>
+      <FormContact :closeForm="showForm" v-show="show"/>
     <ul class="nav justify-content-end">
       <li class="nav-item">
         <router-link to="/Landing" class="nav-link active">Home</router-link>
@@ -10,21 +11,28 @@
       <li class="nav-item">
         <router-link to="/Offre" class="nav-link active">Concept</router-link>
       </li>
-      <li class="nav-item">
-        <router-link to="/ContactPage" class="nav-link active">Nous contacter</router-link>
+      <li class="nav-item nav-link active contact" v-on:click="showForm">
+      Nous contacter
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import FormContact from "../components/FormContact";
+
 export default {
   name: 'HeaderNavbar',
-
+  components: {FormContact},
   data() {
     return {
-
+      show: false
     }
+  },
+  methods: {
+  showForm() {
+      return this.show = !this.show;
+  }
   }
 };
 </script>
@@ -43,6 +51,11 @@ export default {
 }
 
 a{
+  color: white;
+}
+
+.contact:hover{
+  cursor: pointer;
   color: white;
 }
 

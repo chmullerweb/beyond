@@ -165,7 +165,7 @@ export default {
       this.checkForm();
       if(this.errors.length === 0){
         console.log("lala") //voir si cette fonction est bien appellée quand tous les champs sont remplis
-        axios.post('http://localhost:8081/contact', { 
+        axios.post('/contact', { 
         inputStatus: this.inputStatus,
         inputJobDetails: this.inputJobDetails,
         inputName: this.inputName,
@@ -178,6 +178,8 @@ export default {
         }).catch(error => {
           console.log(error)
         })
+    this.closeForm();
+    console.log('Votre message a bien été envoyé')
     }      
   }
   },
@@ -214,7 +216,7 @@ export default {
 }
 
 .modal_fixed{
-	position: 					fixed;
+	position: 					absolute;
 	top: 								7rem;
 	z-index: 						900;
 	justify-content: 		center;
