@@ -3,12 +3,6 @@
   <div class="cardPictos">
 
     <div class="card text-white">
-      <!-- <div class="">
-        <slot name="img">
-        </slot>
-        <img src="" class="card-img" alt="">
-      </div> -->
-        <!-- <img src="" class="card-img" alt=""> -->
       <div class="card-img-overlay">
         <i class=""><slot name="icone"></slot></i>
         <h5 class="card-title pictos"><slot name="title"></slot></h5>
@@ -22,19 +16,6 @@
 
 export default {
   name: 'CardPictos',
-  //
-  // props: ['picto'],
-  //
-  // id: Number,
-  // image: String,
-  // icone: String,
-  // title: String,
-  // text: String,
-  //
-  // data(){
-  //   return
-  // }
-
 };
 </script>
 
@@ -59,9 +40,5 @@ i {
   font-size: 7rem;
   margin: 1.5rem;
 }
-/*
-.cardPictos{
-  width: 100%;
-}  */
 
 </style>
