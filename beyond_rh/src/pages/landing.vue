@@ -3,6 +3,7 @@
     <div class="">
 
     <CardHome/>
+
     <CardTitle>
      <template v-slot:icone>
        <i class="fas fa-microscope"></i>
@@ -50,7 +51,6 @@
 
 <script>
 
-// import {pictos} from "../data.js";
 import CardTitle from "../components/CardTitle";
 import CardConcept from "../components/CardConcept";
 import CardPictos from "../components/CardPictos";

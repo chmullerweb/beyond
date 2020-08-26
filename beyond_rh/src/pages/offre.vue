@@ -15,5 +15,7 @@ import Bouton from "../components/Bouton";
 export default {
   name: 'Offre',
   components: {Bouton, Carousseletapes, CardTitle},
+  // components: {Carousseletapes, CardTitle},
+
 };
 </script>
