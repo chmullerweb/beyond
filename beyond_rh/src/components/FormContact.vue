@@ -178,8 +178,18 @@ export default {
         }).catch(error => {
           console.log(error)
         })
+    }      
+  }
+  },
+  props: {
+    closeForm: {
+      type: Function,
+    }
+  }
+}
 
-        // connecter le front et le back avec express et bodyParser
+
+// connecter le front et le back avec express et bodyParser
         //app.post('route', [check('inputEmail'.isEmail()] (req, res) => {
         //  const errors = validationResult(req) 
         //  console.log(req.body)
@@ -188,15 +198,6 @@ export default {
 
         //faire une double vérification des données envoyées à express
         //const {check, validationResult}
-      
-  },
-  props: {
-    closeForm: {
-      type: Function,
-    }
-  },
-}
-
 </script>
 
 <style lang="css" scoped>
