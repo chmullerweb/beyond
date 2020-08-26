@@ -1,19 +1,13 @@
 module.exports = {
     devServer: {  //server node est à l'url target
       proxy: {
-        'http://localhost:3000': {   
+        '^/contact': {   
       target: 'http://localhost:3000',  
       changeOrigin: true,
-      ws: true,
       secure:false,
       pathRewrite: {
-          '^/api': '/api' //rewrite path
+          '^/contact': '/contact' //"toutes les requêtes avec endpoint ^/contact de localhost:8080 vont être réécrites et transférées vers "localhost:3000/contact"
         },
-      router: {
-          //when request.headers.host == 'http://localhost:3000',
-        // override target 'http://www.example.org' to 'http://localhost:8000'
-        'http://localhost:3000': 'http://localhost:8080',
-      },
       logLevel: 'debug' 
   },
       }

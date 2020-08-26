@@ -1,22 +1,22 @@
 <template>
   <div class="">
-
     <CardTitle/>
     <Carousseletapes/>
-
   </div>
 </template>
 
 <script>
 import CardTitle from "../components/CardTitle";
 import Carousseletapes from "../components/Carousseletapes";
-//import Bouton from "../components/Bouton";
+
 
 export default {
   name: 'Offre',
-  components: {Carousseletapes, CardTitle
-  //,Bouton
-  },
+  components: {Carousseletapes, CardTitle},
+  data() {
+    return {
+    }
+  }
 };
 </script>
 

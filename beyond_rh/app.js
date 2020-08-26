@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Récupère ma requête axios.post de Vue
-app.get('/', (req, res) => {
+app.get('/contact', (req, res) => {
 	console.log('lala')
 	console.log(req.body)
 })
