@@ -3,10 +3,11 @@
         <div class="row justify-content-md-center">
             <div class="col">
             <h1 class="claim"><slot name="claimTitle">Recrutez autrement, Recrutez sportivement</slot></h1>
-            <p class="container"><slot name="claimTxt">Gummies jujubes carrot cake tiramisu. Chocolate cake dragée soufflé gummi bears candy croissant croissant. Chupa chups sesame snaps cotton candy cake oat cake. Icing bonbon powder topping sugar plum sugar plum apple pie. Cupcake oat cake pudding jelly beans jelly beans soufflé jelly-o.</slot></p>
+            <p class="container"><slot name="claimTxt"> Des solutions innovantes et personnalisées de recrutement via des outils d'évaluations conçus par des psychologues du sport. L'objectif est de faire ressortir les points forts de la personnalité du candidat. Ainsi vous recrutez le profil qui correspond à vos attentes. </slot></p>
             <router-link to="/concept">
-              <Bouton btnDark btn>Notre vision</Bouton>
-           </router-link>
+              <Bouton btnInfo btn>En savoir plus</Bouton>
+            </router-link>
+
             </div>
         </div>
     </div>
@@ -18,6 +19,12 @@ import Bouton from './Bouton.vue';
 export default {
   name: 'CardTitle',
   components: {Bouton},
+
+  data() {
+    return {
+    }
+},
+
 
 };
 </script>
@@ -32,5 +39,6 @@ export default {
 .claim{
     padding: 2rem 0rem 1.3rem 0rem;
 }
+
 
 </style>
