@@ -33,7 +33,6 @@ export default {
 
 .cardTitle{
     margin: 1.5rem auto;
-    background-color: #C6D8D3;
 }
 
 .claim{

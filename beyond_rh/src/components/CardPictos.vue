@@ -15,9 +15,7 @@
         <p class="card-text pictos"><slot name="text"></slot></p>
       </div>
     </div>
-
   </div>
-
 </template>
 
 <script>
@@ -57,7 +55,7 @@ export default {
   border: 0px!important;
 }
 
-i{
+i {
   font-size: 7rem;
   margin: 1.5rem;
 }

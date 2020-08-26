@@ -17,10 +17,10 @@ import CardOffre from '../components/CardOffre.vue'
 import CardPictos from '../components/CardPictos.vue'
 import CardTeam from '../components/CardTeam.vue'
 import CardTitle from '../components/CardTitle.vue'
+// import Caroussel from '../components/Caroussel.vue'
+import Contact from '../pages/contact.vue'
 import Caroussel from '../components/Caroussel.vue'
 import Carousseletapes from '../components/Carousseletapes.vue'
-
-
 
 
 Vue.use(VueRouter)
@@ -40,13 +40,16 @@ Vue.use(VueRouter)
     name: 'Landing',
     components: { default: Landing, header: HeaderNavbar, footer: Footer },
   },
-
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
   {
     path: '/concept',
     name: 'Concept',
     components: { default: Concept, header: HeaderNavbar, footer: Footer },
   },
-
   {
     path: '/offre',
     name: 'Offre',
