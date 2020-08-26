@@ -1,11 +1,6 @@
 <template>
 
   <div class="">
-    <!-- <div class="" v-for="etape in etapes" :key="etape.id"> -->
-
-      <!-- <CardOffre cardOffre :etape="etape"/> -->
-      <!-- <CardOffre :cardOffre="etape.class" :etape="etape"/> -->
-      <!-- <CardOffre cardOffre/> -->
 
       <CardOffre cardOffre>
        <template v-slot:number>1</template>
@@ -28,16 +23,18 @@
       <CardOffre cardOffreRight>
        <template v-slot:number>4</template>
        <template v-slot:title>Évaluation</template>
-       <template v-slot:text>Valeur forte de BEYOND pour recruter : garder une approche entière de l’individu et une approche centrée sur l’humain afin de ne pas tout mécaniser. Recruter un collaborateur c\'est accueillir un nouveau membre dans la famille. L\'évaluation se veux humaine pour prendre en compte tous les facette du candidats.</template>
+       <template v-slot:text>Valeur forte de BEYOND pour recruter : garder une approche entière de l’individu et une approche centrée sur l’humain afin de ne pas tout mécaniser. Recruter un collaborateur c'est accueillir un nouveau membre dans la famille. L\'évaluation se veux humaine pour prendre en compte tous les facette du candidats.</template>
       </CardOffre>
 
       <CardOffre cardOffre>
        <template v-slot:number>5</template>
        <template v-slot:title>Recrutement</template>
-       <template v-slot:text>L\'objectif de la mise en situation de recrutement est de savoir si on recrute cette personne ou non. Le sport est un véritable outil et non un gadget. Notre méthodologie scientifique nous permettent de sélectionner les profils qui vous correspondent.</template>
+       <template v-slot:text>L'objectif de la mise en situation de recrutement est de savoir si on recrute cette personne ou non. Le sport est un véritable outil et non un gadget. Notre méthodologie scientifique nous permettent de sélectionner les profils qui vous correspondent.</template>
        <Bouton/>
 
       </CardOffre>
+
+    <Carousseletapes/>
 
 
 
@@ -47,19 +44,12 @@
 </template>
 
 <script>
-// import {etapes} from "../data.js";
 import CardOffre from "../components/CardOffre";
+import Carousseletapes from "../components/Carousseletapes";
 import Bouton from "../components/Bouton";
 
 export default {
   name: 'Offre',
-  components: {CardOffre, Bouton},
-
-// data() {
-//   return {
-//     etapes : etapes,
-//   };
-// },
-
+  components: {CardOffre, Bouton, Carousseletapes},
 };
 </script>

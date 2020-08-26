@@ -32,7 +32,8 @@ export default {
 <style lang="css" scoped>
 
 .nav{
-  background-color: #3C3744;
+  background-color: #5D737E;
+  opacity: 0.9;
   height: 5rem;
 }
 

@@ -43,18 +43,24 @@ export default {
 
 .cardTeam{
     padding: 2rem 1rem 2rem 1rem;
-    background-color: #D6D5C9;
+    background-color: #E2E2E2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row!important;
     margin: 0!important;
 }
 
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 7.25rem;
+}
+
 .cardTeamRight{
   display: flex;
   flex-direction: row-reverse!important;
   justify-content: space-between;
-  background-color: #A37871;
+  background-color: #7798AB;
 }
 
 .number{

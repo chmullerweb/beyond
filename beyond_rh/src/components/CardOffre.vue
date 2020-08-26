@@ -58,7 +58,7 @@ export default {
     /* margin: 1.5rem auto;
     background-color: lightBlue; */
     padding: 2rem 1rem 2rem 1rem;
-    background-color: #D6D5C9;
+    background-color: #E2E2E2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row!important;
@@ -78,7 +78,7 @@ export default {
   display: flex;
   flex-direction: row-reverse!important;
   justify-content: space-between;
-  background-color: #A37871;
+  background-color: #7798AB;
 
 }
 

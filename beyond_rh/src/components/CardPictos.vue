@@ -1,6 +1,6 @@
 <template>
 
-  <div class="container-fluid cardPictos">
+  <div class="cardPictos">
 
     <div class="card text-white">
       <!-- <div class="">
@@ -51,8 +51,10 @@ export default {
   width: 25rem;
   height: 20rem;
   background-color: #454545;
+  opacity: 0.8;
   display: inline-grid;
   border-radius: 0!important;
+  border: 0px!important;
 }
 
 i{
