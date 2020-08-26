@@ -38,8 +38,6 @@ export default {
 <style>
 
 .cardHome{
-    /* margin: 1.5rem auto; */
-    /* background-color: #227C9D; */
     opacity: 0.8;
     width: 100%;
     height: 25rem;
@@ -53,11 +51,13 @@ export default {
 .card-title.home{
   padding: 2rem 0rem 0.1rem 0rem;
   font-size: 5rem;
+  text-shadow: 1px 1px 2px black;
 }
 
 .card-text.home{
     padding: 3rem 0rem 1.3rem 0rem;
     font-size: 2rem;
+    text-shadow: 1px 1px 2px black;
 }
 
 </style>
