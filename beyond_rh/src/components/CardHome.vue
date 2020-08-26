@@ -1,7 +1,7 @@
 <template>
     <div class="cardHome container-fluid">
       <div class="card text-white">
-          <img src="../assets/meet.jpg" class="card-img" alt="" width="300" height="400">
+          <img src="../assets/desk3.jpg" class="card-img" alt="">
         <div class="card-img-overlay home">
           <h5 class="card-title home">BEYOND</h5>
           <p class="card-text home">
