@@ -164,21 +164,20 @@ export default {
     submitForm(){
       this.checkForm();
       if(this.errors.length === 0){
-         axios.post('http://localhost:3000/', { 
-         inputStatus: this.inputStatus,
-         inputJobDetails: this.inputJobDetails,
-         inputName: this.inputName,
-         inputFirstname: this.inputFirstname,
-         inputPhone: this.inputPhone,
-         inputEmail: this.inputEmail,
-         textareaMsg: this.textareaMsg
+        console.log("lala") //voir si cette fonction est bien appellée quand tous les champs sont remplis
+        axios.post('http://localhost:8081/contact', { 
+        inputStatus: this.inputStatus,
+        inputJobDetails: this.inputJobDetails,
+        inputName: this.inputName,
+        inputFirstname: this.inputFirstname,
+        inputPhone: this.inputPhone,
+        inputEmail: this.inputEmail,
+        textareaMsg: this.textareaMsg
         }).then(response => {
-          console.log(response);
+          console.log(response)
         }).catch(error => {
           console.log(error)
         })
-      }
-    }
 
         // connecter le front et le back avec express et bodyParser
         //app.post('route', [check('inputEmail'.isEmail()] (req, res) => {
