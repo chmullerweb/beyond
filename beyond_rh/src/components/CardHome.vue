@@ -43,6 +43,10 @@ export default {
     height: 25rem;
 }
 
+.card-img{
+  height: 100%
+}
+
 .card-img-overlay.home{
   /* background-color: #227C9D; */
   margin: 0!important;
