@@ -1,5 +1,6 @@
 <template>
   <div>
+    <FormContact :closeForm="showForm" v-show="show"/>
     <div class="container-fluid footer">
       <h3>BEYOND</h3>
         <div class="container">
@@ -17,7 +18,10 @@
                 <p>CGU</p></div>
               </div>
             <div class="col">
-              <h4>Les derniers articles</h4>
+              <p>Une question ?</p>
+              <p>Envie d'en savoir plus sur notre offre ?</p>
+              <p>Ecrivez-nous !</p>
+              <Bouton btn btnInfo :displayForm="showForm">Contactez-nous</Bouton>
             </div>
           </div>
         </div>
@@ -39,12 +43,28 @@
 </template>
 
 <script>
+import Bouton from "../components/Bouton";
+import FormContact from "../components/FormContact";
+
 export default {
   name: 'Footer',
-
+  components: {Bouton, FormContact},
   data() {
     return {
-
+      show:false
+    }
+  },
+  methods: {
+  showForm() {
+    this.scrollToTop();
+      return this.show = !this.show;
+    },
+    scrollToTop() {
+                window.scrollTo({
+                  top:0,
+                  left:0,
+                  behavior: 'smooth'
+                });
     }
   }
 };
