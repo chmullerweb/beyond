@@ -23,6 +23,7 @@ import Caroussel from '../components/Caroussel.vue'
 import Carousseletapes from '../components/Carousseletapes.vue'
 
 
+
 Vue.use(VueRouter)
 
   const routes = [
@@ -112,6 +113,7 @@ Vue.use(VueRouter)
     name: ' Carousseletapes',
     component: Carousseletapes
   },
+
 
   {
     path: '/about',

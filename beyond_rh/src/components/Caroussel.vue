@@ -7,26 +7,26 @@
       controls
       indicators
       background="#ababab"
-      img-width="1024"
-      img-height="480"
+      img-width="102"
+      img-height="48"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
 
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=48">
-        <h1>TOTO</h1>
-        <p>TUTU</p>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </b-carousel-slide>
 
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=18">
-        <h1>TITI</h1>
-        <p>TATA</p>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </b-carousel-slide>
 
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
-        <h1>TETE</h1>
-        <p>TYTY</p>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </b-carousel-slide>
 
     </b-carousel>
@@ -58,11 +58,16 @@
 
 <style lang="css" scoped>
 
-.w-100{
-  width: 30%!important;
+/* .img.img-fluid.w-100.d-block{
+  width: 50%!important;
+} */
+
+#carousel-1.carousel.slide{
+  width: 50%!important;
+  display: inline-flex;
 }
 
 p{
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 </style>

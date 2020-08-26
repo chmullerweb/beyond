@@ -116,10 +116,6 @@
 
 <style lang="css" scoped>
 
-.w-100{
-  width: 30%!important;
-}
-
 p{
   font-size: 2rem;
 }
@@ -158,10 +154,18 @@ p{
   height: 8rem;
   margin: 1rem!important;
 }
+
 .card-body col-md-6{
   margin: 0rem!important;
   padding: 0rem!important;
-
 }
+
+#carousel-1.carousel.slide{
+  width: 50%!important;
+}
+/*
+.img-height{
+  height: 20%!important;
+} */
 
 </style>
