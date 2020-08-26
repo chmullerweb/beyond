@@ -165,7 +165,7 @@ export default {
       this.checkForm();
       if(this.errors.length === 0){
         console.log("lala") //voir si cette fonction est bien appellée quand tous les champs sont remplis
-        axios.post('http://localhost:8081/contact', { 
+        axios.post('http://localhost:3000', { 
         inputStatus: this.inputStatus,
         inputJobDetails: this.inputJobDetails,
         inputName: this.inputName,
