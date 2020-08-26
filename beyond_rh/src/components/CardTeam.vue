@@ -95,8 +95,9 @@ export default {
 }
 
 img{
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 3px 2px 5px white!important;
+
 }
 
 </style>
