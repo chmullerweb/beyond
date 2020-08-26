@@ -125,7 +125,6 @@ p{
 }
 
 .cardOffre{
-
     padding: 2rem 1rem 2rem 1rem;
     background-color: #E2E2E2;
     display: flex;
@@ -139,12 +138,10 @@ p{
 }
 
 .cardOffreRight{
-
   display: flex;
   flex-direction: row-reverse!important;
   justify-content: space-between;
   background-color: #7798AB;
-
 }
 
 .number{
@@ -166,10 +163,5 @@ p{
   padding: 0rem!important;
 
 }
-
-/*
-.col-md-4{
-  padding: 75px 125px 0px 125px;
-} */
 
 </style>

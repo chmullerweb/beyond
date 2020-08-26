@@ -1,7 +1,7 @@
 <template>
     <div class="cardHome container-fluid">
       <div class="card text-white">
-          <img src="" class="card-img" alt="">
+          <img src="../assets/meet.jpg" class="card-img" alt="" width="300" height="400">
         <div class="card-img-overlay home">
           <h5 class="card-title home">BEYOND</h5>
           <p class="card-text home">
@@ -39,14 +39,14 @@ export default {
 
 .cardHome{
     /* margin: 1.5rem auto; */
-    background-color: #227C9D;
+    /* background-color: #227C9D; */
     opacity: 0.8;
     width: 100%;
     height: 25rem;
 }
 
 .card-img-overlay.home{
-  background-color: #227C9D;
+  /* background-color: #227C9D; */
   margin: 0!important;
 }
 
