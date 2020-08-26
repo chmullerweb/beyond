@@ -104,6 +104,9 @@ novalidate="true"
 </template>
 
 <script>
+import axios from 'axios';
+
+
 export default {
   name: 'FormContact',
   data () {
@@ -161,9 +164,32 @@ export default {
     submitForm(){
       this.checkForm();
       if(this.errors.length === 0){
-        console.log("lala")
+         axios.post('http://localhost:3000/', { 
+         inputStatus: this.inputStatus,
+         inputJobDetails: this.inputJobDetails,
+         inputName: this.inputName,
+         inputFirstname: this.inputFirstname,
+         inputPhone: this.inputPhone,
+         inputEmail: this.inputEmail,
+         textareaMsg: this.textareaMsg
+        }).then(response => {
+          console.log(response);
+        }).catch(error => {
+          console.log(error)
+        })
       }
     }
+
+        // connecter le front et le back avec express et bodyParser
+        //app.post('route', [check('inputEmail'.isEmail()] (req, res) => {
+        //  const errors = validationResult(req) 
+        //  console.log(req.body)
+        // })
+
+
+        //faire une double vérification des données envoyées à express
+        //const {check, validationResult}
+      
   },
   props: {
     closeForm: {
