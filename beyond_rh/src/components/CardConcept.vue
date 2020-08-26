@@ -6,7 +6,9 @@
             </div>
             <div class="col cardConceptText">
             <h2 class="claimConcept"><slot name="claimConcept">Analysez les soft skills</slot></h2>
-            <p class="container"><slot name="claimConceptText">Nos activités sont adaptées à toutes les conditions physiques. L’objectif et de mettre e valeur les qualités humaines et relationnelles des candidats.</slot></p>
+            <p class="container"><slot name="claimConceptText">
+              Nos activités sont adaptées à toutes les conditions physiques.
+              L’objectif et de mettre en valeur les qualités humaines et relationnelles des candidats.</slot></p>
 
             <router-link to="/concept">
               <Bouton btnDark btn>En savoir plus </Bouton>
