@@ -33,7 +33,6 @@ Vue.use(VueRouter)
 
   },
 
-
   // pages :
 
   {
