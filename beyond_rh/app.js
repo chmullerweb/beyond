@@ -12,7 +12,7 @@ const router = express.Router()
 // Create app express
 const app = express()
 
-// Static folder
+// Static folder - cette ligne sera utile après npm run build - quand app compilée
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Body Parser Middleware
@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Récupère ma requête axios.post de Vue
-app.get('/', (req, res) => {
+app.post('/submit', (req, res) => {
 	console.log('lala')
 	console.log(req.body)
 })
@@ -32,5 +32,3 @@ var port = 3000;
 app.listen(port, hostname, function(){
 	console.log("Mon serveur fonctionne sur http://"+ hostname +":"+port+"\n"); 
 });
-
-
