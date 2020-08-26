@@ -3,9 +3,9 @@
     <button
       v-on:click="displayForm()"
       type="button"
-      :class="{ btn: btn, 'btn-dark': btnDark, 'btn-info': btnInfo, 'big-btn': bigBtn }"
+      :class="{ btn: btn, 'btn-dark': btnDark, 'btn-info': btnInfo, 'btn-big': btnBig, 'm-top': mTop }"
     >
-      <slot>Default Text</slot>
+      <slot></slot>
     </button>
   </div>
 </template>
@@ -29,10 +29,14 @@ export default {
       type: Boolean,
       default: false,
     },
-    bigBtn: {
+    btnBig: {
       type: Boolean,
       default: false,
     },
+    mTop: {
+      type: Boolean,
+      default: false,
+    }
   },
 
   data() {
@@ -42,14 +46,19 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.bouton_principal {
-  margin: 2rem 0rem;
+.bouton_principal{
+  padding: 2rem 0rem;
 }
 
-.big-btn{
-width: 50%;
+.btn-big{
+width: 100%;
 height: 4rem;
 font-size: 2rem;
 }
 
+.m-top{
+  margin-top: 2rem;
+}
+
 </style>
+

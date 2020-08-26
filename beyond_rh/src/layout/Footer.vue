@@ -21,7 +21,7 @@
               <p>Une question ?</p>
               <p>Envie d'en savoir plus sur notre offre ?</p>
               <p>Ecrivez-nous !</p>
-              <Bouton btn btnInfo :displayForm="showForm">Contactez-nous</Bouton>
+              <Bouton btn btnInfo :displayForm="showForm">Nous contacter</Bouton>
             </div>
           </div>
         </div>
@@ -140,3 +140,4 @@ margin-bottom: 0;
 
 
 </style>
+

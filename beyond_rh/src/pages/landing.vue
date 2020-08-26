@@ -4,7 +4,7 @@
 
     <CardHome/>
 
-    <CardTitle>
+    <CardTitle btnText="Découvrir le concept">
      <template v-slot:icone>
        <i class="fas fa-microscope"></i>
      </template>

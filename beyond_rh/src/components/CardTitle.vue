@@ -1,3 +1,4 @@
+
 <template>
     <div class="cardTitle container-fluid">
         <div class="row justify-content-md-center">
@@ -5,7 +6,7 @@
             <h1 class="claim"><slot name="claimTitle"></slot></h1>
             <p class="container"><slot name="claimTxt"></slot></p>
             <router-link to="/concept">
-              <Bouton btnInfo btn>En savoir plus</Bouton>
+              <Bouton btnDark btn :class="{'btn-hidden': btnHidden}">{{btnText}}</Bouton>
             </router-link>
 
             </div>
@@ -19,9 +20,18 @@ import Bouton from './Bouton.vue';
 export default {
   name: 'CardTitle',
   components: {Bouton},
-
   data() {
     return {
+      
+    }
+    },
+    props: {
+      btnHidden: {
+      type: Boolean,
+      default: false,
+    },
+    btnText: {
+        type: String
     }
 },
 
@@ -40,5 +50,13 @@ export default {
     padding: 2rem 0rem 1.3rem 0rem;
 }
 
+.btn-hidden{
+  display: none;
+}
+
+
+
 
 </style>
+
+
