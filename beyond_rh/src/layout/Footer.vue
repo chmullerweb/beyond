@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> master
 <template>
   <div>
     <FormContact :closeForm="showForm" v-show="show"/>
@@ -23,7 +26,11 @@
               <p>Une question ?</p>
               <p>Envie d'en savoir plus sur notre offre ?</p>
               <p>Ecrivez-nous !</p>
+<<<<<<< HEAD
               <Bouton btn btnInfo :displayForm="showForm">Nous contacter</Bouton>
+=======
+              <Bouton btn btnInfo :displayForm="showForm">Contactez-nous</Bouton>
+>>>>>>> master
             </div>
           </div>
         </div>
@@ -142,4 +149,7 @@ margin-bottom: 0;
 
 
 </style>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> master

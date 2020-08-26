@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> master
 <template>
     <div class="cardTitle container-fluid">
         <div class="row justify-content-md-center">
@@ -7,7 +10,11 @@
             <h1 class="claim"><slot name="claimTitle"></slot></h1>
             <p class="container"><slot name="claimTxt"></slot></p>
             <router-link to="/concept">
+<<<<<<< HEAD
               <Bouton btnDark btn :class="{'btn-hidden': btnHidden}"><slot name="btnTxt"></slot></Bouton>
+=======
+              <Bouton btnInfo btn>En savoir plus</Bouton>
+>>>>>>> master
             </router-link>
 
             </div>
@@ -24,10 +31,13 @@ export default {
 
   data() {
     return {
+<<<<<<< HEAD
       btnHidden: {
       type: Boolean,
       default: false,
     },
+=======
+>>>>>>> master
     }
 },
 
@@ -46,6 +56,7 @@ export default {
     padding: 2rem 0rem 1.3rem 0rem;
 }
 
+<<<<<<< HEAD
 .btn-hidden{
   display: none;
 }
@@ -55,3 +66,7 @@ export default {
 
 </style>
 >>>>>>> Stashed changes
+=======
+
+</style>
+>>>>>>> master
