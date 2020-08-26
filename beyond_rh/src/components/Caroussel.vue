@@ -7,8 +7,8 @@
       controls
       indicators
       background="#ababab"
-      img-width="102"
-      img-height="48"
+      img-width="1024"
+      img-height="480"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
