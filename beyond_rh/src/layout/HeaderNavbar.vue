@@ -5,10 +5,10 @@
         <router-link to="/Landing" class="nav-link active">Home</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/Concept" class="nav-link active">Concept</router-link>
+        <router-link to="/Concept" class="nav-link active">Qui sommes-nous ?</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/Offre" class="nav-link active">Qui sommes-nous ?</router-link>
+        <router-link to="/Offre" class="nav-link active">Concept</router-link>
       </li>
       <li class="nav-item">
         <router-link to="/ContactPage" class="nav-link active">Nous contacter</router-link>
