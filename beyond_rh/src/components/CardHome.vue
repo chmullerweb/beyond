@@ -37,7 +37,7 @@ export default {
 <style>
 
 .cardHome{
-    opacity: 0.8;
+    /* opacity: 0.8; */
     width: 100%;
     height: 100%;
 }
