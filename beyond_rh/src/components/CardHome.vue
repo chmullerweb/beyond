@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> master
 <template>
     <div class="cardHome container-fluid">
       <div class="card text-white">
@@ -13,11 +8,7 @@
             LA SOLUTION D'AUTHENTICITÉ POUR VOS RECRUTEMENTS <br>
             FAITES DE MEILLEURS RECRUTEMENTS EN CHALLENGEANT VOS CANDIDATS !</p>
               <router-link to="/concept">
-<<<<<<< HEAD
                 <Bouton btnInfo btn>Comment ça marche ?</Bouton>
-=======
-                <Bouton btnInfo btn>Comment ça marche </Bouton>
->>>>>>> master
              </router-link>
 
         </div>
@@ -46,11 +37,7 @@ export default {
 <style>
 
 .cardHome{
-<<<<<<< HEAD
-    opacity: 0.8;
-=======
     /* opacity: 0.8; */
->>>>>>> master
     width: 100%;
     height: 100%;
 }
@@ -77,7 +64,4 @@ export default {
 }
 
 </style>
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> master
+

@@ -3,9 +3,9 @@
     <button
       v-on:click="displayForm()"
       type="button"
-      :class="{ btn: btn, 'btn-dark': btnDark, 'btn-info': btnInfo, 'big-btn': bigBtn }"
+      :class="{ btn: btn, 'btn-dark': btnDark, 'btn-info': btnInfo, 'btn-big': btnBig, 'm-top': mTop }"
     >
-      <slot>Default Text</slot>
+      <slot></slot>
     </button>
   </div>
 </template>
@@ -32,6 +32,10 @@ export default {
     btnBig: {
       type: Boolean,
       default: false,
+    },
+    mTop: {
+      type: Boolean,
+      default: false,
     }
   },
 
@@ -47,9 +51,13 @@ export default {
 }
 
 .btn-big{
-width: 50%;
+width: 100%;
 height: 4rem;
 font-size: 2rem;
+}
+
+.m-top{
+  margin-top: 2rem;
 }
 
 </style>
