@@ -2,9 +2,8 @@
     <div class="cardTitle container-fluid">
         <div class="row justify-content-md-center">
             <div class="col">
-            <h1 class="claim">Recrutez autrement, Recrutez sportivement</h1>
-            <p class="container">Gummies jujubes carrot cake tiramisu. Chocolate cake dragée soufflé gummi bears candy croissant croissant. Chupa chups sesame snaps cotton candy cake oat cake. Icing bonbon powder topping sugar plum sugar plum apple pie. Cupcake oat cake pudding jelly beans jelly beans soufflé jelly-o. </p>
-
+            <h1 class="claim"><slot name="claimTitle">Recrutez autrement, Recrutez sportivement</slot></h1>
+            <p class="container"><slot name="claimTxt"> Des solutions innovantes et personnalisées de recrutement via des outils d'évaluations conçus par des psychologues du sport. L'objectif est de faire ressortir les points forts de la personnalité du candidat. Ainsi vous recrutez le profil qui correspond à vos attentes. </slot></p> 
             <router-link to="/concept">
               <Bouton btnInfo btn>En savoir plus</Bouton>
             </router-link>
