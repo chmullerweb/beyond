@@ -4,7 +4,9 @@
             <div class="col">
             <h1 class="claim"><slot name="claimTitle">Recrutez autrement, Recrutez sportivement</slot></h1>
             <p class="container"><slot name="claimTxt">Gummies jujubes carrot cake tiramisu. Chocolate cake dragée soufflé gummi bears candy croissant croissant. Chupa chups sesame snaps cotton candy cake oat cake. Icing bonbon powder topping sugar plum sugar plum apple pie. Cupcake oat cake pudding jelly beans jelly beans soufflé jelly-o.</slot></p>
-            <Bouton btn btnInfo><slot name="txtButton">Comment ça marche ?</slot></Bouton>
+            <router-link to="/concept">
+              <Bouton btnDark btn>Notre vision</Bouton>
+           </router-link>
             </div>
         </div>
     </div>
@@ -24,6 +26,7 @@ export default {
 
 .cardTitle{
     margin: 1.5rem auto;
+    background-color: #C6D8D3;
 }
 
 .claim{

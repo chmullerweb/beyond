@@ -2,12 +2,16 @@
     <div class="container-fluid">
         <div class="row cardConcept">
             <div class="col img">
-            <img src="../assets/conceptBeyond.jpg"/>
+            <img src="../assets/boxe.jpg"/>
             </div>
             <div class="col cardConceptText">
             <h2 class="claimConcept"><slot name="claimConcept">Analysez les soft skills</slot></h2>
             <p class="container"><slot name="claimConceptText">Marshmallow soufflé cake gingerbread pie chocolate bar. Marshmallow caramels candy canes toffee gummi bears tootsie roll. Fruitcake cheesecake caramels cotton candy marshmallow halvah croissant.</slot></p>
-            <Bouton btn btnDark><slot name="txtButton">En savoir plus</slot></Bouton>
+
+            <router-link to="/concept">
+              <Bouton btnDark btn>En savoir plus </Bouton>
+           </router-link>
+
             </div>
         </div>
     </div>
@@ -34,16 +38,15 @@ export default {
 
 .cardConcept{
     align-items: center;
+    background-color: #C6D8D3;
 }
 
 .cardConceptText{
     text-align: left;
 }
 
-
-
-
+.container{
+  padding: 0!important; 
+}
 
 </style>
-
-

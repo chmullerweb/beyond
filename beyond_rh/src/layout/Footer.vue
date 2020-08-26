@@ -29,9 +29,9 @@
           </div>
           <div class="col pictosSocial">
               <span>Suivez-nous</span>
-              <span>F</span>
-              <span>I</span>
-              <span>L</span>
+              <span><a  href="#"> <i class="fab fa-facebook fa-1x mx-3"></i></a></span>
+              <span><a  href="#"> <i class="fab fa-instagram fa-1x mx-3"></i></a></span>
+              <span><a  href="#"><i class="fab fa-linkedin fa-1x mx-3"></i></a></span>
           </div>
       </div>
     </div>
@@ -40,30 +40,7 @@
 
 <script>
 export default {
-  name: 'Bouton',
-  props: {
-    titleButton:
-    {
-      type: String,
-      default: "coco",
-    },
-    btn:
-    {
-      type: Boolean,
-      default: true,
-    },
-    btnDark:
-    {
-      type: Boolean,
-      default: false,
-    },
-    btnInfo:
-    {
-      type: Boolean,
-      default: false,
-    }
-
-  },
+  name: 'Footer',
 
   data() {
     return {
@@ -81,9 +58,10 @@ export default {
 
 .footer
 {
-  margin: 2rem 0rem 0 0;
-  background-color: #3C3744;
-  color: white; 
+  margin: 0rem 0rem 0 0;
+  background-color: #5D737E;
+  opacity: 0.9;
+  color: white;
   text-align: left;
 }
 
@@ -108,7 +86,8 @@ h3{
 }
 
 .social{
-  background-color: #2b2d42;
+  /* background-color: #6E7271; */
+  background-color: #5D737E;
   color: white;
 }
 
@@ -122,12 +101,20 @@ margin-bottom: 0;
 }
 
 .pictosSocial{
-  text-align: right; 
+  text-align: right;
   padding: 0.5rem 3rem 0.5rem 0;
+
 }
 
 .pictosSocial span{
   padding-right: 2rem;
+  color: #white;
+}
+
+.pictosSocial span a{
+  color: #363636!important;
+  font-size: 1.5rem;
+
 }
 
 
