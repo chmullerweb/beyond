@@ -2,8 +2,8 @@
     <div class="cardTitle container-fluid">
         <div class="row justify-content-md-center">
             <div class="col">
-            <h1 class="claim"><slot name="claimTitle">Recrutez autrement, Recrutez sportivement</slot></h1>
-            <p class="container"><slot name="claimTxt">Gummies jujubes carrot cake tiramisu. Chocolate cake dragée soufflé gummi bears candy croissant croissant. Chupa chups sesame snaps cotton candy cake oat cake. Icing bonbon powder topping sugar plum sugar plum apple pie. Cupcake oat cake pudding jelly beans jelly beans soufflé jelly-o.</slot></p>
+            <h1 class="claim"><slot name="claimTitle"></slot></h1>
+            <p class="container"><slot name="claimTxt"></slot></p>
             <router-link to="/concept">
               <Bouton btnDark btn>Notre vision</Bouton>
            </router-link>

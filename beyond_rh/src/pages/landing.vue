@@ -3,7 +3,14 @@
     <div class="">
 
     <CardHome/>
-    <CardTitle/>
+    <CardTitle>
+     <template v-slot:icone>
+       <i class="fas fa-microscope"></i>
+     </template>
+     <template v-slot:claimTitle>Recrutez autrement, Recrutez sportivement</template>
+     <template v-slot:claimTxt>Gummies jujubes carrot cake tiramisu. Chocolate cake dragée soufflé gummi bears candy croissant croissant. Chupa chups sesame snaps cotton candy cake oat cake. Icing bonbon powder topping sugar plum sugar plum apple pie. Cupcake oat cake pudding jelly beans jelly beans soufflé jelly-o.</template>
+    </CardTitle>
+
 
   <div class="cardPictos container-fluid">
 
