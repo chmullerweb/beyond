@@ -27,8 +27,14 @@
       </router-link>
 
       <CardTitle btnHidden>
-      <template v-slot:claimTitle>Coucou c'est nous !</template>
-      <template v-slot:claimTxt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</template>
+      <template v-slot:claimTitle>La Team Beyond</template>
+      <template v-slot:claimTxt>
+        <p>
+          Notre entreprise est composée d'une équipe de psychologue du sport, du créateur du projet qui travaillent en colaboration pour vous proposer des processus de recutement sur-mesure
+        </p>
+
+        <router-link :to="{ name: '', params: {} }"></router-link>
+        </template>
       </CardTitle>
 
 
