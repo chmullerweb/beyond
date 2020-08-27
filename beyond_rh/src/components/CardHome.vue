@@ -10,7 +10,6 @@
               <router-link to="/concept">
                 <Bouton btnInfo btn>Comment ça marche ?</Bouton>
              </router-link>
-
         </div>
       </div>
 
@@ -63,5 +62,60 @@ export default {
     text-shadow: 1px 1px 2px black;
 }
 
-</style>
+@media screen and (max-width:1023px){
+  .card-text.home{
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+  .card-title.home{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
 
+  .btnInfo.btn{
+    margin: 0;
+    padding: 0;
+    max-width: 1.5rem;
+  }
+
+  .card.text-white{
+    min-height: 70%;
+  }
+
+  /* img{
+    max-width: 50%;
+  } */
+
+}
+
+@media screen and (max-width:667){
+  .card-text.home{
+  font-size: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+  .card-title.home{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .btnInfo.btn{
+    margin: 0;
+    padding: 0;
+    max-width: 1rem;
+  }
+
+  .card.text-white{
+    height: 70%;
+  }
+
+  /* img{
+    max-width: 30%;
+  } */
+
+}
+
+</style>

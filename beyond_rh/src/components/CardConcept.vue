@@ -32,7 +32,6 @@
 </template>
 
 <script>
-//import CardTitle from './CardTitle.vue';
 import Bouton from './Bouton.vue';
 
 export default {
@@ -41,11 +40,6 @@ export default {
 
 };
 
-// <CardTitle>
-//             <template v-slot:claimTitle>Analysez les softs skills</template>
-//             <template v-slot:claimTxt>Marshmallow soufflé cake gingerbread pie chocolate bar. Marshmallow caramels candy canes toffee gummi bears tootsie roll. Fruitcake cheesecake caramels cotton candy marshmallow halvah croissant.</template>
-//             <template v-slot:txtButton>En savoir plus</template>
-//             </CardTitle>
 </script>
 
 <style scoped>
@@ -65,6 +59,19 @@ export default {
 
 .title_activite{
   font-size: 1.1em
+}
+
+@media screen and (max-width:1023){
+  .row.cardConcept{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .col.img{
+    margin: 0px;
+    padding: 0px;
+  }
 }
 
 
