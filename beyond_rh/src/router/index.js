@@ -10,7 +10,12 @@ import Footer from '../layout/Footer.vue'
 import Landing from '../pages/landing.vue'
 import Concept from '../pages/concept.vue'
 import Offre from '../pages/offre.vue'
+<<<<<<< HEAD
 import Cgu from '../pages/cgu.vue'
+=======
+import CGU from '../pages/cgu.vue'
+import Mentions from '../pages/mentions.vue'
+>>>>>>> 29af8c15bcf5212eb5e56d2879425c6d9760532c
 
 // components :
 import Bouton from '../components/Bouton.vue'
@@ -63,6 +68,12 @@ Vue.use(VueRouter)
     name: 'Cgu',
     components: { default: Cgu, header: HeaderNavbar, footer: Footer },
   },
+  {
+    path: '/mentionsLegales',
+    name: 'Mentions',
+    components: { default: Mentions, header: HeaderNavbar, footer: Footer },
+  },
+  
 
   // components :
 
