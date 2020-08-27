@@ -6,7 +6,7 @@
           <div class="col-md-4">
             <slot name="img">
             </slot>
-            <img src="" class="card-img" alt="">
+            <!-- <img src="" class="card-img" alt=""> -->
           </div>
         </div>
 

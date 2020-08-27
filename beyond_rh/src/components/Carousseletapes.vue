@@ -161,7 +161,9 @@ p{
 }
 
 #carousel-1.carousel.slide{
-  width: 50%!important;
+  width: 80%!important;
+  display: inline-flex;
+  vertical-align: middle;
 }
 /*
 .img-height{

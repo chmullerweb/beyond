@@ -65,6 +65,7 @@
 #carousel-1.carousel.slide{
   width: 50%!important;
   display: inline-flex;
+  vertical-align: middle;
 }
 
 p{
