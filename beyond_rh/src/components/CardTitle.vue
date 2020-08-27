@@ -1,4 +1,3 @@
-
 <template>
     <div class="cardTitle container-fluid">
         <div class="row justify-content-md-center">
@@ -22,7 +21,7 @@ export default {
   components: {Bouton},
   data() {
     return {
-      
+
     }
     },
     props: {
@@ -58,5 +57,3 @@ export default {
 
 
 </style>
-
-
