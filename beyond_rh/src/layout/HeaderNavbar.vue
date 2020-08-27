@@ -63,6 +63,10 @@ a {
   color: white;
 }
 
+a:hover{
+  color: #C6D8D3;
+}
+
 .contact:hover {
   cursor: pointer;
   color: white;
