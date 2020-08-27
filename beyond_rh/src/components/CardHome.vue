@@ -38,11 +38,11 @@ export default {
 .cardHome{
     /* opacity: 0.8; */
     width: 100%;
-    height: 100%;
+    height: 24rem;
 }
 
 .card-img{
-  height: 100%
+  height: 24rem;
 }
 
 .card-img-overlay.home{
@@ -57,7 +57,6 @@ export default {
 }
 
 .card-text.home{
-    /* padding: 3rem 0rem 1.3rem 0rem; */
     font-size: 2rem;
     text-shadow: 1px 1px 2px black;
 }
@@ -80,24 +79,24 @@ export default {
     max-width: 1.5rem;
   }
 
-  .card.text-white{
-    min-height: 70%;
+  .cardHome{
+    height: 20rem;
   }
 
-  /* img{
-    max-width: 50%;
-  } */
+  .card-img{
+    height: 20rem;
+  }
 
 }
 
-@media screen and (max-width:667){
+@media screen and (max-width:668px){
   .card-text.home{
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
   .card-title.home{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
   }
@@ -108,13 +107,13 @@ export default {
     max-width: 1rem;
   }
 
-  .card.text-white{
-    height: 70%;
+  .cardHome{
+    height: 15rem;
   }
 
-  /* img{
-    max-width: 30%;
-  } */
+  .card-img{
+    height: 15rem;
+  }
 
 }
 

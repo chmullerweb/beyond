@@ -67,6 +67,7 @@ export default {
     flex-direction: column;
     margin: 0px;
     padding: 0px;
+    width: 100%;
   }
   .col.img{
     margin: 0px;
