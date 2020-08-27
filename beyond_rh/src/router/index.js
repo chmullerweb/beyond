@@ -9,6 +9,7 @@ import Footer from '../layout/Footer.vue'
 import Landing from '../pages/landing.vue'
 import Concept from '../pages/concept.vue'
 import Offre from '../pages/offre.vue'
+import Mentions from '../pages/mentions.vue'
 
 import Bouton from '../components/Bouton.vue'
 import CardConcept from '../components/CardConcept.vue'
@@ -55,6 +56,11 @@ Vue.use(VueRouter)
     path: '/offre',
     name: 'Offre',
     components: { default: Offre, header: HeaderNavbar, footer: Footer },
+  },
+  {
+    path: '/mentionsLegales',
+    name: 'Mentions',
+    components: { default: Mentions, header: HeaderNavbar, footer: Footer },
   },
 
   // components :
