@@ -99,7 +99,7 @@ img{
 
 }
 
-@media screen and (max-width:667px){
+@media screen and (max-width:668px){
   img{
     width: 200px;
     height: 125px;
@@ -115,8 +115,6 @@ img{
 
 @media screen and (max-width:1024px){
   img{
-    /* width: 200px;
-    height: 125px; */
     margin-left: 10rem;
     margin-right: 11rem;
   }

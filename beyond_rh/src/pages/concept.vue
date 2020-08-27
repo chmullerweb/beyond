@@ -40,7 +40,7 @@
 
       <CardTeam cardTeam>
        <template v-slot:img>
-         <img
+         <img team
            width="400"
            height="250"
            src="../assets/doctor.jpg">
