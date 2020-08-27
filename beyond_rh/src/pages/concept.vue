@@ -4,7 +4,9 @@
       <CardTitle btnHidden>
       <template v-slot:claimTitle>Une approche sportive</template>
       <template v-slot:claimTxt>
-        <p>Nous mêlons le sport à notre expertise du recrutement pour créer des mises en situation inédites et adaptées.En effet chaque poste nécessite une mise en situation unique et une grille de lecture adaptée pour en sortir le meilleur profil. Ainsi notre méthodologie scientifique nous permet de sélectionner les profils qui vous correspondent.
+        <p>
+          Utilisez le sport et les mises en situation pour comprendre et anticiper les différents traits de personnalités de vos candidats.
+          Vérifiez les différents softs skills comme la capacité d’adaptation, l'écoute ou le management d'équipe en temps réel !
       </p>
     </template>
       </CardTitle>
@@ -13,7 +15,11 @@
 
       <CardTitle btnHidden>
       <template v-slot:claimTitle>Une approche psychologique</template>
-      <template v-slot:claimTxt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</template>
+      <template v-slot:claimTxt>
+        <p>
+          Nous utilisons un concept performant qui mêle sport & science. Ce processus permet l'évaluation psychologique des candidats via des test conçus par nos psychologues du sport.
+        </p>
+      </template>
       </CardTitle>
       <Caroussel/>
       <router-link to="/Offre">
@@ -21,8 +27,14 @@
       </router-link>
 
       <CardTitle btnHidden>
-      <template v-slot:claimTitle>Coucou c'est nous !</template>
-      <template v-slot:claimTxt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</template>
+      <template v-slot:claimTitle>La Team Beyond</template>
+      <template v-slot:claimTxt>
+        <p>
+          Notre entreprise est composée d'une équipe de psychologue du sport, du créateur du projet qui travaillent en colaboration pour vous proposer des processus de recutement sur-mesure
+        </p>
+
+        <router-link :to="{ name: '', params: {} }"></router-link>
+        </template>
       </CardTitle>
 
 
