@@ -38,9 +38,9 @@
           </div>
           <div class="col pictosSocial">
               <span>Suivez-nous</span>
-              <span><a  href="#"> <i class="fab fa-facebook fa-1x mx-3"></i></a></span>
-              <span><a  href="#"> <i class="fab fa-instagram fa-1x mx-3"></i></a></span>
-              <span><a  href="#"><i class="fab fa-linkedin fa-1x mx-3"></i></a></span>
+              <span><a href="https://www.facebook.com/descodeuses"><i class="fab fa-facebook fa-1x mx-3"></i></a></span>
+              <span><a  href="https://www.instagram.com/descodeuses/?hl=fr"><i class="fab fa-instagram fa-1x mx-3"></i></span>
+              <span><a  href="https://www.linkedin.com/school/descodeuses/?originalSubdomain=fr"><i class="fab fa-linkedin fa-1x mx-3"></i></a></span>
           </div>
       </div>
     </div>
@@ -158,6 +158,10 @@ margin-bottom: 0;
 
 .legacy{
   padding: 0 0 0 0;
+}
+
+.copyright, .pictosSocial{
+  font-size: 0.8rem;
 }
 
 }
