@@ -15,18 +15,15 @@
     >
 
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=48">
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>Analysez les compétences potentiels </h2>
       </b-carousel-slide>
 
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=18">
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>Facilitez les interactions sociales</h2>
       </b-carousel-slide>
 
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>Découvrez de manière original les candidats </h2>
       </b-carousel-slide>
 
     </b-carousel>
