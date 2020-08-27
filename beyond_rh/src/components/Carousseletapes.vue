@@ -166,9 +166,6 @@ p{
   vertical-align: middle;
   margin: 2rem;
 }
-/*
-.img-height{
-  height: 20%!important;
-} */
+
 
 </style>

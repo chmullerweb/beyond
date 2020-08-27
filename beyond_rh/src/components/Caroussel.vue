@@ -65,7 +65,17 @@
   vertical-align: middle;
 }
 
-p{
-  /* font-size: 2rem; */
+@media screen and (max-width: 768px) {
+
+h2{
+font-size: 1rem!important;
 }
+
+.carousel-control-prev-icon{
+  width: 1rem;
+}
+
+}
+
+
 </style>
