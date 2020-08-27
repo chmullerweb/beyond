@@ -5,7 +5,7 @@
       <h3>BEYOND</h3>
         <div class="container">
           <div class="row">
-            <div class="col flex">
+            <div class="col flex flex-vert">
               <div class="adresse">
                 <h4>Paris</h4>
                 <p>XX rue Mason</p>
@@ -14,10 +14,15 @@
                 <p class="phone">06.XX.XX.XX.XX</p>
               </div>
               <div class="legacy">
+                <router-link to="/mentions">
                 <p>Mentions légales</p>
-                <p>CGU</p></div>
+                </router-link>
+                <router-link to="/cgu">
+                <p>CGU</p>
+                </router-link>
               </div>
-            <div class="col">
+              </div>
+            <div class="col italic">
               <p>Une question ?</p>
               <p>Envie d'en savoir plus sur notre offre ?</p>
               <p>Ecrivez-nous !</p>
@@ -32,10 +37,10 @@
               <p>Copyright Sochapa Descodeuses - 2020</p>
           </div>
           <div class="col pictosSocial">
-              <span>Suivez-nous</span>
-              <span><a  href="#"> <i class="fab fa-facebook fa-1x mx-3"></i></a></span>
-              <span><a  href="#"> <i class="fab fa-instagram fa-1x mx-3"></i></a></span>
-              <span><a  href="#"><i class="fab fa-linkedin fa-1x mx-3"></i></a></span>
+              <span class="followUs">Suivez-nous</span>
+              <span class="picto"><a href="https://www.facebook.com/descodeuses"><i class="fab fa-facebook fa-1x mx-3"></i></a></span>
+              <span class="picto"><a  href="https://www.instagram.com/descodeuses/?hl=fr"><i class="fab fa-instagram fa-1x mx-3"></i></a></span>
+              <span class="picto"><a  href="https://www.linkedin.com/school/descodeuses/?originalSubdomain=fr"><i class="fab fa-linkedin fa-1x mx-3"></i></a></span>
           </div>
       </div>
     </div>
@@ -126,7 +131,7 @@ margin-bottom: 0;
 
 }
 
-.pictosSocial span{
+.pictosSocial .followUs, .pictosSocial .picto{
   padding-right: 2rem;
   color: #white;
 }
@@ -134,6 +139,45 @@ margin-bottom: 0;
 .pictosSocial span a{
   color: #363636!important;
   font-size: 1.5rem;
+}
+
+.legacy a{
+  color: white;
+  text-decoration: none;  
+}
+
+.italic{
+  font-style: italic;
+}
+
+
+@media screen and (max-width:768px){
+  .flex-vert{
+	flex-direction: column;
+}
+
+.legacy{
+  padding: 0 0 0 0;
+}
+
+.copyright p{
+  padding-top: 0.3rem;
+}
+
+.copyright, .pictosSocial{
+  font-size: 0.8rem;
+  padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    align-self: center;
+}
+
+.pictosSocial .followUs, .pictosSocial .picto{
+  padding-right: 0;
+}
+
+.pictosSocial .picto i{
+  font-size: 1.25rem;
+}
 
 }
 
