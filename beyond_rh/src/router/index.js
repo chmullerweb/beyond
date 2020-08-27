@@ -11,6 +11,7 @@ import Landing from '../pages/landing.vue'
 import Concept from '../pages/concept.vue'
 import Offre from '../pages/offre.vue'
 import CGU from '../pages/cgu.vue'
+import Mentions from '../pages/mentions.vue'
 
 // components : 
 import Bouton from '../components/Bouton.vue'
@@ -63,6 +64,12 @@ Vue.use(VueRouter)
     name: 'CGU',
     components: { default: CGU, header: HeaderNavbar, footer: Footer },
   },
+  {
+    path: '/mentionsLegales',
+    name: 'Mentions',
+    components: { default: Mentions, header: HeaderNavbar, footer: Footer },
+  },
+  
 
   // components :
 
