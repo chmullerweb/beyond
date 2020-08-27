@@ -65,7 +65,7 @@ Vue.use(VueRouter)
     components: { default: Cgu, header: HeaderNavbar, footer: Footer },
   },
   {
-    path: '/mentionsLegales',
+    path: '/mentions',
     name: 'Mentions',
     components: { default: Mentions, header: HeaderNavbar, footer: Footer },
   },

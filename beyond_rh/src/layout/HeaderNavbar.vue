@@ -59,4 +59,15 @@ a{
   color: white;
 }
 
+@media screen and (max-width:768px){
+.nav-link {
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.nav{
+  height: 4rem;
+}
+}
+
 </style>

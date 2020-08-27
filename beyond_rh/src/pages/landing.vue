@@ -80,4 +80,17 @@ export default {
   padding: 0!important;
 }
 
+@media screen and (max-width:1023px){
+  .container-fluid{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column!important; */
+}
+
+  .col img{
+   width: 10%;
+  }
+
+}
+
 </style>
