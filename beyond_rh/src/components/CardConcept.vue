@@ -5,13 +5,25 @@
             <img src="../assets/boxe.jpg"/>
             </div>
             <div class="col cardConceptText">
-            <h2 class="claimConcept"><slot name="claimConcept">Analysez les soft skills</slot></h2>
-            <p class="container"><slot name="claimConceptText">
-              Nos activités sont adaptées à toutes les conditions physiques.
-              L’objectif et de mettre en valeur les qualités humaines et relationnelles des candidats.</slot></p>
+            <h2 class="claimConcept mt-4 mb-3 font-weight-bold"><slot name="claimConcept">Analysez les soft skills</slot></h2>
+            <div class="container"><slot name="claimConceptText">
+            <p> Nos activités sont adaptées à toutes les conditions physiques.
+              L’objectif et de mettre en valeur les qualités humaines et relationnelles des candidats. </p>
+              <h3 class="title_activite mt-3 mb-3 font-weight-bold">Voici un exemple d'une journée de recrutement </h3>
+              <h4 class="title_activite font-weight-bold">Matinée</h4>
+              <ul>
+                <li>Rencontre entre les candidats et recruteurs autours d’un petit déjeuner convivial </li>
+                <li>Constitution d’équipes mixtes associant différents profils</li>
+              </ul>
+               <h4 class="title_activite font-weight-bold">Après-midi</h4>
+               <ul>
+                 <li>Début d'ativités collectifs ou individuel</li>
+                 <li>Ralisation du bilan personnalisé par nos experts psychologues du sport </li>
+               </ul>
+             </slot></div>
 
-            <router-link to="/concept">
-              <Bouton btnDark btn>En savoir plus </Bouton>
+            <router-link to="/offre">
+              <Bouton btnDark btn>Notre concept </Bouton>
            </router-link>
 
             </div>
@@ -50,5 +62,11 @@ export default {
 .container{
   padding: 0!important;
 }
+
+.title_activite{
+  font-size: 1.1em
+}
+
+
 
 </style>
