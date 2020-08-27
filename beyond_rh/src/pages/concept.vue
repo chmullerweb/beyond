@@ -23,7 +23,7 @@
       </CardTitle>
       <Caroussel/>
       <router-link to="/Offre">
-      <Bouton btnInfo btn btnBig mTop>Besoin d'en savoir plus sur les étapes de recrutement avec Beyond ?</Bouton>
+      <Bouton btnInfo btn btnBig mTop class="min-text">Besoin d'en savoir plus sur les étapes de recrutement avec Beyond ?</Bouton>
       </router-link>
 
       <CardTitle btnHidden>
@@ -95,3 +95,18 @@ export default {
   components: {CardTeam, Caroussel, CardTitle, Bouton},
 };
 </script>
+
+<style>
+
+@media screen and (max-width: 768px) {
+.min-text{
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+
+}
+
+
+
+</style>
