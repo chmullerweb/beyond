@@ -10,9 +10,9 @@ import Footer from '../layout/Footer.vue'
 import Landing from '../pages/landing.vue'
 import Concept from '../pages/concept.vue'
 import Offre from '../pages/offre.vue'
-import CGU from '../pages/cgu.vue'
+import Cgu from '../pages/cgu.vue'
 
-// components : 
+// components :
 import Bouton from '../components/Bouton.vue'
 import CardConcept from '../components/CardConcept.vue'
 import CardHome from '../components/CardHome.vue'
@@ -60,8 +60,8 @@ Vue.use(VueRouter)
   },
   {
     path: '/cgu',
-    name: 'CGU',
-    components: { default: CGU, header: HeaderNavbar, footer: Footer },
+    name: 'Cgu',
+    components: { default: Cgu, header: HeaderNavbar, footer: Footer },
   },
 
   // components :
