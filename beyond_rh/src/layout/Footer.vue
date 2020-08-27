@@ -5,7 +5,7 @@
       <h3>BEYOND</h3>
         <div class="container">
           <div class="row">
-            <div class="col flex">
+            <div class="col flex flex-vert">
               <div class="adresse">
                 <h4>Paris</h4>
                 <p>XX rue Mason</p>
@@ -14,10 +14,15 @@
                 <p class="phone">06.XX.XX.XX.XX</p>
               </div>
               <div class="legacy">
+                <router-link to="/mentions">
                 <p>Mentions légales</p>
-                <p>CGU</p></div>
+                </router-link>
+                <router-link to="/cgu">
+                <p>CGU</p>
+                </router-link>
               </div>
-            <div class="col">
+              </div>
+            <div class="col italic">
               <p>Une question ?</p>
               <p>Envie d'en savoir plus sur notre offre ?</p>
               <p>Ecrivez-nous !</p>
@@ -134,6 +139,26 @@ margin-bottom: 0;
 .pictosSocial span a{
   color: #363636!important;
   font-size: 1.5rem;
+}
+
+.legacy a{
+  color: white;
+  text-decoration: none;  
+}
+
+.italic{
+  font-style: italic;
+}
+
+
+@media screen and (max-width:768px){
+  .flex-vert{
+	flex-direction: column;
+}
+
+.legacy{
+  padding: 0 0 0 0;
+}
 
 }
 
