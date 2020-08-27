@@ -10,12 +10,12 @@
             <p> Nos activités sont adaptées à toutes les conditions physiques.
               L’objectif et de mettre en valeur les qualités humaines et relationnelles des candidats. </p>
               <h3 class="title_activite mt-3 mb-3 font-weight-bold">Voici un exemple d'une journée de recrutement </h3>
-              <h4 class="title_activite font-weight-bold">Matinée</h4>
+              <h4 class="subtitle_activite font-weight-bold">Matinée</h4>
               <ul>
                 <li>Rencontre entre les candidats et recruteurs autours d’un petit déjeuner convivial </li>
                 <li>Constitution d’équipes mixtes associant différents profils</li>
               </ul>
-               <h4 class="title_activite font-weight-bold">Après-midi</h4>
+               <h4 class="subtitle_activite font-weight-bold">Après-midi</h4>
                <ul>
                  <li>Début d'ativités collectifs ou individuel</li>
                  <li>Ralisation du bilan personnalisé par nos experts psychologues du sport </li>
@@ -64,7 +64,32 @@ export default {
 }
 
 .title_activite{
-  font-size: 1.1em
+  font-size: 1.1em;
+}
+
+.subtitle_activite{
+    font-size: 1em;
+}
+
+@media screen and (max-width:768px){
+
+h2{
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.title_activite  {
+  font-size: 1rem;
+}
+
+.subtitle_activite{
+  font-size: 0.9rem;
+}
+
+.bouton_principal{
+  text-align: center;
+}
+
 }
 
 
