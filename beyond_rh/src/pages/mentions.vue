@@ -29,7 +29,7 @@
       <p>
         L’utilisation du présent site implique l’acceptation pleine et entière
         des
-        <router-link to="/cgu">conditions générales d’utilisation</router-link>
+        <router-link to="/cgu">Conditions Générales d’Utilisation</router-link>
         décrites ci-après. Ces conditions d’utilisation sont susceptibles d’être
         modifiées ou complétées à tout moment.
       </p>
