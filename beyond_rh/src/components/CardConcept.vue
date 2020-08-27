@@ -105,6 +105,10 @@ export default {
   .bouton_principal {
     text-align: center;
   }
+  img{
+    width: 23rem;
+    height: 15rem;
+  }
 }
 
 
@@ -120,6 +124,10 @@ export default {
     margin: 0px;
     padding: 0px;
   }
+  /* img{
+    width: 1rem;
+    height: 1rem;
+  } */
   .col{
     padding: 0!important;
   }
