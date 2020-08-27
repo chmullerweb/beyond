@@ -76,7 +76,6 @@ export default {
   margin: 1rem!important;
 }
 
-
 .col-md-4{
   padding: 75px 125px 0px 125px;
 }
@@ -85,36 +84,35 @@ export default {
   font-family: 'Alata';
 }
 
-.card-title.team{
-  /* padding: 1rem; */
-}
-
-.card-text.team{
-  /* padding: 1rem; */
-}
-
 img{
   border-radius: 12px;
   box-shadow: 3px 2px 5px white!important;
-
 }
 
-@media screen and (max-width:668px){
+@media screen and (max-width:667px){
+  .row.no-gutters{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
   img{
     width: 200px;
     height: 125px;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: -5rem;
+    margin-right: -6rem;
   }
   .cardTeam, .cardTeamRight{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .card-body{
+    margin-left: -3rem;
+    margin-right: -1rem;
+}
 }
 
 @media screen and (max-width:1024px){
-  img{
+  .row.no-gutters{
     margin-left: 10rem;
     margin-right: 11rem;
   }
