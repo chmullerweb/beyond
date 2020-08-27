@@ -47,6 +47,7 @@ export default {
 .cardConcept{
     align-items: center;
     background-color: #C6D8D3;
+    margin-right: 0!important;
 }
 
 .cardConceptText{
@@ -83,10 +84,13 @@ h2{
 .bouton_principal{
   text-align: center;
 }
+.cardConcept{
+    margin-right: 0!important;
+}
 
 }
 
-@media screen and (max-width:1023){
+@media screen and (max-width:1023px){
   .row.cardConcept{
     display: flex;
     flex-direction: column;
@@ -98,6 +102,13 @@ h2{
     margin: 0px;
     padding: 0px;
   }
+  .col{
+    padding: 0!important;
+  }
+  .cardConcept{
+      margin-right: 0!important;
+  }
+
 }
 
 

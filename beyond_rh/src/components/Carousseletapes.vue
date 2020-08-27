@@ -164,6 +164,7 @@ p{
   width: 80%!important;
   display: inline-flex;
   vertical-align: middle;
+  margin: 2rem;
 }
 /*
 .img-height{

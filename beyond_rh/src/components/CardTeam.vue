@@ -99,4 +99,36 @@ img{
 
 }
 
+@media screen and (max-width:667px){
+  img{
+    width: 200px;
+    height: 125px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .cardTeam, .cardTeamRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:1024px){
+  img{
+    /* width: 200px;
+    height: 125px; */
+    margin-left: 10rem;
+    margin-right: 11rem;
+  }
+  .cardTeam, .cardTeamRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-body{
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+}
 </style>
