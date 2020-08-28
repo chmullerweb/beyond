@@ -3,7 +3,13 @@
     <button
       v-on:click="displayForm()"
       type="button"
-      :class="{ btn: btn, 'btn-dark': btnDark, 'btn-info': btnInfo, 'btn-big': btnBig, 'm-top': mTop }"
+      :class="{
+        btn: btn,
+        'btn-dark': btnDark,
+        'btn-info': btnInfo,
+        'btn-big': btnBig,
+        'm-top': mTop,
+      }"
     >
       <slot></slot>
     </button>
@@ -36,41 +42,38 @@ export default {
     mTop: {
       type: Boolean,
       default: false,
-    }
+    },
   },
-
   data() {
     return {};
   },
 };
-
 </script>
 
 <style lang="css" scoped>
-.bouton_principal{
+.bouton_principal {
   padding: 2rem 0rem;
 }
 
-.btn-big{
-width: 100%;
-height: 4rem;
-font-size: 2rem;
+.btn-big {
+  width: 100%;
+  height: 4rem;
+  font-size: 2rem;
 }
 
-.m-top{
+.m-top {
   margin-top: 2rem;
 }
 
-@media screen and (max-width:667px){
-  .btn-big{
+@media screen and (max-width: 667px) {
+  .btn-big {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width:1024px){
-  .btn-big{
+@media screen and (max-width: 1024px) {
+  .btn-big {
     font-size: 1.2rem;
   }
 }
-
 </style>

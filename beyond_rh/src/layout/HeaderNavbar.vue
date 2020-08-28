@@ -1,23 +1,25 @@
 <template>
   <div>
     <FormContact :closeForm="showForm" v-show="show" />
-    <img src="@/assets/logoBeyond.png" class="logo">
-        <ul class="nav justify-content-end">
-          
-          <li class="nav-item">
-            <router-link to="/landing" class="nav-link active"
-              >Home</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/aboutUs" class="nav-link active">Qui sommes-nous ?</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/conceptBeyond" class="nav-link active">Le Concept</router-link>
-          </li>
-          <li class="nav-item nav-link active contact" v-on:click="showForm">
-            Nous contacter
-          </li>
-        </ul>
+    <img src="@/assets/logoBeyond.png" class="logo" />
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <router-link to="/landing" class="nav-link active">Home</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/aboutUs" class="nav-link active"
+          >Qui sommes-nous ?</router-link
+        >
+      </li>
+      <li class="nav-item">
+        <router-link to="/conceptBeyond" class="nav-link active"
+          >Le Concept</router-link
+        >
+      </li>
+      <li class="nav-item nav-link active contact" v-on:click="showForm">
+        Nous contacter
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -41,11 +43,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
-.logo{
+.logo {
   position: absolute;
-    left: 0;
-    width: 6rem;
+  left: 0;
+  width: 6rem;
 }
 
 .nav {
@@ -63,8 +64,8 @@ a {
   color: white;
 }
 
-a:hover{
-  color: #C6D8D3;
+a:hover {
+  color: #c6d8d3;
 }
 
 .contact:hover {
@@ -82,12 +83,9 @@ a:hover{
     height: 4rem;
   }
 
-  .logo{
+  .logo {
     width: 4rem;
     top: 0.5rem;
   }
-
-
-
 }
 </style>

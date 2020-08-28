@@ -1,6 +1,5 @@
 <template>
   <div class="cardPictos">
-
     <div class="card text-white">
       <div class="card-img-overlay">
         <i class=""><slot name="icone"></slot></i>
@@ -8,7 +7,6 @@
         <p class="card-text pictos"><slot name="text"></slot></p>
       </div>
     </div>
-
   </div>
 </template>
 

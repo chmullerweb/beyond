@@ -1,6 +1,5 @@
 <template>
   <div class="container-fluid">
-
     <div class="row cardConcept">
       <div class="col img">
         <img src="../assets/boxe.jpg" />
@@ -44,7 +43,6 @@
         </router-link>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -58,11 +56,10 @@ export default {
 </script>
 
 <style scoped>
-
-.cardConcept{
+.cardConcept {
   align-items: center;
-  background-color: #C6D8D3;
-  margin-right: 0!important;
+  background-color: #c6d8d3;
+  margin-right: 0 !important;
 }
 
 .cardConceptText {
@@ -89,11 +86,11 @@ export default {
   .title_activite {
     font-size: 1rem;
   }
-  .bouton_principal{
-  text-align: center;
+  .bouton_principal {
+    text-align: center;
   }
-  .cardConcept{
-    margin-right: 0!important;
+  .cardConcept {
+    margin-right: 0 !important;
   }
   .subtitle_activite {
     font-size: 0.9rem;
@@ -101,15 +98,14 @@ export default {
   .bouton_principal {
     text-align: center;
   }
-  img{
+  img {
     width: 23rem;
     height: 15rem;
   }
 }
 
-
-@media screen and (max-width:1023px){
-  .row.cardConcept{
+@media screen and (max-width: 1023px) {
+  .row.cardConcept {
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -120,9 +116,8 @@ export default {
     margin: 0px;
     padding: 0px;
   }
-  .cardConcept{
-      margin-right: 0!important;
+  .cardConcept {
+    margin-right: 0 !important;
   }
 }
-
 </style>

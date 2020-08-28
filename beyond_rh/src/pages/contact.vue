@@ -6,10 +6,8 @@
 </template>
 
 <script>
-
 import FormContact from "../components/FormContact";
 import Bouton from "../components/Bouton";
-
 
 export default {
   name: 'Contact',
@@ -25,5 +23,4 @@ export default {
     }
   }
 };
-
 </script>

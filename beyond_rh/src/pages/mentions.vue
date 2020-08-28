@@ -2,11 +2,13 @@
   <div class="">
     <CardTitle btnHidden>
       <template v-slot:claimTitle>Mentions Légales - Beyond</template>
-      <template v-slot:claimTxt>Conformément aux dispositions des articles 6-III et 19 de la Loi n°
+      <template v-slot:claimTxt
+        >Conformément aux dispositions des articles 6-III et 19 de la Loi n°
         2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique,
         dite L.C.E.N., nous portons à la connaissance des utilisateurs et
         visiteurs du site : www.generer-mentions-legales.com les informations
-        suivantes :</template>
+        suivantes :
+      </template>
     </CardTitle>
     <div class="container left margin-tb-4">
       <h2 class="margin-t-2">Identité</h2>
@@ -15,11 +17,11 @@
         <p>Adresse : http://nomdusite.domaine</p>
         <p>Propriétaire : Tart Muffin</p>
         <p>Responsable de publication : Cheesecake halvah</p>
-      </div>
-      <div class="thin-space margin-t-2">
+    </div>
+    <div class="thin-space margin-t-2">
         <p>Conception et réalisation : Carrot Cake</p>
         <p>Hébergement : Cream Cookie</p>
-      </div>
+    </div>
       <h2 class="margin-t-2">Personne morale</h2>
       <p>
         ‘Raison sociale’ – ‘Forme juridique’ au capital de XXX XXX euros – RCS
@@ -151,7 +153,6 @@ h2 {
 }
 
 .margin-tb-4 {
-    margin: 4rem 0;
+  margin: 4rem 0;
 }
-
 </style>

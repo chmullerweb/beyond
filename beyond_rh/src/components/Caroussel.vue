@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -14,21 +13,16 @@
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=48">
         <h2>Analysez les compétences potentiels </h2>
       </b-carousel-slide>
-
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=18">
         <h2>Facilitez les interactions sociales</h2>
       </b-carousel-slide>
-
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
         <h2>Découvrez de manière original les candidats </h2>
       </b-carousel-slide>
-
     </b-carousel>
-
   </div>
 </template>
 
