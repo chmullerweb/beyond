@@ -119,7 +119,7 @@ export default {
       inputPhone: '',
       inputEmail: '',
       textareaMsg: ''
-            };
+         };
   },
   methods:{
       checkForm(e){
