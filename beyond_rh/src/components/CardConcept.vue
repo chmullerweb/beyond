@@ -59,9 +59,9 @@ export default {
 <style scoped>
 
 .cardConcept{
-    align-items: center;
-    background-color: #C6D8D3;
-    margin-right: 0!important;
+  align-items: center;
+  background-color: #C6D8D3;
+  margin-right: 0!important;
 }
 
 .cardConceptText {
@@ -85,23 +85,18 @@ export default {
     font-size: 1.5rem;
     padding-left: 2rem;
   }
-
   .title_activite {
     font-size: 1rem;
   }
-
-.bouton_principal{
+  .bouton_principal{
   text-align: center;
-}
-.cardConcept{
+  }
+  .cardConcept{
     margin-right: 0!important;
-}
-
+  }
   .subtitle_activite {
     font-size: 0.9rem;
   }
-
-
   .bouton_principal {
     text-align: center;
   }
@@ -123,13 +118,6 @@ export default {
   .col.img {
     margin: 0px;
     padding: 0px;
-  }
-  /* img{
-    width: 1rem;
-    height: 1rem;
-  } */
-  .col{
-    padding: 0!important;
   }
   .cardConcept{
       margin-right: 0!important;

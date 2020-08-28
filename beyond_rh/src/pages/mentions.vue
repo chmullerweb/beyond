@@ -125,7 +125,7 @@
 import CardTitle from "../components/CardTitle";
 
 export default {
-  name: "Offre",
+  name: "Mentions",
   components: { CardTitle },
   data() {
     return {};

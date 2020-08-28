@@ -48,7 +48,7 @@ export default {
     margin: 3rem!important;
     box-shadow: 3px 2px 5px grey!important;
     border-radius: 12px;
-    background-color: #C6D8D3;
+    background-color: #E2E2E2;
     opacity: 0.8;
 }
 
@@ -65,8 +65,6 @@ export default {
   justify-content: space-between;
   box-shadow: 3px 2px 5px grey!important;
   border-radius: 12px;
-
-
 }
 
 .number{
@@ -95,6 +93,7 @@ img{
   box-shadow: 3px 2px 5px white!important;
 }
 
+
 @media screen and (max-width:667px){
   .row.no-gutters{
     /* margin-left: 4rem;
@@ -112,17 +111,17 @@ img{
     align-items: center;
     padding-top: 1rem;
   }
-  .card-body{
+  /* .card-body{ */
     /* margin-left: -3rem;
     margin-right: -1rem; */
-}
+/* } */
 }
 
 @media screen and (max-width:1024px){
-  .row.no-gutters{
+  /* .row.no-gutters{ */
     /* margin-left: 10rem;
     margin-right: 11rem; */
-  }
+  /* } */
   .cardTeam, .cardTeamRight{
     display: flex;
     flex-direction: column!important;
