@@ -1,7 +1,9 @@
 <template>
 
     <div class="">
-
+    <div class="container-fluid sucessMsgStyle">
+    {{successMsg}}
+    </div>
     <CardHome/>
 
     <CardTitle btnText="Découvrir le concept">
@@ -61,6 +63,11 @@ import CardHome from "../components/CardHome";
 
 export default {
   name: 'Landing',
+  data () {
+    return {
+      successMsg: ''
+    }
+  },
   components: {CardTitle, CardConcept, CardPictos, CardHome},
 };
 </script>
@@ -78,6 +85,13 @@ export default {
 .container-fluid{
   margin: 0!important;
   padding: 0!important;
+}
+
+.successMsgStyle{
+  background-color: green;
+  font-size: 1rem;
+  color: black;
+  font-weight: bolder;
 }
 
 @media screen and (max-width:1023px){
