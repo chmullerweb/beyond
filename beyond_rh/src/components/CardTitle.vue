@@ -1,5 +1,6 @@
 <template>
     <div class="cardTitle container-fluid">
+
         <div class="row justify-content-md-center">
             <div class="col">
             <h1 class="claim"><slot name="claimTitle"></slot></h1>
@@ -10,10 +11,12 @@
 
             </div>
         </div>
+
     </div>
 </template>
 
 <script>
+
 import Bouton from './Bouton.vue';
 
 export default {
@@ -24,6 +27,7 @@ export default {
 
     }
     },
+
     props: {
       btnHidden: {
       type: Boolean,
@@ -33,9 +37,8 @@ export default {
         type: String
     }
 },
-
-
 };
+
 </script>
 
 <style>
@@ -58,10 +61,5 @@ export default {
     font-size: 1.5rem;
   }
 }
-
-
-
-
-
 
 </style>

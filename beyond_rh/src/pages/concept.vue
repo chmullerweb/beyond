@@ -103,10 +103,6 @@ export default {
   font-size: 1rem;
   font-weight: bolder;
 }
-
-
 }
-
-
 
 </style>

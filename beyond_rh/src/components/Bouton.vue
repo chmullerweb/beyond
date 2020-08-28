@@ -43,6 +43,7 @@ export default {
     return {};
   },
 };
+
 </script>
 
 <style lang="css" scoped>
@@ -71,7 +72,5 @@ font-size: 2rem;
     font-size: 1.2rem;
   }
 }
-
-
 
 </style>

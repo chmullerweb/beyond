@@ -1,5 +1,4 @@
 <template>
-
   <div class="cardPictos">
 
     <div class="card text-white">
@@ -9,6 +8,7 @@
         <p class="card-text pictos"><slot name="text"></slot></p>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -40,7 +40,5 @@ i {
   font-size: 7rem;
   margin: 1.5rem;
 }
-
-
 
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div class="container-fluid">
+
     <div class="row cardConcept">
       <div class="col img">
         <img src="../assets/boxe.jpg" />
@@ -38,12 +39,12 @@
             </ul>
           </slot>
         </div>
-
         <router-link to="/offre">
           <Bouton btnDark btn>Notre concept </Bouton>
         </router-link>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -122,6 +123,6 @@ export default {
   .cardConcept{
       margin-right: 0!important;
   }
-
 }
+
 </style>

@@ -1,6 +1,6 @@
 <template>
+    <div>
 
-    <div class="">
     <div class="container-fluid sucessMsgStyle">
     {{successMsg}}
     </div>
@@ -15,40 +15,38 @@
 
     </CardTitle>
 
+    <div class="cardPictos container-fluid">
 
-  <div class="cardPictos container-fluid">
+        <CardPictos>
+         <template v-slot:icone>
+           <i class="far fa-clock"></i>
+         </template>
+         <template v-slot:title>GAIN DE TEMPS</template>
+         <template v-slot:text> Simplifiez vos recutements grace à un procédé pertinent et efficace  </template>
+       </CardPictos>
 
-    <CardPictos>
-     <template v-slot:icone>
-       <i class="far fa-clock"></i>
-     </template>
-     <template v-slot:title>GAIN DE TEMPS</template>
-     <template v-slot:text> Simplifiez vos recutements grace à un procédé pertinent et efficace  </template>
-   </CardPictos>
+        <CardPictos>
+          <template v-slot:icone>
+            <i class="fas fa-microscope"></i>
+          </template>
+          <template v-slot:title>EVALUATION DES SOFTS SKILLS</template>
+          <template v-slot:text>
+            Détecter des talents uniques souvent indétectables lors de recrutement classique </template>
+       </CardPictos>
 
-    <CardPictos>
-      <template v-slot:icone>
-        <i class="fas fa-microscope"></i>
-      </template>
-      <template v-slot:title>EVALUATION DES SOFTS SKILLS</template>
-      <template v-slot:text>
-        Détecter des talents uniques souvent indétectables lors de recrutement classique </template>
-   </CardPictos>
-
-   <CardPictos>
-     <template v-slot:icone>
-       <i class="fas fa-trophy"></i>
-     </template>
-     <template v-slot:title>DÉCELER LE BON CANDIDAT</template>
-     <template v-slot:text>Percevez efficament les qualités relationnelles et professionnelles</template>
-   </CardPictos>
+       <CardPictos>
+         <template v-slot:icone>
+           <i class="fas fa-trophy"></i>
+         </template>
+         <template v-slot:title>DÉCELER LE BON CANDIDAT</template>
+         <template v-slot:text>Percevez efficament les qualités relationnelles et professionnelles</template>
+       </CardPictos>
 
  </div>
 
     <CardConcept/>
 
   </div>
-
 </template>
 
 
@@ -98,7 +96,6 @@ export default {
   .container-fluid{
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column!important; */
 }
 
   .col img{
