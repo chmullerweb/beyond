@@ -41,25 +41,32 @@ export default {
 <style lang="css" scoped>
 
 .cardTeam{
-    padding: 2rem 1rem 2rem 1rem;
-    background-color: #E2E2E2;
+    /* padding: 2rem 1rem 2rem 1rem; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row!important;
-    margin: 0!important;
+    margin: 3rem!important;
+    box-shadow: 3px 2px 5px grey!important;
+    border-radius: 12px;
+    background-color: #C6D8D3;
+    opacity: 0.8;
 }
 
 .card-body {
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 7.25rem;
+    padding: 2rem;
+    margin: 1rem;
 }
 
 .cardTeamRight{
   display: flex;
   flex-direction: row-reverse!important;
   justify-content: space-between;
-  background-color: #7798AB;
+  box-shadow: 3px 2px 5px grey!important;
+  border-radius: 12px;
+
+
 }
 
 .number{
@@ -77,7 +84,6 @@ export default {
 }
 
 .col-md-4{
-  padding: 75px 125px 0px 125px;
 }
 
 .team{
@@ -91,40 +97,42 @@ img{
 
 @media screen and (max-width:667px){
   .row.no-gutters{
-    margin-left: 4rem;
-    margin-right: 4rem;
+    /* margin-left: 4rem;
+    margin-right: 4rem; */
   }
   img{
     width: 200px;
     height: 125px;
-    margin-left: -5rem;
-    margin-right: -6rem;
+    /* margin-left: -5rem;
+    margin-right: -6rem; */
   }
   .cardTeam, .cardTeamRight{
     display: flex;
-    flex-direction: column;
+    flex-direction: column!important;
     align-items: center;
+    padding-top: 1rem;
   }
   .card-body{
-    margin-left: -3rem;
-    margin-right: -1rem;
+    /* margin-left: -3rem;
+    margin-right: -1rem; */
 }
 }
 
 @media screen and (max-width:1024px){
   .row.no-gutters{
-    margin-left: 10rem;
-    margin-right: 11rem;
+    /* margin-left: 10rem;
+    margin-right: 11rem; */
   }
   .cardTeam, .cardTeamRight{
     display: flex;
-    flex-direction: column;
+    flex-direction: column!important;
     align-items: center;
+    padding-top: 1rem;
   }
 
   .card-body{
-    margin-left: 7rem;
-    margin-right: 7rem;
+    /* margin-left: 7rem;
+    margin-right: 7rem; */
   }
 }
 </style>

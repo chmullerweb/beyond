@@ -60,5 +60,18 @@ font-size: 2rem;
   margin-top: 2rem;
 }
 
-</style>
+@media screen and (max-width:667px){
+  .btn-big{
+    font-size: 1rem;
+  }
+}
 
+@media screen and (max-width:1024px){
+  .btn-big{
+    font-size: 1.2rem;
+  }
+}
+
+
+
+</style>
