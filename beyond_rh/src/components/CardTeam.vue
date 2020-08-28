@@ -1,5 +1,4 @@
 <template>
-
     <div :class="{'cardTeam': cardTeam, 'cardTeamRight': cardTeamRight}">
 
         <div class="row no-gutters">
@@ -15,7 +14,6 @@
         </div>
 
     </div>
-
 </template>
 
 
@@ -43,7 +41,6 @@ export default {
 .cardTeam{
     /* padding: 2rem 1rem 2rem 1rem; */
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row!important;
     margin: 3rem!important;
     box-shadow: 3px 2px 5px grey!important;
@@ -93,17 +90,12 @@ img{
   box-shadow: 3px 2px 5px white!important;
 }
 
-
 @media screen and (max-width:667px){
   .row.no-gutters{
-    /* margin-left: 4rem;
-    margin-right: 4rem; */
   }
   img{
     width: 200px;
     height: 125px;
-    /* margin-left: -5rem;
-    margin-right: -6rem; */
   }
   .cardTeam, .cardTeamRight{
     display: flex;
@@ -111,27 +103,15 @@ img{
     align-items: center;
     padding-top: 1rem;
   }
-  /* .card-body{ */
-    /* margin-left: -3rem;
-    margin-right: -1rem; */
-/* } */
 }
 
 @media screen and (max-width:1024px){
-  /* .row.no-gutters{ */
-    /* margin-left: 10rem;
-    margin-right: 11rem; */
-  /* } */
+
   .cardTeam, .cardTeamRight{
     display: flex;
     flex-direction: column!important;
     align-items: center;
     padding-top: 1rem;
-  }
-
-  .card-body{
-    /* margin-left: 7rem;
-    margin-right: 7rem; */
   }
 }
 </style>

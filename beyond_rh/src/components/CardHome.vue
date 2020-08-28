@@ -1,5 +1,6 @@
 <template>
     <div class="cardHome container-fluid">
+
       <div class="card text-white">
           <img src="../assets/desk3.jpg" class="card-img" alt="" max-width="100%">
         <div class="card-img-overlay home">
@@ -36,18 +37,12 @@ export default {
 <style>
 
 .cardHome{
-    /* opacity: 0.8; */
     width: 100%;
     height: 24rem;
 }
 
 .card-img{
   height: 24rem;
-}
-
-.card-img-overlay.home{
-  /* background-color: #227C9D; */
-  /* margin: 0!important; */
 }
 
 .card-title.home{

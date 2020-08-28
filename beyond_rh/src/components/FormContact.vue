@@ -1,6 +1,7 @@
 <template>
 <div class="modal_fixed container-fluid">
-<form 
+
+<form
 class="formContact container"
 id="formContactPopup"
 novalidate="true"
@@ -17,7 +18,7 @@ novalidate="true"
   </div>
     <div class="form-group col-md-4">
       <label for="inputStatus">Vous êtes :</label>
-      <select 
+      <select
       id="inputStatus"
       class="form-control"
       v-model="inputStatus"
@@ -100,12 +101,13 @@ novalidate="true"
   </div>
   <button  type="submit" class="btn btn-info btn-submit">Envoyer</button>
 </form>
+
 </div>
 </template>
 
 <script>
-import axios from 'axios';
 
+import axios from 'axios';
 
 export default {
   name: 'FormContact',
@@ -150,7 +152,7 @@ export default {
       }
       if (!this.textareaMsg){
         this.errors.push("Oups ! Votre message est vide")
-      }      
+      }
       if (!this.errors.length) {
         return true;
       }
@@ -165,7 +167,7 @@ export default {
       this.checkForm();
       if(this.errors.length === 0){
         console.log("lala") //voir si cette fonction est bien appellée quand tous les champs sont remplis
-        axios.post('/api/submit', { 
+        axios.post('/api/submit', {
         inputStatus: this.inputStatus,
         inputJobDetails: this.inputJobDetails,
         inputName: this.inputName,
@@ -180,7 +182,7 @@ export default {
         })
     this.closeForm();
     console.log('Votre message a bien été envoyé')
-    }      
+    }
   }
   },
   props: {
@@ -189,11 +191,9 @@ export default {
     }
   }
 }
-
-
 // connecter le front et le back avec express et bodyParser
         //app.post('route', [check('inputEmail'.isEmail()] (req, res) => {
-        //  const errors = validationResult(req) 
+        //  const errors = validationResult(req)
         //  console.log(req.body)
         // })
 
@@ -318,7 +318,7 @@ export default {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   }
-  } 
+  }
 
 @media screen and (max-width:768px){
   .modal_fixed{
@@ -327,8 +327,6 @@ export default {
 	z-index: 						900;
 	justify-content: 		center;
 }
-
 }
 
 </style>
-

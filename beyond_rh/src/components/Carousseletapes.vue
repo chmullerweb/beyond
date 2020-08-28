@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -88,11 +89,13 @@
       </b-carousel-slide>
 
     </b-carousel>
+
   </div>
 </template>
 
 
 <script>
+
   import Carousseletapes from './Carousseletapes.vue';
     export default {
       name: 'Carousseletapes',
@@ -112,6 +115,7 @@
         }
       }
     }
+
 </script>
 
 <style lang="css" scoped>
@@ -166,6 +170,5 @@ p{
   vertical-align: middle;
   margin: 2rem;
 }
-
 
 </style>

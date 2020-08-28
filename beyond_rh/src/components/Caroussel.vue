@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -55,10 +56,6 @@
 
 <style lang="css" scoped>
 
-/* .img.img-fluid.w-100.d-block{
-  width: 50%!important;
-} */
-
 #carousel-1.carousel.slide{
   width: 50%!important;
   display: inline-flex;
@@ -74,8 +71,6 @@ font-size: 1rem!important;
 .carousel-control-prev-icon{
   width: 1rem;
 }
-
 }
-
 
 </style>
