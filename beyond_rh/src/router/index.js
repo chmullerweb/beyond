@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 // layout :
 import HeaderNavbar from '../layout/HeaderNavbar.vue'
@@ -9,7 +8,7 @@ import Footer from '../layout/Footer.vue'
 // pages :
 import Landing from '../pages/landing.vue'
 import Concept from '../pages/concept.vue'
-import Offre from '../pages/offre.vue'
+import AboutUs from '../pages/aboutUs.vue'
 import Cgu from '../pages/cgu.vue'
 import Mentions from '../pages/mentions.vue'
 
@@ -21,7 +20,6 @@ import CardOffre from '../components/CardOffre.vue'
 import CardPictos from '../components/CardPictos.vue'
 import CardTeam from '../components/CardTeam.vue'
 import CardTitle from '../components/CardTitle.vue'
-import Contact from '../pages/contact.vue'
 import Caroussel from '../components/Caroussel.vue'
 import Carousseletapes from '../components/Carousseletapes.vue'
 
@@ -30,34 +28,21 @@ import Carousseletapes from '../components/Carousseletapes.vue'
 Vue.use(VueRouter)
 
   const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-
-  },
-
-  // pages :
-
+    // pages :
   {
     path: '/landing',
     name: 'Landing',
     components: { default: Landing, header: HeaderNavbar, footer: Footer },
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
-  },
-  {
-    path: '/concept',
+    path: '/conceptBeyond',
     name: 'Concept',
     components: { default: Concept, header: HeaderNavbar, footer: Footer },
   },
   {
-    path: '/offre',
-    name: 'Offre',
-    components: { default: Offre, header: HeaderNavbar, footer: Footer },
+    path: '/aboutUs',
+    name: 'AboutUs',
+    components: { default: AboutUs, header: HeaderNavbar, footer: Footer },
   },
   {
     path: '/cgu',
