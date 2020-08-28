@@ -57,7 +57,6 @@ Vue.use(VueRouter)
 
 
   // components :
-
   {
     path: '/bouton',
     name: 'Bouton',
@@ -106,19 +105,10 @@ Vue.use(VueRouter)
     name: ' Caroussel',
     component: Caroussel
   },
-
   {
     path: '/carousseletapes',
     name: ' Carousseletapes',
     component: Carousseletapes
-  },
-
-
-  {
-    path: '/about',
-    name: 'About',
-
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]
 
