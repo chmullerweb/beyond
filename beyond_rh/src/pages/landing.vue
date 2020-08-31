@@ -35,8 +35,8 @@
         </template>
         <template v-slot:title>EVALUATION DES SOFTS SKILLS</template>
         <template v-slot:text>
-          Détecter des talents uniques souvent indétectables lors de recrutement
-          classique
+          Découvrez des talents uniques souvent indétectables lors de recrutements
+          classiques
         </template>
       </CardPictos>
       <CardPictos>
@@ -44,12 +44,12 @@
           <i class="fas fa-trophy"></i>
         </template>
         <template v-slot:title>DÉCELER LE BON CANDIDAT</template>
-        <template v-slot:text
-          >Percevez efficament les qualités relationnelles et
+        <template v-slot:text>
+          Percevez efficament les qualités relationnelles et
           professionnelles</template>
       </CardPictos>
     </div>
-    <CardConcept />
+    <CardConcept/>
   </div>
 </template>
 

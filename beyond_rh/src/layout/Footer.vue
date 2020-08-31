@@ -31,7 +31,7 @@
     <div class="container-fluid social">
       <div class="row">
         <div class="col copyright">
-          <p>Copyright Sochapa Descodeuses - 2020</p>
+          <p>Copyright ©Sochapa Descodeuses - 2020</p>
         </div>
         <div class="col pictosSocial">
           <span class="followUs">Suivez-nous</span>
