@@ -30,9 +30,9 @@
             </ul>
             <h4 class="subtitle_activite font-weight-bold">Après-midi</h4>
             <ul>
-              <li>Début d'ativités collectifs ou individuel</li>
+              <li>Début d'ativités collectives ou individuelles</li>
               <li>
-                Ralisation du bilan personnalisé par nos experts psychologues du
+                Réalisation d'un bilan personnalisé par nos experts psychologues du
                 sport
               </li>
             </ul>

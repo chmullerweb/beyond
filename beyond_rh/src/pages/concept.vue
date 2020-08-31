@@ -5,10 +5,9 @@
       <template v-slot:claimTxt>
         Utiliser le sport dans ses recrutements permet aux candidat-e-s de se révéler de manière plus authentique.
         Une étape complémentaire de mise en situation, en adéquation avec la culture de l'entreprise, pour optimiser le processus de sélection de nouveaux collaborateurs.
-
       </template>
     </CardTitle>
-    <Carousseletapes />
+    <Carousseletapes/>
   </div>
 </template>
 

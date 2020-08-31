@@ -4,7 +4,7 @@
       <template v-slot:claimTitle>Une approche sportive</template>
       <template v-slot:claimTxt>
         <p>
-          Utilisez le sport et les mises en situation pour comprendre et
+          Utilisez les mises en situation sportives pour comprendre et
           anticiper les différents traits de personnalités de vos candidats.
           Vérifiez les différents softs skills comme la capacité d’adaptation,
           l'écoute ou le management d'équipe en temps réel !
@@ -15,7 +15,7 @@
 
     <Caroussel :img1="require('@/assets/foot.jpg')" :img2="require('@/assets/sport.jpg')" :img3="require('@/assets/team-sport.jpg')">
       <template #title1>
-        Analysez les reflexions du candidat
+        Analysez le comportement du candidat
       </template>
       <template #title2>
         Découvrez son adaptabilité
@@ -43,10 +43,10 @@
           Déterminez scientifiquement si le profil correspond aux valeurs de l’entreprise
         </template>
         <template #title2>
-          Découvrez les compétences à adapter en milieu professionnel
+          Découvrez les compétences à s'adapter en milieu professionnel
         </template>
         <template #title3>
-          Analysez les capacités d’organisations et d’adaptations
+          Analysez les capacités d’organisation et d’adaptation
         </template>
     </Caroussel>
 
@@ -59,7 +59,7 @@
       <template v-slot:claimTitle>La Team Beyond</template>
       <template v-slot:claimTxt>
         <p>
-          Notre entreprise est composée d'une équipe de psychologue du sport, du
+          Notre entreprise est composée d'une équipe de psychologue du sport, ainsi que du
           créateur du projet qui travaillent en colaboration pour vous proposer
           des processus de recutement sur-mesure
         </p>
@@ -71,13 +71,13 @@
         <img team width="400" height="250" src="../assets/doctor.jpg" />
       </template>
       <template v-slot:title>Yusuf JHEENGOOR : CEO</template>
-      <template v-slot:text
-        >Auditeur financier chez PwC pendant 2 ans, de formation financière avec
+      <template v-slot:text>
+        Auditeur financier chez PwC pendant 2 ans, de formation financière avec
         un DSCG. Je suis engagé associativement avec l'association RCE.<br />
         J'ai créé ce projet pour permettre un recrutement plus efficace et
-        ouvert à tous, qui sort du cadre.<br />
+        ouvert à tous, qui sort du cadre.<br/>
         Ce projet est lauréat French Tech Tremplin, Start Us Up et Pitch and
-        Code des Decodeuses.
+        Code des Descodeuses.
       </template>
     </CardTeam>
     <CardTeam cardTeamRight>
@@ -89,9 +89,9 @@
         >Auditeur financier chez PwC pendant 2 ans, de formation financière avec
         un DSCG. Je suis engagé associativement avec l'association RCE.<br />
         J'ai créé ce projet pour permettre un recrutement plus efficace et
-        ouvert à tous, qui sort du cadre.<br />
+        ouvert à tous, qui sort du cadre.<br/>
         Ce projet est lauréat French Tech Tremplin, Start Us Up et Pitch and
-        Code des Decodeuses.
+        Code des Descodeuses.
       </template>
     </CardTeam>
 
@@ -104,9 +104,9 @@
         Auditeur financier chez PwC pendant 2 ans, de formation financière avec
         un DSCG. Je suis engagé associativement avec l'association RCE.<br />
         J'ai créé ce projet pour permettre un recrutement plus efficace et
-        ouvert à tous, qui sort du cadre.<br />
+        ouvert à tous, qui sort du cadre.<br/>
         Ce projet est lauréat French Tech Tremplin, Start Us Up et Pitch and
-        Code des Decodeuses.
+        Code des Descodeuses.
       </template>
     </CardTeam>
   </div>
