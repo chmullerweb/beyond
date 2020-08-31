@@ -38,7 +38,7 @@
       </template>
     </CardTitle>
 
-    <Caroussel :img1="require('@/assets/science.jpg')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/analyse.jpg')">
+    <Caroussel :img1="require('@/assets/sport3.jpg')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/jogging.jpg')">
         <template #title1>
           Déterminez scientifiquement si le profil correspond aux valeurs de l’entreprise
         </template>
