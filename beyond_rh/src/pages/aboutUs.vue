@@ -21,7 +21,7 @@
         Découvrez son adaptabilité
       </template>
       <template #title3>
-        Déceler sa créativité
+        Décelez sa créativité
       </template>
   </Caroussel>
 
@@ -46,7 +46,7 @@
           Découvrez les compétences à adapter en milieu professionnel
         </template>
         <template #title3>
-          Analyser les capacités d’organisations et d’adaptations
+          Analysez les capacités d’organisations et d’adaptations
         </template>
     </Caroussel>
 
