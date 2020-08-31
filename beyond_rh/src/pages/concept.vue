@@ -14,13 +14,13 @@
 
       <Caroussel :img1="require('@/assets/foot.jpg')" :img2="require('@/assets/sport.jpg')" :img3="require('@/assets/team-sport.jpg')">
         <template #title1>
-          hello4
+          Analysez les reflexions du candidat
         </template>
         <template #title2>
-          hello15
+          Découvrez son adaptabilité
         </template>
         <template #title3>
-          hello6
+          Déceler sa créativité
         </template>
       </Caroussel>
 
@@ -35,16 +35,15 @@
       </template>
       </CardTitle>
 
-      <!-- <Caroussel/> -->
-      <Caroussel :img1="require('@/assets/analyse.png')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/science.jpg')">
+      <Caroussel :img1="require('@/assets/science.jpg')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/analyse.jpg')">
         <template #title1>
-          hello4
+          Déterminez scientifiquement si le profil correspond aux valeurs de l’entreprise
         </template>
         <template #title2>
-          hello15
+          Découvrez les compétences à adapter en milieu professionnel
         </template>
         <template #title3>
-          hello6
+          Analyser les capacités d’organisations et d’adaptations
         </template>
       </Caroussel>
 
