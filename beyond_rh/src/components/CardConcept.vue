@@ -38,7 +38,7 @@
             </ul>
           </slot>
         </div>
-        <router-link to="/offre">
+        <router-link to="/conceptBeyond">
           <Bouton btnDark btn>Notre concept </Bouton>
         </router-link>
       </div>
