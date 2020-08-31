@@ -12,7 +12,7 @@
       </CardTitle>
 
 
-      <Caroussel :img1="require('@/assets/boxe.jpg')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/desk.jpg')">
+      <Caroussel :img1="require('@/assets/foot.jpg')" :img2="require('@/assets/sport.jpg')" :img3="require('@/assets/team-sport.jpg')">
         <template #title1>
           hello4
         </template>
@@ -36,7 +36,7 @@
       </CardTitle>
 
       <!-- <Caroussel/> -->
-      <Caroussel :img1="require('@/assets/boxe.jpg')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/desk.jpg')">
+      <Caroussel :img1="require('@/assets/analyse.png')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/science.jpg')">
         <template #title1>
           hello4
         </template>
