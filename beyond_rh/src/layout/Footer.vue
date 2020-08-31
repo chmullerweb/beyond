@@ -3,34 +3,35 @@
     <FormContact :closeForm="showForm" v-show="show" />
     <div class="container-fluid footer">
       <h3>BEYOND</h3>
+      <hr>
       <div class="container">
         <div class="row">
-          <div class="col flex flex-vert">
+
             <div class="adresse">
-              <h4>Paris</h4>
               <p>XX rue Mason</p>
-              <p>75020 Paris</p>
-              <p>France</p>
+              <p>75020 Paris, France</p>
               <p class="phone">06.XX.XX.XX.XX</p>
             </div>
-            <div class="legacy">
-              <router-link to="/mentions">
-                <p>Mentions légales</p>
-              </router-link>
-              <router-link to="/cgu">
-                <p>CGU</p>
-              </router-link>
-            </div>
-          </div>
+
           <div class="col italic">
-            <p>Une question ?</p>
-            <p>Envie d'en savoir plus sur notre offre ?</p>
+            <p>Une question ? Envie d'en savoir plus sur notre offre ?</p>
             <p>Ecrivez-nous !</p>
             <Bouton btn btnInfo :displayForm="showForm">Nous contacter</Bouton>
           </div>
+
+          <div class="legacy">
+            <router-link to="/mentions">
+              <p>Mentions légales</p>
+            </router-link>
+            <router-link to="/cgu">
+              <p>CGU</p>
+            </router-link>
+          </div>
+
         </div>
       </div>
     </div>
+
     <div class="container-fluid social">
       <div class="row">
         <div class="col copyright">
@@ -86,8 +87,15 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.flex {
+
+.row{
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bouton_principal{
+    padding: 0rem;
 }
 
 .footer {
@@ -95,20 +103,20 @@ export default {
   background-color: #5d737e;
   opacity: 0.9;
   color: white;
-  text-align: left;
 }
 
 h3 {
-  padding: 1rem 6rem;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 .adresse,
 .legacy {
-  line-height: 0.3rem;
+  line-height: 0.2rem;
 }
 
-.adresse h4 {
-  padding-bottom: 0.5rem;
+.adresse{
+  padding-top: 1.5rem;
 }
 
 .adresse .phone {
@@ -116,11 +124,13 @@ h3 {
 }
 
 .legacy {
-  padding: 3rem 0rem 2rem 2rem;
+  padding: 0.9rem 0rem 2rem 2rem;
+  line-height: 1.5;
 }
 
+/* bandeau copyright & réseaux sociaux :  */
+
 .social {
-  /* background-color: #6E7271; */
   background-color: #5d737e;
   color: white;
 }
@@ -160,8 +170,14 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .flex-vert {
+  /* .flex-vert {
     flex-direction: column;
+  } */
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
   }
 
   .legacy {
