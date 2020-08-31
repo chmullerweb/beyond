@@ -20,12 +20,10 @@
 
       <b-carousel-slide :img-src="img2">
         <h2><slot name="title2"></slot></h2>
-
       </b-carousel-slide>
 
       <b-carousel-slide :img-src="img3">
         <h2><slot name="title3"></slot></h2>
-
       </b-carousel-slide>
     </b-carousel>
   </div>
