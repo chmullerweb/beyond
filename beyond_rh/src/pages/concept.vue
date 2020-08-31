@@ -11,7 +11,20 @@
     </template>
       </CardTitle>
 
-      <Caroussel/>
+
+      <Caroussel :img1="require('@/assets/boxe.jpg')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/desk.jpg')">
+        <template #title1>
+          hello4
+        </template>
+        <template #title2>
+          hello15
+        </template>
+        <template #title3>
+          hello6
+        </template>
+      </Caroussel>
+
+
 
       <CardTitle btnHidden>
       <template v-slot:claimTitle>Une approche psychologique</template>
@@ -21,7 +34,23 @@
         </p>
       </template>
       </CardTitle>
-      <Caroussel/>
+
+      <!-- <Caroussel/> -->
+      <Caroussel :img1="require('@/assets/boxe.jpg')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/desk.jpg')">
+        <template #title1>
+          hello4
+        </template>
+        <template #title2>
+          hello15
+        </template>
+        <template #title3>
+          hello6
+        </template>
+      </Caroussel>
+
+
+
+
       <router-link to="/Offre">
       <Bouton btnInfo btn btnBig mTop>Besoin d'en savoir plus sur les étapes de recrutement avec Beyond ?</Bouton>
       </router-link>

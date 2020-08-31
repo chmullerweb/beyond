@@ -14,16 +14,18 @@
       @sliding-end="onSlideEnd"
     >
 
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=48">
-        <h2>Analysez les compétences potentiels </h2>
+      <b-carousel-slide :img-src="img1">
+        <h2><slot name="title1"></slot></h2>
       </b-carousel-slide>
 
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=18">
-        <h2>Facilitez les interactions sociales</h2>
+      <b-carousel-slide :img-src="img2">
+        <h2><slot name="title2"></slot></h2>
+
       </b-carousel-slide>
 
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
-        <h2>Découvrez de manière original les candidats </h2>
+      <b-carousel-slide :img-src="img3">
+        <h2><slot name="title3"></slot></h2>
+
       </b-carousel-slide>
 
     </b-carousel>
@@ -36,6 +38,20 @@
     export default {
       name: 'Caroussel',
       component: {Caroussel},
+      props:{
+        img1:{
+          type: String,
+          required:true,
+        },
+        img2:{
+          type: String,
+          required:true,
+        },
+        img3:{
+          type: String,
+          required:true,
+        },
+      },
       data() {
         return {
           slide: 0,
