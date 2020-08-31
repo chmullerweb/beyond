@@ -1,15 +1,11 @@
 <template>
   <div class="">
     <CardTitle btnText="C'est quoi l'approche Beyond ?">
-      <template v-slot:claimTitle>Lorem ipsum</template>
+      <template v-slot:claimTitle>NOTRE CONVICTION</template>
       <template v-slot:claimTxt>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Utiliser le sport dans ses recrutements permet aux candidat-e-s de se révéler de manière plus authentique.
+        Une étape complémentaire de mise en situation, en adéquation avec la culture de l'entreprise, pour optimiser le processus de sélection de nouveaux collaborateurs.
+
       </template>
     </CardTitle>
     <Carousseletapes />
