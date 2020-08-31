@@ -6,19 +6,16 @@
       <hr>
       <div class="container">
         <div class="row">
-
             <div class="adresse">
               <p>XX rue Mason</p>
               <p>75020 Paris, France</p>
               <p class="phone">06.XX.XX.XX.XX</p>
             </div>
-
           <div class="col italic">
             <p>Une question ? Envie d'en savoir plus sur notre offre ?</p>
             <p>Ecrivez-nous !</p>
             <Bouton btn btnInfo :displayForm="showForm">Nous contacter</Bouton>
           </div>
-
           <div class="legacy">
             <router-link to="/mentions">
               <p>Mentions légales</p>
@@ -27,7 +24,6 @@
               <p>CGU</p>
             </router-link>
           </div>
-
         </div>
       </div>
     </div>
@@ -170,14 +166,10 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  /* .flex-vert {
-    flex-direction: column;
-  } */
 
   .row{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
   }
 
   .legacy {

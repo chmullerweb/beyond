@@ -16,12 +16,7 @@
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
         <div>
           <div class="">
-            <div class="round">
-              <p class="number">1</p>
-            </div>
-          </div>
-          <div class="">
-            <h1>Situation</h1>
+            <h1>1. Situation</h1>
             <p>
               La mise en situation permet de capitaliser sur l’expertise BEYOND.
               Nous mêlons sport à notre expertise du recrutement pour créer des
@@ -35,12 +30,7 @@
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
         <div>
           <div class="">
-            <div class="round">
-              <p class="number">2</p>
-            </div>
-          </div>
-          <div class="">
-            <h1>Observation</h1>
+            <h1>2. Observation</h1>
             <p>
               Observer des comportements permet de réduire les biais
               d’évaluation. Ce n’est ni une opinion, ni un préjugé. Un
@@ -54,12 +44,7 @@
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
         <div>
           <div class="">
-            <div class="round">
-              <p class="number">3</p>
-            </div>
-          </div>
-          <div class="">
-            <h1>Compétence</h1>
+            <h1>3. Compétence</h1>
             <p>
               Positionner l’observateur dans une posture de décisionnaire où il
               doit émettre un avis de recrutement sur des compétences maîtrisées
@@ -72,11 +57,8 @@
       </b-carousel-slide>
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
         <div>
-          <div class="round">
-            <p class="number">4</p>
-          </div>
           <div class="">
-            <h1>Évaluation</h1>
+            <h1>4. Évaluation</h1>
             <p>
               Valeur forte de BEYOND pour recruter : garder une approche entière
               de l’individu et une approche centrée sur l’humain afin de ne pas
@@ -90,12 +72,7 @@
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=38">
         <div>
           <div class="">
-            <div class="round">
-              <p class="number">5</p>
-            </div>
-          </div>
-          <div class="">
-            <h1>Recrutement</h1>
+            <h1>5. Recrutement</h1>
             <p>
               L'objectif de la mise en situation de recrutement est de savoir si
               on recrute cette personne ou non. Le sport est un véritable outil
@@ -155,21 +132,6 @@ p {
   flex-direction: row-reverse !important;
   justify-content: space-between;
   background-color: #7798ab;
-}
-
-.number {
-  font-family: "Alata";
-  font-size: 3rem;
-}
-
-.round {
-  border: 0.3rem solid grey;
-  border-radius: 75px;
-  margin-top: 1rem;
-  padding: 1.2rem;
-  width: 8rem;
-  height: 8rem;
-  margin: 1rem !important;
 }
 
 .card-body col-md-6 {
