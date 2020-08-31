@@ -11,6 +11,7 @@ import Concept from '../pages/concept.vue'
 import AboutUs from '../pages/aboutUs.vue'
 import Cgu from '../pages/cgu.vue'
 import Mentions from '../pages/mentions.vue'
+import Offre from '../pages/offre.vue'
 
 // components :
 import Bouton from '../components/Bouton.vue'

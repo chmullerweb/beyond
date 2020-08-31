@@ -8,7 +8,7 @@
           LA SOLUTION D'AUTHENTICITÉ POUR VOS RECRUTEMENTS <br />
           FAITES DE MEILLEURS RECRUTEMENTS EN CHALLENGEANT VOS CANDIDATS !
         </p>
-        <router-link to="/concept">
+        <router-link to="/conceptBeyond">
           <Bouton btnInfo btn>Comment ça marche ?</Bouton>
         </router-link>
       </div>

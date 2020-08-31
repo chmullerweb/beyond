@@ -4,7 +4,7 @@
       <div class="col">
         <h1 class="claim"><slot name="claimTitle"></slot></h1>
         <p class="container"><slot name="claimTxt"></slot></p>
-        <router-link to="/concept">
+        <router-link to="/aboutUs">
           <Bouton btnDark btn :class="{ 'btn-hidden': btnHidden }">{{
             btnText
           }}</Bouton>
