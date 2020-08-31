@@ -11,7 +11,22 @@
         </p>
       </template>
     </CardTitle>
-    <Caroussel />
+
+
+    <Caroussel :img1="require('@/assets/foot.jpg')" :img2="require('@/assets/sport.jpg')" :img3="require('@/assets/team-sport.jpg')">
+      <template #title1>
+        Analysez les reflexions du candidat
+      </template>
+      <template #title2>
+        Découvrez son adaptabilité
+      </template>
+      <template #title3>
+        Déceler sa créativité
+      </template>
+  </Caroussel>
+
+
+
     <CardTitle btnHidden>
       <template v-slot:claimTitle>Une approche psychologique</template>
       <template v-slot:claimTxt>
@@ -22,7 +37,19 @@
         </p>
       </template>
     </CardTitle>
-    <Caroussel />
+
+    <Caroussel :img1="require('@/assets/science.jpg')" :img2="require('@/assets/doctor.jpg')" :img3="require('@/assets/analyse.jpg')">
+        <template #title1>
+          Déterminez scientifiquement si le profil correspond aux valeurs de l’entreprise
+        </template>
+        <template #title2>
+          Découvrez les compétences à adapter en milieu professionnel
+        </template>
+        <template #title3>
+          Analyser les capacités d’organisations et d’adaptations
+        </template>
+    </Caroussel>
+
     <router-link to="/Offre">
       <Bouton btnInfo btn btnBig mTop class="min-text">
         Besoin d'en savoir plus sur les étapes de recrutement avec Beyond ?
