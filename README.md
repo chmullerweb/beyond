@@ -22,7 +22,6 @@ npm install
 ```
 
 ## Lancer le serveur Nodejs
-Télécharger NodeJs sur le site officiel : https://nodejs.org/en/download/
 Ouvrez un autre terminal et entrez-y la commande suivante :
 
 ```
@@ -30,7 +29,7 @@ node app.js
 ```
 
 Le serveur doit être lancé afin de recevoir les messages du formulaire de contact. 
-
+A noter : En faisant "npm install" vous avez récupérer la dépendance Node. Sinon, téléchargez NodeJs sur le site officiel : https://nodejs.org/en/download/
 
 ### Compiler le projet et lancer l'application Vuejs
 Dans votre premier terminal après la commande npm install, entrez :
